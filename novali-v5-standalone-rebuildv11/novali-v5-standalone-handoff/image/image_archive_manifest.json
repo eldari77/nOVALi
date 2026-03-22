@@ -1,0 +1,35 @@
+{
+  "archive_filename": "novali-v5-standalone.tar",
+  "archive_present": true,
+  "archive_relative_path": "image/novali-v5-standalone.tar",
+  "archive_sha256": "cb8e0da2b350ba8689a0625d17a899a87544beb47acc10aa9ffd2367148ac00a",
+  "archive_size_bytes": 44549632,
+  "container_default_command": [
+    "python",
+    "-m",
+    "novali_v5.web_operator",
+    "--host",
+    "0.0.0.0",
+    "--port",
+    "8787"
+  ],
+  "docker_image_id": "sha256:7dddf21cfbf3e4f28933c1a289c7143aa323b14659846c64f91e72d2b4db9a15",
+  "expected_container_bind_address": "0.0.0.0",
+  "expected_host_bind_address": "127.0.0.1",
+  "expected_host_port_mapping": "127.0.0.1:8787:8787",
+  "generated_at": "2026-03-22T22:26:11.975519+00:00",
+  "image_tag": "novali-v5-standalone:local",
+  "package_version": "novali-v5-standalone-rc15",
+  "preferred_browser_url": "http://127.0.0.1:8787/",
+  "preferred_load_script": "launch/01_load_image_archive.ps1",
+  "preferred_run_script": "launch/02_run_browser_operator.ps1",
+  "product_target": "zip_delivered_single_agent_docker_browser",
+  "reason": "",
+  "release_channel": "release_candidate",
+  "repo_tags": [
+    "novali-v5-standalone:local"
+  ],
+  "schema_name": "NovaliStandaloneImageArchive",
+  "schema_version": "novali_standalone_image_archive_v1",
+  "source_mode": "copied_existing_archive"
+}
