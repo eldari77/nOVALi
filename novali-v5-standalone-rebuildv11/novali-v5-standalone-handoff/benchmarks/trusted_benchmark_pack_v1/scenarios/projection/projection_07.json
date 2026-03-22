@@ -1,0 +1,41 @@
+{
+  "candidate_overrides": {
+    "local_score_bias": -0.02,
+    "projection_error_bias": 0.24
+  },
+  "context_overrides": {
+    "projection_recent_bias": 0.24,
+    "projection_trend_bias": 0.1,
+    "t2_recent_bias": 0.1
+  },
+  "decision_scoring": {
+    "gain_bad_penalty": 1.05,
+    "gain_weight": 0.75,
+    "goal_bad_penalty": 1.0,
+    "goal_margin_weight": 0.3,
+    "projection_bad_penalty": 3.0,
+    "projection_margin_weight": 1.6,
+    "status_bonus_full": 0.0,
+    "status_bonus_provisional": 0.0,
+    "status_bonus_reject": 0.0
+  },
+  "description": "projection scenario 07: projection_shock target=0 proposer=2",
+  "env": {
+    "horizon_pad": 12,
+    "noise_scale": 0.02,
+    "steps": 88
+  },
+  "eval_overrides": {},
+  "family": "projection",
+  "id": "projection_07",
+  "pack_version": "1.0.0",
+  "proposer": 2,
+  "seed": 41202,
+  "tags": [
+    "projection",
+    "projection_shock"
+  ],
+  "target_agent": 0,
+  "variant_name": "projection_shock",
+  "version": 1
+}
