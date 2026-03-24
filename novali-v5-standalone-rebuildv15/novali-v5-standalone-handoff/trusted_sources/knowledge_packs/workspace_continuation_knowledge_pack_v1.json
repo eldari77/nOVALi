@@ -1,0 +1,65 @@
+{
+  "description": "Conservative stage-order guidance for bounded successor continuation inside the active workspace.",
+  "pack_id": "bounded_workspace_continuation_v1",
+  "schema_name": "NovaliWorkspaceContinuationKnowledgePack",
+  "schema_version": "novali_workspace_continuation_knowledge_pack_v1",
+  "stages": [
+    {
+      "cycle_kind": "planning_only",
+      "missing_deliverables_gate": [
+        "planning_bundle"
+      ],
+      "next_recommended_cycle": "materialize_workspace_local_implementation",
+      "rationale": "Create the planning baseline before any implementation-bearing mutable-shell work.",
+      "requires_deliverables": [],
+      "stage_id": "initial_planning_bundle",
+      "title": "Create the initial planning bundle.",
+      "work_item_id": "bounded_successor_workspace_bundle"
+    },
+    {
+      "cycle_kind": "implementation_bearing",
+      "missing_deliverables_gate": [
+        "implementation_bundle"
+      ],
+      "next_recommended_cycle": "plan_successor_package_gap_closure",
+      "rationale": "Materialize the first bounded code and test bundle directly from the planning baseline.",
+      "requires_deliverables": [
+        "planning_bundle"
+      ],
+      "stage_id": "first_implementation_bundle",
+      "title": "Materialize the first implementation bundle.",
+      "work_item_id": "implementation_bundle_workspace_contract"
+    },
+    {
+      "cycle_kind": "planning_only",
+      "missing_deliverables_gate": [
+        "continuation_gap_analysis"
+      ],
+      "next_recommended_cycle": "materialize_successor_package_readiness_bundle",
+      "rationale": "Consult internal evidence and record what still blocks bounded successor completion.",
+      "requires_deliverables": [
+        "planning_bundle",
+        "implementation_bundle"
+      ],
+      "stage_id": "continuation_gap_analysis",
+      "title": "Produce a trusted-evidence continuation gap analysis.",
+      "work_item_id": "successor_continuation_gap_analysis"
+    },
+    {
+      "cycle_kind": "implementation_bearing",
+      "missing_deliverables_gate": [
+        "successor_readiness_bundle"
+      ],
+      "next_recommended_cycle": "operator_review_required",
+      "rationale": "Materialize the bounded successor readiness bundle needed for conservative completion.",
+      "requires_deliverables": [
+        "planning_bundle",
+        "implementation_bundle",
+        "continuation_gap_analysis"
+      ],
+      "stage_id": "successor_readiness_bundle",
+      "title": "Materialize the successor readiness bundle.",
+      "work_item_id": "successor_readiness_bundle"
+    }
+  ]
+}
