@@ -1,0 +1,102 @@
+{
+  "schema_name": "NOVALIDirectiveBootstrapFile",
+  "schema_version": "novali_directive_bootstrap_file_v1",
+  "sample_asset_metadata": {
+    "sample_only": true,
+    "purpose": "manual_operator_acceptance",
+    "non_authoritative": true
+  },
+  "bootstrap_context": {
+    "active_branch": "novali-v5",
+    "additional_reference_versions": [
+      "novali-v2"
+    ],
+    "branch_name": "wm_hybrid_context_scoped",
+    "branch_state": "paused_with_baseline_held",
+    "branch_transition_id": "sample_branch_transition::manual_acceptance::novali-v5",
+    "branch_transition_reason": "Sample directive for manual operator acceptance of the novali-v5 operator shell while preserving the held baseline and frozen reference surfaces.",
+    "branch_transition_status": "sample_manual_acceptance_only",
+    "branch_transition_timestamp": "2026-03-21T00:00:00+00:00",
+    "carried_forward_safe_trio_reference": {
+      "baseline_name": "swap_C",
+      "selected_ids": [
+        "recovery_02",
+        "recovery_03",
+        "recovery_12"
+      ]
+    },
+    "completed_reference_branch": "novali-v4",
+    "current_operating_stance": "hold_and_consolidate",
+    "frozen_fallback_reference_version": "novali-v3",
+    "governed_work_loop_status": "hold_position_closed_out_v1",
+    "held_baseline": {
+      "template": "proposal_learning_loop.v4_wm_hybrid_context_scoped_probe_v1"
+    },
+    "held_baseline_template": "proposal_learning_loop.v4_wm_hybrid_context_scoped_probe_v1",
+    "older_reference_version": "novali-v2",
+    "plan_non_owning": true,
+    "projection_safety_primary": true,
+    "reference_operator_surface_branch": "novali-v4",
+    "routing_status": "routing_deferred",
+    "selector_frontier_read": "serial_budget_then_ordering"
+  },
+  "directive_spec": {
+    "directive_id": "directive_novali_v5_manual_operator_acceptance_v1",
+    "directive_text": "Use the novali-v5 operator shell to initialize or resume NOVALI through the canonical directive-first bootstrap path and inspect canonical state safely.",
+    "clarified_intent_summary": "Support a bounded manual acceptance pass over the operator shell without changing protected runtime behavior or authority meaning.",
+    "success_criteria": [
+      "the directive wrapper validates in the GUI",
+      "bootstrap-only launch succeeds with canonical artifacts materialized",
+      "resume path shows frozen session state clearly",
+      "unsupported controls remain visibly unsupported"
+    ],
+    "milestone_model": [
+      {
+        "milestone_id": "directive_validation_visible",
+        "completion_signal": "the GUI shows valid directive-wrapper feedback before launch"
+      },
+      {
+        "milestone_id": "operator_launch_path_verified",
+        "completion_signal": "the canonical operator launch path produces persisted canonical artifacts and an audit trail"
+      }
+    ],
+    "human_approval_points": [
+      "branch-state changes",
+      "protected-surface challenges",
+      "resource-expansion requests"
+    ],
+    "constraints": [
+      "do not change routing logic",
+      "do not change thresholds",
+      "do not change live policy",
+      "do not change frozen benchmark semantics",
+      "do not modify nined_core.py"
+    ],
+    "trusted_sources": [
+      "local_repo:novali-v5",
+      "local_artifacts:novali-v5/data",
+      "trusted_benchmark_pack_v1"
+    ],
+    "bucket_spec": {
+      "bucket_id": "bucket_manual_acceptance_sample_v1",
+      "bucket_model": "containerized_bucket_v1"
+    },
+    "allowed_action_classes": [
+      "low_risk_shell_change",
+      "diagnostic_schema_materialization",
+      "append_only_ledger_write",
+      "local_governance_registry_update"
+    ],
+    "stop_conditions": [
+      "directive validation fails",
+      "clarification remains unresolved",
+      "canonical governance artifacts are inconsistent"
+    ],
+    "drift_budget_for_context_exploration": {
+      "allowed": true,
+      "tag_required": "manual_acceptance_support",
+      "max_budgeted_support_reads": 4,
+      "max_budgeted_external_fetches": 0
+    }
+  }
+}
