@@ -1,0 +1,41 @@
+{
+  "candidate_overrides": {
+    "dummy_improvement_bias": 0.03,
+    "local_score_bias": 0.01
+  },
+  "context_overrides": {
+    "c2_recent_bias": 0.05,
+    "c3_recent_bias": 0.05,
+    "wm_quality_penalty_bias": 0.12
+  },
+  "decision_scoring": {
+    "gain_bad_penalty": 1.32,
+    "gain_weight": 0.98,
+    "goal_bad_penalty": 1.22,
+    "goal_margin_weight": 0.75,
+    "projection_bad_penalty": 1.85,
+    "projection_margin_weight": 0.9,
+    "status_bonus_full": 0.0,
+    "status_bonus_provisional": 0.04,
+    "status_bonus_reject": 0.0
+  },
+  "description": "calibration scenario 10: forecast_balance_check target=0 proposer=0",
+  "env": {
+    "horizon_pad": 10,
+    "noise_scale": 0.012,
+    "steps": 78
+  },
+  "eval_overrides": {},
+  "family": "calibration",
+  "id": "calibration_10",
+  "pack_version": "1.0.0",
+  "proposer": 0,
+  "seed": 45300,
+  "tags": [
+    "calibration",
+    "forecast_balance_check"
+  ],
+  "target_agent": 0,
+  "variant_name": "forecast_balance_check",
+  "version": 1
+}

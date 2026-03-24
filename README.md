@@ -1,69 +1,92 @@
 # NOVALI
 
-**NOVALI** is an experimental self-structuring agent framework designed to initialize from a formal directive, operate under explicit governance constraints, consult only approved trusted sources, and improve through bounded, auditable changes rather than open-ended self-modification.
+**NOVALI** is an experimental governed-agent framework built around one core idea: an agent should initialize from a formal directive, operate inside explicit runtime constraints, improve only through bounded and auditable work, and remain understandable to the operator throughout the process.
 
-The current standalone product direction is:
+The current product direction is:
 
-**unzip → load Docker image → run container → open browser on localhost → initialize NOVALI**
+**unzip → load Docker image → run container → open browser on localhost → initialize NOVALI → continue into bounded governed execution**
 
 ---
 
 ## What NOVALI is
 
-NOVALI is built around the idea that an agent should not behave like an unrestricted autonomous process. Instead, it should:
+NOVALI is not designed as an unrestricted autonomous system. It is designed to be:
 
-- start from a formal directive bootstrap file
-- preserve canonical governance state in explicit persisted artifacts
-- operate inside a bounded runtime envelope
-- use only operator-approved trusted sources
-- perform self-improvement only inside approved mutable work areas
-- keep protected core surfaces stable unless explicitly reviewed
+- **directive-first**
+- **artifact-governed**
+- **runtime-bounded**
+- **operator-readable**
+- **workspace-scoped for self-improvement**
+- **conservative by default**
 
-This project is aimed at creating agents that are more **governable, inspectable, and structurally coherent over time**.
+Instead of letting runtime behavior become the source of truth, NOVALI keeps authority in explicit persisted artifacts and uses the browser UI as the operator surface over a governed execution chain.
+
+---
+
+## Current Status
+
+NOVALI is currently in a **working standalone product phase** built around a packaged Docker handoff and a browser-based localhost operator UI.
+
+Current packaged reference:
+- **`novali-v5-standalone-rc42`**
+
+Recent progress has moved NOVALI beyond basic initialization into a much deeper bounded improvement stack, including:
+
+- directive-first bootstrap
+- governed execution in bounded active workspaces
+- bounded coding profiles
+- review / promotion / reseed / continuation flows
+- admitted-candidate lifecycle
+- future-reference-target rollover
+- bounded skill-pack execution for quality improvement
+- campaign, campaign-cycle, and loop-level governance
+- first productization and guided workflow refinement in the operator UI
+
+At this point, the governance/control-plane stack is stable enough that current effort is shifting toward **product-facing operator experience**, not more governance expansion.
 
 ---
 
 ## Current Product Shape
 
-The current near-term standalone deployment target is:
+The near-term standalone deployment target is:
 
 - a **zip-delivered package**
 - containing a **prebuilt Docker image archive**
-- with a **browser-based localhost operator UI**
-- for initializing and running a **single NOVALI agent**
+- launched with a **browser-based localhost operator UI**
+- for initializing and running a **single governed NOVALI agent**
 
-The current operator flow is:
+The current golden path is:
 
 1. unpack the handoff package
 2. load the Docker image archive
 3. run the packaged launcher
 4. open the browser UI on localhost
 5. select or generate a directive
-6. configure runtime policy and trusted-source settings
-7. initialize NOVALI
-8. optionally resume into bounded governed execution
+6. run **bootstrap-only initialization**
+7. switch back to the bounded governed-execution profile
+8. resume NOVALI into governed execution when appropriate
 
 ---
 
 ## Core Design Principles
 
 ### 1. Directive-first initialization
-NOVALI does not start from freeform text alone. It initializes from a formal directive bootstrap file that carries structured intent and startup context.
+NOVALI initializes from a formal directive bootstrap file rather than freeform prompting alone.
 
 ### 2. Canonical artifact authority
-Governance truth does not live in ad hoc runtime state. It lives in explicit persisted artifacts, including directive, bucket, branch, and self-structure surfaces.
+Governance truth lives in persisted artifacts, not in ad hoc runtime state.
 
 ### 3. Bounded execution
-NOVALI is intended to operate under operator-owned runtime constraints that it cannot casually alter or bypass.
+NOVALI operates inside operator-owned runtime constraints and cannot casually broaden its own permissions.
 
-### 4. Trusted-source-only external evidence
-NOVALI should only consult bounded, operator-approved trusted sources when additional information is required.
+### 4. Governed self-improvement
+Improvement is limited to approved mutable work areas and reviewed bounded flows.
 
-### 5. Governed self-improvement
-Self-improvement is allowed only in the mutable shell and approved workspaces. Protected core surfaces remain fixed unless explicitly reviewed.
+### 5. Trusted-source discipline
+Trusted sources are bounded evidence channels, not the governance source of truth.
 
 ### 6. Auditability over cleverness
-The system is designed to favor traceable structure, stable policy, and inspectable changes over opaque capability growth.
+NOVALI prefers explicit structure, inspectable changes, and stable policy over opaque capability growth.
 
 ---
 
@@ -73,24 +96,24 @@ NOVALI currently uses a browser-first operator flow over a governed execution ch
 
 `browser UI → launcher → frozen session → bootstrap → governed execution`
 
-Important concepts:
+Key concepts:
 
-- **Directive bootstrap**: formal structured initialization
-- **Frozen operator session**: effective launch constraints and policy
+- **Directive bootstrap**: structured initialization intent
+- **Frozen operator session**: effective runtime policy and launch constraints
 - **Runtime envelope**: bounded execution profile and backend
 - **Trusted sources**: operator-approved evidence channels
-- **Active workspace**: bounded writable build area for governed coding runs
-- **Canonical artifacts**: persisted governance state used as source of authority
+- **Active workspace**: bounded writable build area for governed runs
+- **Canonical artifacts**: persisted authority surfaces used to drive state and decisions
 
 ---
 
 ## Execution Modes
 
 ### Bootstrap-only initialization
-Used for first-time initialization and canonical state creation.
+Used to create canonical state for a new directive/session.
 
 ### Governed execution
-Used after initialization when NOVALI resumes under an approved execution profile to perform bounded work.
+Used after initialization when NOVALI resumes under an approved bounded execution profile.
 
 ---
 
@@ -108,14 +131,54 @@ Typical subfolders include:
 - `artifacts/`
 - `plans/`
 
-This allows NOVALI to produce useful outputs without granting unrestricted write access across the repository or package.
+This allows NOVALI to produce useful outputs without unrestricted write access across the repository or package.
+
+---
+
+## What NOVALI can now do
+
+The current `novali-v5` line can now support, in bounded form:
+
+- browser-first bootstrap and resume flows
+- bounded governed execution
+- directive-guided planning and implementation cycles
+- review / promotion / admission flows
+- admitted-candidate preservation and comparison
+- bounded future-reference-target rollover
+- skill-pack-driven quality improvement
+- multi-wave campaign management
+- campaign-cycle and loop-of-loops governance
+- operator-facing observability over runtime, campaign, cycle, and artifact state
+
+This means NOVALI is no longer just an initialization shell. It is now an **experimental governed improvement system** with a browser operator surface.
+
+---
+
+## Operator Experience Direction
+
+Current productization work is focused on making NOVALI easier to use and easier to understand.
+
+Recent operator UX improvements include:
+
+- a clearer staged initialization story
+- stronger home/landing guidance
+- a more cohesive browser UI
+- clearer bootstrap-only vs governed-execution guidance
+- more actionable summary layers in observability
+- a stronger “what is happening / what next” presentation model
+
+Current visual direction:
+- dark primary palette
+- green secondary accents
+- dark purple tertiary accents
+- a restrained **magic + technology** aesthetic
 
 ---
 
 ## Deployment Modes
 
 ### Docker standalone
-The primary near-term deployment path.
+This is the primary deployment path today.
 
 Use this when you want:
 - one agent
@@ -126,10 +189,10 @@ Use this when you want:
 ### Kubernetes orchestration
 Deferred future phase.
 
-This is intended for:
+Intended for:
 - multi-agent deployment
-- swarm-like orchestration
-- stronger platform-level scheduling and policy control
+- stronger orchestration and scheduling
+- broader infrastructure control
 
 Kubernetes is **not** the current standalone target.
 
@@ -137,7 +200,7 @@ Kubernetes is **not** the current standalone target.
 
 ## Safety and Governance Posture
 
-NOVALI is explicitly conservative by design.
+NOVALI is conservative by design.
 
 By default, it does **not** assume permission to:
 
@@ -148,42 +211,33 @@ By default, it does **not** assume permission to:
 - claim unsupported runtime guarantees
 - bypass operator-owned constraints
 
-The system is designed to support bounded progress rather than unconstrained autonomy.
+The system is meant to support **bounded progress**, not unconstrained autonomy.
 
 ---
 
 ## Trusted Sources
 
-Trusted sources are the bounded external or internal evidence channels NOVALI may consult while fulfilling a directive.
+Trusted sources are bounded evidence channels NOVALI may consult while fulfilling a directive.
 
-They are **not** the governance source of truth.
-
-Current intended distinction:
+Important distinction:
 
 - **Governance truth** = canonical persisted NOVALI artifacts
 - **External evidence** = trusted-source channels approved by the operator
 
+Trusted sources inform work. They do not replace governance authority.
+
 ---
 
-## Current Status
+## Current Product Phase
 
-NOVALI is currently in an experimental but working standalone phase with:
+NOVALI is now best described as:
 
-- formal directive bootstrap
-- browser-based localhost operator UI
-- Docker-based standalone handoff packaging
-- bounded runtime envelope
-- governed execution path
-- active workspace support for bounded coding runs
+**Governance-stable, productizing, and operator-facing**
 
-Recent milestones include:
-
-- standalone packaged browser-first initialization
-- prebuilt Docker image archive handoff
-- bounded governed execution in `novali-active_workspace`
-- packaged two-step flow:
-  - `new_bootstrap + bootstrap_only`
-  - `resume_existing + governed_execution`
+That means:
+- major governance/control-plane layers are functioning
+- current effort is moving toward workflow clarity, dashboard actionability, and showcase readiness
+- deeper runtime/governance expansion is intentionally paused while product-facing polish improves
 
 ---
 
@@ -194,8 +248,8 @@ NOVALI is being built for tasks such as:
 - governed autonomous planning
 - structured bounded coding runs
 - agent-initialized implementation work inside approved workspaces
-- directive-guided research or product tasks using trusted sources
-- auditable self-improvement under explicit safety constraints
+- auditable improvement of successor artifacts under explicit safety constraints
+- product/research workflows that need inspectable operator oversight
 
 ---
 
@@ -209,8 +263,35 @@ The exact packaged flow depends on the current release, but the intended user ex
 4. run the packaged launcher
 5. open the localhost browser UI
 6. choose or generate a directive
-7. initialize NOVALI
-8. resume into governed execution when appropriate
+7. run bootstrap-only initialization
+8. switch back to governed execution
+9. continue NOVALI into bounded work as appropriate
+
+---
+
+## Roadmap
+
+### Active priorities
+- refine operator workflow clarity
+- improve dashboard actionability and runtime summaries
+- continue standalone product polish
+- improve showcase/demo quality
+- strengthen bounded quality-improvement outputs inside active workspaces
+
+### Deferred priorities
+- automatic live baseline replacement
+- endless reseeding
+- live trusted-source querying
+- broader writable roots
+- Kubernetes-based orchestration
+- multi-agent orchestration
+- deeper UX modernization beyond the current productization baseline
+
+### Deferred UX track
+A future operator UX pass is planned around:
+- a more modern **magic + technology** visual treatment
+- stronger directive-core presentation
+- a more cinematic initialization sequence where the directive is treated as the system core being brought online
 
 ---
 
@@ -232,21 +313,6 @@ Commercial licensing contact:
 
 ---
 
-## Roadmap
-
-Near-term priorities:
-- improve bounded coding outputs in active workspace runs
-- strengthen trusted-source query protocol design
-- continue standalone release polish
-- improve operator observability and artifact review
-
-Deferred priorities:
-- richer trusted-source internal query channels
-- broader governed skill acquisition
-- Kubernetes-based multi-agent orchestration
-
----
-
 ## Contributing
 
 This repository is evolving quickly. If you contribute:
@@ -254,7 +320,7 @@ This repository is evolving quickly. If you contribute:
 - preserve the directive-first authority chain
 - keep operator-owned policy frozen and auditable
 - do not casually broaden write permissions or runtime claims
-- prefer bounded, testable improvements over large speculative rewrites
+- prefer bounded, testable improvements over speculative rewrites
 - keep Docker standalone and Kubernetes orchestration concerns separate
 
 A future CLA or contribution policy may be introduced to preserve consistent commercial licensing rights.
