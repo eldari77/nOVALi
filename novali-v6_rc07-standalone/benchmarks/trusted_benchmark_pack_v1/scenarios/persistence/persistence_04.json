@@ -1,0 +1,39 @@
+{
+  "candidate_overrides": {},
+  "context_overrides": {
+    "moving_average_bias": 0.12,
+    "persistence_streak_delta": 2,
+    "retained_evidence_bias": 0.18,
+    "retained_rounds_delta": 1
+  },
+  "decision_scoring": {
+    "gain_bad_penalty": 1.2,
+    "gain_weight": 0.95,
+    "goal_bad_penalty": 1.2,
+    "goal_margin_weight": 0.75,
+    "projection_bad_penalty": 1.85,
+    "projection_margin_weight": 0.78,
+    "status_bonus_full": 0.06,
+    "status_bonus_provisional": 0.14,
+    "status_bonus_reject": 0.0
+  },
+  "description": "persistence scenario 04: streak_consolidation target=0 proposer=0",
+  "env": {
+    "horizon_pad": 8,
+    "noise_scale": 0.011,
+    "steps": 74
+  },
+  "eval_overrides": {},
+  "family": "persistence",
+  "id": "persistence_04",
+  "pack_version": "1.0.0",
+  "proposer": 0,
+  "seed": 43100,
+  "tags": [
+    "persistence",
+    "streak_consolidation"
+  ],
+  "target_agent": 0,
+  "variant_name": "streak_consolidation",
+  "version": 1
+}
