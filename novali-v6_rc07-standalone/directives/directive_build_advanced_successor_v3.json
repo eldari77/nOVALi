@@ -1,0 +1,178 @@
+{
+  "schema_name": "NOVALIDirectiveBootstrapFile",
+  "schema_version": "novali_directive_bootstrap_file_v1",
+  "bootstrap_context": {
+    "active_branch": "novali-v6",
+    "additional_reference_versions": [
+      "novali-v3",
+      "novali-v2"
+    ],
+    "branch_name": "wm_hybrid_context_scoped",
+    "branch_state": "paused_with_baseline_held",
+    "branch_transition_id": "branch_transition::2026-03-24::novali-v5_to_novali-v6",
+    "branch_transition_reason": "novali-v5 reached a closeout-ready state with stable directive-first bootstrap, bounded governed execution, packaged standalone rc44, and productized operator surfaces, so novali-v6 is the next active development branch while novali-v5 becomes the frozen reference/operator surface baseline.",
+    "branch_transition_status": "novali_v5_frozen_reference_novali_v6_active",
+    "branch_transition_timestamp": "2026-03-24T21:00:52.3769809+00:00",
+    "carried_forward_safe_trio_reference": {
+      "baseline_name": "swap_C",
+      "selected_ids": [
+        "recovery_02",
+        "recovery_03",
+        "recovery_12"
+      ]
+    },
+    "completed_reference_branch": "novali-v5",
+    "current_operating_stance": "hold_and_consolidate",
+    "frozen_fallback_reference_version": "novali-v4",
+    "governed_work_loop_status": "hold_position_closed_out_v1",
+    "held_baseline": {
+      "template": "proposal_learning_loop.v4_wm_hybrid_context_scoped_probe_v1"
+    },
+    "held_baseline_template": "proposal_learning_loop.v4_wm_hybrid_context_scoped_probe_v1",
+    "older_reference_version": "novali-v2",
+    "plan_non_owning": true,
+    "projection_safety_primary": true,
+    "reference_operator_surface_branch": "novali-v5",
+    "routing_status": "routing_deferred",
+    "selector_frontier_read": "serial_budget_then_ordering"
+  },
+  "directive_spec": {
+    "allowed_action_classes": [
+      "low_risk_shell_change",
+      "diagnostic_schema_materialization",
+      "append_only_ledger_write",
+      "local_governance_registry_update"
+    ],
+    "bucket_spec": {
+      "bucket_id": "bucket_directive_build_advanced_successor_v3",
+      "bucket_model": "containerized_bucket_v1"
+    },
+    "clarified_intent_summary": "Initialize novali-v6 from the frozen novali-v5 reference line for a bounded next-generation successor run focused on designing, implementing, testing, reviewing, packaging, and delivering a workspace-local agent that is more effective than the current bounded reference target, with completion defined by a finished successor handoff package and a single zip artifact containing the delivered next-generation agent package and its bounded handoff contents, created entirely inside the approved active workspace.",
+    "constraints": [
+      "do not change routing logic",
+      "do not change thresholds",
+      "do not change live policy",
+      "do not change frozen benchmark semantics",
+      "do not modify nined_core.py",
+      "do not modify protected core surfaces by default",
+      "mutable-shell improvements only unless an explicitly reviewed proposal says otherwise",
+      "preserve directive-first bootstrap and canonical artifact authority",
+      "trusted sources are bounded evidence channels, not governance authority",
+      "prefer local_path / local_bundle / packaged_dataset style trusted-source use",
+      "do not assume open-ended internet access",
+      "keep standalone Docker + localhost browser operator flow coherent",
+      "routing remains deferred",
+      "hold_and_consolidate posture remains in force",
+      "novali-v5 remains the frozen reference/operator surface baseline for this directive",
+      "continuous improvement must proceed through bounded multi-cycle execution and explicit review/reseed governance rather than open-ended uncontrolled looping",
+      "deliver all successor outputs inside approved active workspace and approved generated/log roots only",
+      "final deliverable must be a single zip artifact produced inside the active workspace",
+      "the final zip must contain the next-generation agent package and its bounded handoff contents produced by the bounded run, not references to external untracked state",
+      "baseline replacement remains deferred and must not occur automatically in this directive"
+    ],
+    "directive_id": "directive_build_advanced_successor_v3",
+    "directive_text": "Design and implement a bounded workspace-local next-generation NOVALI agent from the frozen novali-v5 reference line that is more effective than the current bounded reference target, iterating planning, implementation, review, packaging, and approved reseed cycles until a complete successor handoff package and a single final zip artifact containing the next-generation agent package and its bounded handoff contents have been delivered inside the approved workspace, while preserving projection safety, canonical artifact authority, immutable-kernel constraints, and protected-surface exclusions by default.",
+    "drift_budget_for_context_exploration": {
+      "allowed": true,
+      "max_budgeted_external_fetches": 2,
+      "max_budgeted_support_reads": 8,
+      "tag_required": "advanced_successor_delivery_support"
+    },
+    "human_approval_points": [
+      "branch-state changes",
+      "protected-surface challenges",
+      "resource-expansion requests",
+      "immutable-kernel boundary challenges",
+      "governance-authority surface challenges",
+      "promotion-to-baseline decisions",
+      "approved reseed / continuation decisions",
+      "any request to treat the produced successor as an active baseline replacement"
+    ],
+    "milestone_model": [
+      {
+        "milestone_id": "directive_wrapper_ready",
+        "completion_signal": "the formal directive wrapper validates before activation without requiring additional clarification"
+      },
+      {
+        "milestone_id": "mutable_shell_scope_locked",
+        "completion_signal": "the next-generation successor scope is explicitly bounded to mutable-shell improvements and protected surfaces remain excluded by default"
+      },
+      {
+        "milestone_id": "canonical_bootstrap_ready",
+        "completion_signal": "canonical governance artifacts are loaded or materialized deterministically under the preserved held baseline and authority model"
+      },
+      {
+        "milestone_id": "governed_execution_ready",
+        "completion_signal": "the canonical execution handoff becomes execution-ready after bootstrap while keeping the standalone Docker plus localhost browser operator flow coherent"
+      },
+      {
+        "milestone_id": "next_generation_design_ready",
+        "completion_signal": "the successor design is made explicit through plans, manifests, and implementation intent artifacts describing the next-generation agent to be built inside the workspace"
+      },
+      {
+        "milestone_id": "multi_cycle_continuation_ready",
+        "completion_signal": "bounded planning, implementation, packaging, and review cycles can continue through explicit review and approved reseed rather than stopping after the first implementation bundle"
+      },
+      {
+        "milestone_id": "successor_agent_materialized",
+        "completion_signal": "a workspace-local next-generation agent exists with source, tests, docs, manifests, and readiness artifacts sufficient to run as a bounded successor package"
+      },
+      {
+        "milestone_id": "successor_handoff_bundle_materialized",
+        "completion_signal": "a workspace-local successor handoff bundle analogous to the current standalone delivery shape exists with source, tests, docs, manifests, review artifacts, and readiness evidence"
+      },
+      {
+        "milestone_id": "single_zip_delivery_materialized",
+        "completion_signal": "a single final zip artifact exists inside the approved workspace and contains the produced next-generation agent package and its required bounded handoff contents"
+      },
+      {
+        "milestone_id": "review_and_promotion_bundle_materialized",
+        "completion_signal": "review summary, promotion recommendation, next-objective proposal, reseed lineage, effective approved next-objective artifacts, and successor-comparison artifacts exist and are operator-visible"
+      },
+      {
+        "milestone_id": "bounded_next_generation_delivery_complete",
+        "completion_signal": "the produced next-generation agent package is materially complete inside the active workspace, delivered as a single zip artifact, assessed as more effective than the current bounded reference target under the successor-completion and promotion-review rubrics, and the directive-derived stop condition is satisfied"
+      }
+    ],
+    "stop_conditions": [
+      "directive validation fails",
+      "clarification remains unresolved",
+      "canonical governance artifacts are inconsistent",
+      "requested work would cross immutable-kernel or protected-surface boundaries without explicit review",
+      "requested work would broaden routing, thresholds, live policy, or benchmark semantics by default",
+      "standalone Docker plus localhost browser operator coherence is lost",
+      "no further admissible bounded work remains and no approved reseed is available",
+      "review or promotion logic rejects continuation without a newly approved bounded objective",
+      "the final zip artifact cannot be produced inside the approved workspace under current bounded constraints",
+      "directive-derived completion condition is satisfied within current bounded workspace scope",
+      "hard cycle cap or bounded-failure stop is reached under current governance limits"
+    ],
+    "success_criteria": [
+      "the bounded novali-v6 next-generation successor directive compiles and bootstraps without clarification-required refusal",
+      "directive-first bootstrap completes with canonical governance artifacts materialized",
+      "governed execution reads authority from persisted artifacts after bootstrap",
+      "mutable-shell successor work remains bounded away from protected core surfaces by default",
+      "operator runtime constraints remain frozen outside agent-owned self-structure",
+      "trusted sources remain evidence channels and not governance authority during the run",
+      "bounded planning, implementation, packaging, review, and approved reseed cycles continue until the next-generation delivery objective is materially satisfied or explicitly stopped for a governed reason",
+      "a workspace-local next-generation agent package exists that is structurally analogous to the current delivered standalone handoff shape, including source modules, tests, docs, manifests, review artifacts, and readiness evidence",
+      "a single zip artifact exists inside the approved active workspace and contains the delivered next-generation agent package together with its bounded handoff contents",
+      "the successor package is assessed as more effective than the current bounded reference target according to the bounded successor-completion and promotion-review rubrics",
+      "the final stop reason reflects directive-conditioned completion or an explicit governed stop, not shallow early completion",
+      "baseline replacement remains deferred and is not performed automatically by this directive"
+    ],
+    "trusted_sources": [
+      "local_repo:novali-v5",
+      "local_artifacts:novali-v5/data",
+      "local_repo:novali-v4",
+      "local_artifacts:novali-v4/data",
+      "local_bundle:standalone_handoff_package",
+      "packaged_dataset:trusted_benchmark_pack_v1",
+      "local_logs:logs",
+      "local_path:directive_inputs",
+      "local_bundle:knowledge_packs",
+      "local_artifacts:novali-active_workspace",
+      "openai_api"
+    ]
+  }
+}

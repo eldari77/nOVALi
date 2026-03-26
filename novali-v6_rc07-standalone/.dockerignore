@@ -1,0 +1,15 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+**/__pycache__/
+**/*.pyc
+**/*.pyo
+**/*.pyd
+data/
+logs/
+manual_acceptance_runs/
+manual_acceptance_samples/
+dist/
+tests/

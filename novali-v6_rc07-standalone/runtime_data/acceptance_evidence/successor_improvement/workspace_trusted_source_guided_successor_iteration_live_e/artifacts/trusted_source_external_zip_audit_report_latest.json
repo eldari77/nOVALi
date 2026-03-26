@@ -1,0 +1,127 @@
+{
+  "active_bounded_reference_target_id": "current_bounded_baseline_expectations_v1",
+  "capability_id": "trusted_source_external_zip_audit_capability_v1",
+  "categories_with_missing_paths": [],
+  "category_rows": [
+    {
+      "category_id": "planning_surface",
+      "present": true,
+      "relative_path": "plans/bounded_work_cycle_plan.md",
+      "why_required": "internal bounded zip-audit contract requires this surface remain visible for planning, implementation, tests, and artifact evidence"
+    },
+    {
+      "category_id": "planning_surface",
+      "present": true,
+      "relative_path": "plans/successor_continuation_gap_analysis.md",
+      "why_required": "internal bounded zip-audit contract requires this surface remain visible for planning, implementation, tests, and artifact evidence"
+    },
+    {
+      "category_id": "design_surface",
+      "present": true,
+      "relative_path": "docs/mutable_shell_successor_design_note.md",
+      "why_required": "internal bounded zip-audit contract requires this surface remain visible for planning, implementation, tests, and artifact evidence"
+    },
+    {
+      "category_id": "design_surface",
+      "present": true,
+      "relative_path": "docs/successor_package_readiness_note.md",
+      "why_required": "internal bounded zip-audit contract requires this surface remain visible for planning, implementation, tests, and artifact evidence"
+    },
+    {
+      "category_id": "design_surface",
+      "present": true,
+      "relative_path": "docs/successor_single_zip_delivery_note.md",
+      "why_required": "internal bounded zip-audit contract requires this surface remain visible for planning, implementation, tests, and artifact evidence"
+    },
+    {
+      "category_id": "source_surface",
+      "present": true,
+      "relative_path": "src/successor_shell/workspace_contract.py",
+      "why_required": "internal bounded zip-audit contract requires this surface remain visible for planning, implementation, tests, and artifact evidence"
+    },
+    {
+      "category_id": "source_surface",
+      "present": true,
+      "relative_path": "src/successor_shell/successor_manifest.py",
+      "why_required": "internal bounded zip-audit contract requires this surface remain visible for planning, implementation, tests, and artifact evidence"
+    },
+    {
+      "category_id": "test_surface",
+      "present": true,
+      "relative_path": "tests/test_workspace_contract.py",
+      "why_required": "internal bounded zip-audit contract requires this surface remain visible for planning, implementation, tests, and artifact evidence"
+    },
+    {
+      "category_id": "test_surface",
+      "present": true,
+      "relative_path": "tests/test_successor_manifest.py",
+      "why_required": "internal bounded zip-audit contract requires this surface remain visible for planning, implementation, tests, and artifact evidence"
+    },
+    {
+      "category_id": "artifact_manifest_surface",
+      "present": true,
+      "relative_path": "artifacts/workspace_artifact_index_latest.json",
+      "why_required": "internal bounded zip-audit contract requires this surface remain visible for planning, implementation, tests, and artifact evidence"
+    },
+    {
+      "category_id": "artifact_manifest_surface",
+      "present": true,
+      "relative_path": "artifacts/successor_readiness_evaluation_latest.json",
+      "why_required": "internal bounded zip-audit contract requires this surface remain visible for planning, implementation, tests, and artifact evidence"
+    },
+    {
+      "category_id": "artifact_manifest_surface",
+      "present": true,
+      "relative_path": "artifacts/successor_delivery_manifest_latest.json",
+      "why_required": "internal bounded zip-audit contract requires this surface remain visible for planning, implementation, tests, and artifact evidence"
+    }
+  ],
+  "caveats": [
+    "Trusted-source evidence is implementation support only."
+  ],
+  "directive_id": "directive_build_advanced_successor_v3",
+  "generated_at": "2026-03-25T19:56:07.858830+00:00",
+  "implementation_guidance": [
+    "Audit the delivered standalone zip deterministically.",
+    "Keep required-path evidence bounded to the declared contract."
+  ],
+  "knowledge_id": "trusted_source_external_zip_audit_guidance_v3",
+  "knowledge_pack_id": "trusted_source_external_zip_audit_pack_v3",
+  "missing_relative_paths": [],
+  "mission_integration_state": "trusted_source_audit_applied_to_live_mission",
+  "mission_objective_class": "improve_successor_package_readiness",
+  "mission_objective_id": "improve_successor_package_readiness",
+  "mission_objective_title": "Improve successor package readiness",
+  "mission_output_relative_paths": [
+    "docs/successor_package_readiness_note.md",
+    "artifacts/successor_readiness_evaluation_latest.json",
+    "artifacts/successor_delivery_manifest_latest.json",
+    "artifacts/novali-v6_rc00-standalone.zip"
+  ],
+  "mission_task_being_attempted": "advance the bounded successor package-readiness mission by applying a trusted-source-backed structural audit to the delivered standalone zip and feeding that evidence into readiness review artifacts",
+  "protected_live_baseline_reference_id": "current_bounded_baseline_expectations_v1",
+  "provider_id": "openai_api",
+  "report_state": "validated_complete",
+  "request_id": "trusted_source_request::workspace_trusted_source_guided_successor_iteration_live_e::trusted_source_external_zip_audit_capability_v1::mission::improve_successor_package_readiness",
+  "required_categories": [
+    "planning_surface",
+    "design_surface",
+    "source_surface",
+    "test_surface",
+    "artifact_manifest_surface"
+  ],
+  "required_categories_satisfied": true,
+  "reuse_state": "indexed_knowledge_reused",
+  "schema_name": "GovernedExecutionTrustedSourceExternalZipAuditReport",
+  "schema_version": "governed_execution_trusted_source_external_zip_audit_report_v1",
+  "validation_steps": [
+    "List the zip entries.",
+    "Confirm every required path row is present."
+  ],
+  "workspace_id": "workspace_trusted_source_guided_successor_iteration_live_e",
+  "workspace_root": "C:\\Users\\eLDARi\\Documents\\VScode\\.venv\\9D-Sim\\novali-v6\\novali-active_workspace\\workspace_trusted_source_guided_successor_iteration_live_e",
+  "zip_absolute_path": "C:\\Users\\eLDARi\\Documents\\VScode\\.venv\\9D-Sim\\novali-v6\\novali-active_workspace\\workspace_trusted_source_guided_successor_iteration_live_e\\artifacts\\novali-v6_rc00-standalone.zip",
+  "zip_entry_count": 17,
+  "zip_present": true,
+  "zip_size_bytes": 8799
+}
