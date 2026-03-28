@@ -30,7 +30,7 @@ NOVALI keeps authority in persisted governance artifacts rather than letting run
 NOVALI is currently in a **working standalone product phase** built around a packaged Docker handoff and a browser-based localhost operator UI.
 
 Current packaged reference:
-- **`novali-v6_rc20-standalone.zip`**
+- **`novali-v6_rc30-standalone.zip`**
 
 Current branch posture:
 - **active development branch:** `novali-v6`
@@ -40,34 +40,40 @@ Current architecture posture:
 - **Controller-only coordination and adoption authority**
 - **single-generation bounded delegation**
 - **trusted sources as evidence-only, not governance authority**
+- **advisory-only recommendation, governance, and operator guidance layers**
 - **packaged standalone delivery with bundled image archive**
 - **conservative default posture with explicit reviewability**
 
-At this point, NOVALI is best understood as a **governed standalone operator product** with bounded external evidence support and bounded specialist delegation.
+At this point, NOVALI is best understood as a **governed standalone operator product** with bounded external evidence support, bounded specialist delegation, and bounded operator decision support.
 
 ---
 
-## What rc20 added
+## What rc30 adds
 
-Rc20 strengthened NOVALI’s bounded delegation layer without broadening authority.
+Rc30 strengthens NOVALI’s operator-facing decision-support layer without broadening authority or execution scope.
 
-New rc20 capabilities include:
+New rc30 capabilities include:
 
-- persisted **mission delegation plans**
-- persisted **child admissibility / prerequisite state**
-- persisted **blocked delegation alternatives**
-- a typed **Librarian → Verifier** handoff contract
-- operator-visible delegation state in **Home**, **Observability**, and the **review workspace**
+- persisted **operator guidance** and **action guidance** artifacts
+- explicit **Suggested next action**
+- explicit **Action guidance**
+- explicit **Why not other actions**
+- operator-facing bounded next-step support such as:
+  - `follow_recommendation`
+  - `hold`
+  - `defer`
+  - `review_required`
+  - `maintain_no_strong_recommendation`
+  - `await_more_evidence`
+  - `continue_current_posture`
 
-The Controller can now explicitly record and surface why it chose one of the current bounded paths:
+Rc30 remains intentionally conservative:
 
-- `local`
-- `librarian`
-- `verifier`
-- `sequential_librarian_then_verifier`
-
-Rc20 remains intentionally conservative:
-
+- guidance is **advisory only**
+- no auto-delegation
+- no auto-adoption
+- no policy mutation
+- no second authority path
 - no new specialist roles
 - no recursive delegation
 - no autonomous research mode by default
@@ -136,6 +142,9 @@ Key concepts:
 - **Canonical artifacts**: persisted authority surfaces used to drive state and decisions
 - **Delegation plan**: persisted Controller-owned record of why a bounded path was chosen
 - **Typed handoff contract**: explicit bounded contract for the current `Librarian -> Verifier` sequence
+- **Governance summary**: consolidated operator-readable view of current bounded governance state
+- **Governance trend / temporal drift**: bounded visibility into how that state is changing over time
+- **Operator guidance**: bounded next-step decision support for the human operator
 
 ---
 
@@ -159,6 +168,26 @@ NOVALI currently supports a narrow set of bounded paths under Controller authori
 - **Sequential Librarian → Verifier** — fixed two-step bounded delegation with explicit typed handoff
 
 These paths are operator-readable, artifact-backed, and intentionally limited in scope.
+
+---
+
+## Current Governance and Guidance Stack
+
+The current `novali-v6` line includes a layered bounded governance stack over the four existing paths:
+
+- **delegation structure**
+- **delegation evidence**
+- **recommendation quality**
+- **recommendation audit and calibration**
+- **recommendation stability / evidence-window governance**
+- **recommendation governance controls and override visibility**
+- **operator-intervention audit**
+- **intervention prudence / trust-signal visibility**
+- **consolidated governance summary**
+- **governance trend / temporal drift visibility**
+- **operator decision support / action guidance**
+
+This stack is intended to improve readability and operator judgment, not to replace operator authority.
 
 ---
 
@@ -200,14 +229,20 @@ The current `novali-v6` line can support, in bounded form:
   - indexed reuse
   - justified external re-query
   - operator review / escalation control
-- operator-facing observability over runtime, campaign, cycle, artifact, trusted-source, and delegation state
+- operator-facing observability over runtime, campaign, cycle, artifact, trusted-source, delegation, governance, and guidance state
 - bounded specialist delegation through:
   - `local`
   - `librarian`
   - `verifier`
   - `sequential_librarian_then_verifier`
+- bounded operator decision support through:
+  - governance summary
+  - trend / temporal drift visibility
+  - suggested next action
+  - action guidance
+  - why-not-other-actions visibility
 
-This means NOVALI is no longer just an initialization shell. It is now an **experimental governed improvement system** with a browser operator surface, bounded external evidence support, and explicit bounded delegation structure.
+This means NOVALI is no longer just an initialization shell. It is now an **experimental governed improvement system** with a browser operator surface, bounded external evidence support, explicit bounded delegation structure, and advisory-only bounded operator guidance.
 
 ---
 
@@ -245,9 +280,14 @@ Current operator-facing capabilities include:
 - at-a-glance system state, operator attention, current objective, and recommendation
 - review / continue / admission / promotion visibility
 - packaged trusted-source provider configuration and validation
-- observability over mission state, artifact state, trusted-source policy state, and delegation state
+- observability over mission state, artifact state, trusted-source policy state, delegation state, governance state, and guidance state
 - review workspace visibility for pending decisions and intervention paths
 - operator-visible delegation path, blocked options, and typed handoff state
+- operator-visible governance summary
+- operator-visible governance trend / temporal drift
+- operator-visible suggested next action
+- operator-visible action guidance
+- operator-visible why-not-other-actions context
 
 The current standalone handoff is intended to be self-contained, including the bundled Docker image archive.
 
@@ -293,6 +333,8 @@ By default, it does **not** assume permission to:
 - recurse into broader delegation trees
 - claim unsupported runtime guarantees
 - bypass operator-owned constraints
+- auto-delegate based on summary, trend, or guidance layers
+- auto-adopt operator guidance as execution policy
 
 The system is meant to support **bounded progress**, not unconstrained autonomy.
 
@@ -325,14 +367,15 @@ It should not be treated as proof of a scientific claim.
 
 NOVALI is now best described as:
 
-**Governed, operator-facing, delegation-capable, externally-capable, and packaging-complete**
+**Governed, operator-facing, delegation-capable, externally-capable, packaging-complete, and guidance-capable**
 
 That means:
 
 - major governance/control-plane layers are functioning
 - trusted-source integration is bounded and policy-governed
 - the packaged standalone handoff is self-contained
-- bounded specialist delegation is now first-class and artifact-backed
+- bounded specialist delegation is first-class and artifact-backed
+- bounded governance and guidance summaries are operator-visible
 - current effort is focused on operator control, mission usefulness, and disciplined capability growth
 
 ---
@@ -347,6 +390,7 @@ NOVALI is being built for tasks such as:
 - auditable improvement of successor artifacts under explicit safety constraints
 - bounded acquisition of external implementation knowledge when local knowledge is insufficient
 - product/research workflows that need inspectable operator oversight
+- bounded operator-supervised decision support over evolving governance state
 
 ---
 
@@ -362,18 +406,19 @@ The exact packaged flow depends on the current release, but the intended user ex
 6. choose or generate a directive
 7. run bootstrap-only initialization
 8. switch back to governed execution
-9. continue NOVALI into bounded work as appropriate
+9. use governance summary, trend, and action guidance to supervise next steps
+10. continue NOVALI into bounded work as appropriate
 
 ---
 
 ## Roadmap
 
 ### Active priorities
-- improve selection quality across the existing bounded delegation paths
-- continue bounded successor-improvement work inside `novali-v6`
+- improve bounded operator decision support across the existing four delegation paths
 - improve mission usefulness under explicit runtime constraints
 - keep packaged standalone delivery self-contained and reliable
-- preserve auditability as external evidence support and delegation structure grow
+- preserve auditability as governance, trend, and guidance layers grow
+- keep all operator guidance advisory-only and artifact-backed
 
 ### Deferred priorities
 - automatic live baseline replacement
@@ -415,6 +460,7 @@ This repository is evolving quickly. If you contribute:
 - preserve Controller-only authority unless a phase explicitly revisits it
 - prefer bounded, testable improvements over speculative rewrites
 - keep Docker standalone and Kubernetes orchestration concerns separate
+- keep guidance, summary, and trend layers advisory-only unless a future phase explicitly revisits that posture
 
 A future CLA or contribution policy may be introduced to preserve consistent commercial licensing rights.
 
