@@ -27,49 +27,55 @@ NOVALI keeps authority in persisted governance artifacts rather than letting run
 
 ## Current Status
 
-NOVALI is currently in a **working standalone product phase** built around a packaged Docker handoff and a browser-based localhost operator UI.
+NOVALI is currently in a **working standalone product phase** built around a packaged Docker handoff and a browser-based localhost operator UI. The current canonical packaged handoff is:
 
-Current packaged reference:
-- **`novali-v6_rc30-standalone.zip`**
+- **`novali-v6_rc40-standalone.zip`**
 
 Current branch posture:
-- **active development branch:** `novali-v6`
-- **frozen reference / operator surface baseline:** `novali-v5`
+
+- **active development line:** `novali-v6`
+- **frozen reference / trusted preserved-source baseline:** `novali-v5`
 
 Current architecture posture:
+
 - **Controller-only coordination and adoption authority**
 - **single-generation bounded delegation**
 - **trusted sources as evidence-only, not governance authority**
-- **advisory-only recommendation, governance, and operator guidance layers**
+- **advisory-only recommendation, governance, guidance, and demo layers**
 - **packaged standalone delivery with bundled image archive**
 - **conservative default posture with explicit reviewability**
 
-At this point, NOVALI is best understood as a **governed standalone operator product** with bounded external evidence support, bounded specialist delegation, and bounded operator decision support.
+At this point, NOVALI is best understood as a **governed standalone operator product** with bounded external evidence support, bounded specialist delegation, bounded operator decision support, and a now-demonstrated bounded trusted-source demo path. :contentReference[oaicite:2]{index=2}
 
 ---
 
-## What rc30 adds
+## What rc40 adds
 
-Rc30 strengthens NOVALI’s operator-facing decision-support layer without broadening authority or execution scope.
+Rc40 consolidates the existing demo work into a single operator-readable story without broadening execution authority or changing the bounded path set.
 
-New rc30 capabilities include:
+New rc40 capabilities include:
 
-- persisted **operator guidance** and **action guidance** artifacts
-- explicit **Suggested next action**
-- explicit **Action guidance**
-- explicit **Why not other actions**
-- operator-facing bounded next-step support such as:
-  - `follow_recommendation`
-  - `hold`
-  - `defer`
-  - `review_required`
-  - `maintain_no_strong_recommendation`
-  - `await_more_evidence`
-  - `continue_current_posture`
+- persisted **demo storyline** artifacts
+- persisted **presentation summary** artifacts
+- persisted **narration guide** artifacts
+- persisted **review-readiness explanation** artifacts
+- a visible **ordered proof chain** across the full trusted-source demo
+- a clearer explanation of **why the result still truthfully ends at `awaiting_review`**
 
-Rc30 remains intentionally conservative:
+The proof chain now reads, in order:
 
-- guidance is **advisory only**
+- local-first baseline
+- knowledge gap identified
+- narrow escalation justified
+- live external response received
+- knowledge incorporated
+- reusable skill artifact updated
+- outputs improved
+- awaiting review
+
+Rc40 remains intentionally conservative:
+
+- storyline and narration are **advisory only**
 - no auto-delegation
 - no auto-adoption
 - no policy mutation
@@ -79,6 +85,8 @@ Rc30 remains intentionally conservative:
 - no autonomous research mode by default
 - no broader orchestration substrate
 - no Kubernetes runtime target
+
+Rc40 improves presentation coherence only. It does not broaden mission-path behavior. :contentReference[oaicite:3]{index=3}
 
 ---
 
@@ -101,6 +109,16 @@ The current golden path is:
 6. run **bootstrap-only initialization**
 7. transition back to the bounded governed-execution profile
 8. continue NOVALI into governed execution when appropriate
+
+The current demo path now also supports:
+
+1. a **local-first bounded baseline demo**
+2. a **trusted-source-capable demo scenario**
+3. a **bounded live external proof step**
+4. a **reviewable before/after improvement story**
+5. a **review-gated final presentation state**
+
+That gives NOVALI a credible packaged demo path without claiming unrestricted autonomy. :contentReference[oaicite:4]{index=4}
 
 ---
 
@@ -145,6 +163,9 @@ Key concepts:
 - **Governance summary**: consolidated operator-readable view of current bounded governance state
 - **Governance trend / temporal drift**: bounded visibility into how that state is changing over time
 - **Operator guidance**: bounded next-step decision support for the human operator
+- **Demo storyline**: a bounded operator-readable proof chain explaining what the trusted-source demo showed and why review still remains appropriate
+
+
 
 ---
 
@@ -167,13 +188,13 @@ NOVALI currently supports a narrow set of bounded paths under Controller authori
 - **Verifier** — bounded readiness / integrity / contract-compliance checking
 - **Sequential Librarian → Verifier** — fixed two-step bounded delegation with explicit typed handoff
 
-These paths are operator-readable, artifact-backed, and intentionally limited in scope.
+These paths are operator-readable, artifact-backed, and intentionally limited in scope. Rc40 did not broaden this path set. 
 
 ---
 
-## Current Governance and Guidance Stack
+## Current Governance, Guidance, and Demo Stack
 
-The current `novali-v6` line includes a layered bounded governance stack over the four existing paths:
+The current `novali-v6` line includes a layered bounded stack over the four existing paths:
 
 - **delegation structure**
 - **delegation evidence**
@@ -186,8 +207,17 @@ The current `novali-v6` line includes a layered bounded governance stack over th
 - **consolidated governance summary**
 - **governance trend / temporal drift visibility**
 - **operator decision support / action guidance**
+- **operator action-readiness / guided handoff**
+- **operator flow coherence / demo-readiness**
+- **bounded demo-scenario scaffolding**
+- **demo execution evidence / result capture**
+- **demo output completion / reviewable artifact generation**
+- **trusted-source demo candidate and on-disk directive**
+- **live trusted-source connectivity validation**
+- **live trusted-source demo result improvement**
+- **demo storyline / presentation / narration / review-readiness consolidation**
 
-This stack is intended to improve readability and operator judgment, not to replace operator authority.
+This stack is intended to improve readability, operator judgment, and reviewability, not to replace operator authority. :contentReference[oaicite:7]{index=7}
 
 ---
 
@@ -205,7 +235,7 @@ Typical subfolders include:
 - `artifacts/`
 - `plans/`
 
-This allows NOVALI to produce useful outputs without unrestricted write access across the repository or package.
+This allows NOVALI to produce useful outputs without unrestricted write access across the repository or package. :contentReference[oaicite:8]{index=8}
 
 ---
 
@@ -224,12 +254,6 @@ The current `novali-v6` line can support, in bounded form:
 - campaign-cycle and loop-of-loops governance
 - trusted-source evidence acquisition and reuse
 - operator-configured external provider validation and handshake
-- mission-level trusted-source orchestration across:
-  - local-only
-  - indexed reuse
-  - justified external re-query
-  - operator review / escalation control
-- operator-facing observability over runtime, campaign, cycle, artifact, trusted-source, delegation, governance, and guidance state
 - bounded specialist delegation through:
   - `local`
   - `librarian`
@@ -241,8 +265,15 @@ The current `novali-v6` line can support, in bounded form:
   - suggested next action
   - action guidance
   - why-not-other-actions visibility
+  - readiness / guided handoff visibility
+- bounded demo support through:
+  - a packaged local-first baseline demo
+  - a trusted-source-capable demo scenario
+  - a live external connectivity proof
+  - a live before/after improvement demonstration
+  - a consolidated storyline and review-readiness explanation
 
-This means NOVALI is no longer just an initialization shell. It is now an **experimental governed improvement system** with a browser operator surface, bounded external evidence support, explicit bounded delegation structure, and advisory-only bounded operator guidance.
+This means NOVALI is no longer just an initialization shell. It is now an **experimental governed improvement system** with a browser operator surface, bounded external evidence support, explicit bounded delegation structure, advisory-only operator guidance, and a reviewable trusted-source demo path. 
 
 ---
 
@@ -264,7 +295,42 @@ NOVALI currently supports:
 - indexed reusable knowledge artifacts
 - reuse vs re-query decisions
 - supersession and invalidation hygiene
-- operator-configurable governance over external trusted-source usage
+- operator-configured governance over external trusted-source usage
+- bounded live external connectivity validation
+- bounded incorporation of external evidence into reviewable outputs
+- bounded reusable skill-artifact updates derived from trusted-source-supported work
+
+Rc40’s trusted-source demo story now explicitly explains the whole chain from local insufficiency to narrow escalation to live evidence receipt to skill-artifact update, while still keeping the final state review-gated. 
+
+---
+
+## Demo State
+
+NOVALI now has a bounded packaged demo track with two important layers:
+
+### 1. Local-first baseline demo
+A packaged bounded walkthrough that proves the operator flow, produces reviewable outputs, and stays inside the `local` path.
+
+### 2. Trusted-source growth demo
+A bounded trusted-source scenario that shows:
+
+- local-first analysis
+- explicit knowledge-gap detection
+- narrow trusted-source escalation
+- live external response receipt
+- knowledge incorporation
+- reusable skill-artifact update
+- improved outputs
+- final `awaiting_review` governance state
+
+The current demo story is intentionally truthful:
+
+- it shows meaningful improvement
+- it does not hide unresolved review gates
+- it does not pretend external evidence becomes governance authority
+- it does not use a demo-only runtime path
+
+This is a governed demo of **bounded growth and self-structuring**, not a claim of unrestricted autonomy. :contentReference[oaicite:11]{index=11}
 
 ---
 
@@ -288,8 +354,13 @@ Current operator-facing capabilities include:
 - operator-visible suggested next action
 - operator-visible action guidance
 - operator-visible why-not-other-actions context
+- operator-visible demo storyline
+- operator-visible ordered proof chain
+- operator-visible presentation summary
+- operator-visible narration guide
+- operator-visible review-readiness explanation
 
-The current standalone handoff is intended to be self-contained, including the bundled Docker image archive.
+The current standalone handoff is intended to be self-contained, including the bundled Docker image archive. 
 
 ---
 
@@ -314,7 +385,7 @@ Intended for:
 - stronger orchestration and scheduling
 - broader infrastructure control
 
-Kubernetes is **not** the current standalone target.
+Kubernetes is **not** the current standalone target. :contentReference[oaicite:13]{index=13}
 
 ---
 
@@ -333,10 +404,12 @@ By default, it does **not** assume permission to:
 - recurse into broader delegation trees
 - claim unsupported runtime guarantees
 - bypass operator-owned constraints
-- auto-delegate based on summary, trend, or guidance layers
+- auto-delegate based on summary, trend, guidance, or demo layers
 - auto-adopt operator guidance as execution policy
+- convert trusted-source evidence into governance authority
+- hide review-gated states behind demo polish
 
-The system is meant to support **bounded progress**, not unconstrained autonomy.
+The system is meant to support **bounded progress**, not unconstrained autonomy. 
 
 ---
 
@@ -359,7 +432,7 @@ Operationally, it is used as a disciplined lens for:
 - perspective stability
 - bounded improvement with explicit review
 
-It should not be treated as proof of a scientific claim.
+It should not be treated as proof of a scientific claim. :contentReference[oaicite:15]{index=15}
 
 ---
 
@@ -367,7 +440,7 @@ It should not be treated as proof of a scientific claim.
 
 NOVALI is now best described as:
 
-**Governed, operator-facing, delegation-capable, externally-capable, packaging-complete, and guidance-capable**
+**Governed, operator-facing, delegation-capable, externally-capable, packaging-complete, demo-capable, and review-gated by design**
 
 That means:
 
@@ -376,7 +449,11 @@ That means:
 - the packaged standalone handoff is self-contained
 - bounded specialist delegation is first-class and artifact-backed
 - bounded governance and guidance summaries are operator-visible
-- current effort is focused on operator control, mission usefulness, and disciplined capability growth
+- bounded trusted-source live connectivity is proven
+- bounded trusted-source demo improvement is proven
+- the demo is now narratable and presentation-ready without hiding the review gate
+
+Current effort is focused on operator control, mission usefulness, disciplined capability growth, and repeatable demo presentation. :contentReference[oaicite:16]{index=16}
 
 ---
 
@@ -391,6 +468,10 @@ NOVALI is being built for tasks such as:
 - bounded acquisition of external implementation knowledge when local knowledge is insufficient
 - product/research workflows that need inspectable operator oversight
 - bounded operator-supervised decision support over evolving governance state
+- bounded trusted-source-assisted artifact generation and skill-pack growth
+- bounded live demo scenarios that show improvement without hiding review requirements
+
+
 
 ---
 
@@ -406,8 +487,11 @@ The exact packaged flow depends on the current release, but the intended user ex
 6. choose or generate a directive
 7. run bootstrap-only initialization
 8. switch back to governed execution
-9. use governance summary, trend, and action guidance to supervise next steps
-10. continue NOVALI into bounded work as appropriate
+9. use governance summary, trend, action guidance, and readiness surfaces to supervise next steps
+10. use the demo storyline and trusted-source demo surfaces to review the bounded growth path
+11. continue NOVALI into bounded work as appropriate
+
+
 
 ---
 
@@ -417,8 +501,9 @@ The exact packaged flow depends on the current release, but the intended user ex
 - improve bounded operator decision support across the existing four delegation paths
 - improve mission usefulness under explicit runtime constraints
 - keep packaged standalone delivery self-contained and reliable
-- preserve auditability as governance, trend, and guidance layers grow
-- keep all operator guidance advisory-only and artifact-backed
+- preserve auditability as governance, trend, guidance, and demo layers grow
+- keep all operator guidance and demo presentation layers advisory-only and artifact-backed
+- improve repeatable demo facilitation and reviewable operator runbooks
 
 ### Deferred priorities
 - automatic live baseline replacement
@@ -428,6 +513,9 @@ The exact packaged flow depends on the current release, but the intended user ex
 - broader writable roots
 - Kubernetes-based orchestration
 - multi-agent orchestration
+- broad multi-scenario demo framework
+
+
 
 ---
 
@@ -448,6 +536,8 @@ See:
 Commercial licensing contact:  
 **eldari77@gmail.com**
 
+:contentReference[oaicite:20]{index=20}
+
 ---
 
 ## Contributing
@@ -460,12 +550,12 @@ This repository is evolving quickly. If you contribute:
 - preserve Controller-only authority unless a phase explicitly revisits it
 - prefer bounded, testable improvements over speculative rewrites
 - keep Docker standalone and Kubernetes orchestration concerns separate
-- keep guidance, summary, and trend layers advisory-only unless a future phase explicitly revisits that posture
+- keep guidance, summary, trend, trusted-source, and demo layers advisory-only unless a future phase explicitly revisits that posture
 
-A future CLA or contribution policy may be introduced to preserve consistent commercial licensing rights.
+A future CLA or contribution policy may be introduced to preserve consistent commercial licensing rights. 
 
 ---
 
 ## Disclaimer
 
-NOVALI is an experimental governed-agent framework. It is not a general unrestricted autonomous system and should not be treated as one. Use it with explicit operator oversight and bounded runtime policies.
+NOVALI is an experimental governed-agent framework. It is not a general unrestricted autonomous system and should not be treated as one. Use it with explicit operator oversight and bounded runtime policies. :contentReference[oaicite:22]{index=22}
