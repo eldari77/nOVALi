@@ -1,0 +1,166 @@
+{
+  "bootstrap_context": {
+    "active_branch": "novali-v6",
+    "additional_reference_versions": [
+      "novali-v4",
+      "novali-v3",
+      "novali-v2"
+    ],
+    "branch_name": "wm_hybrid_context_scoped",
+    "branch_state": "paused_with_baseline_held",
+    "branch_transition_id": "sample_branch_transition::trusted_source_demo::novali-v6",
+    "branch_transition_reason": "Sample directive for the bounded trusted-source reference inventory growth demo candidate while preserving the frozen novali-v5 reference line and the current bounded operator authority model.",
+    "branch_transition_status": "sample_trusted_source_demo_candidate_only",
+    "branch_transition_timestamp": "2026-03-28T00:00:00+00:00",
+    "carried_forward_safe_trio_reference": {
+      "baseline_name": "swap_C",
+      "selected_ids": [
+        "recovery_02",
+        "recovery_03",
+        "recovery_12"
+      ]
+    },
+    "completed_reference_branch": "novali-v5",
+    "current_operating_stance": "hold_and_consolidate",
+    "frozen_fallback_reference_version": "novali-v4",
+    "governed_work_loop_status": "hold_position_closed_out_v1",
+    "held_baseline": {
+      "template": "proposal_learning_loop.v4_wm_hybrid_context_scoped_probe_v1"
+    },
+    "held_baseline_template": "proposal_learning_loop.v4_wm_hybrid_context_scoped_probe_v1",
+    "older_reference_version": "novali-v2",
+    "plan_non_owning": true,
+    "projection_safety_primary": true,
+    "reference_operator_surface_branch": "novali-v5",
+    "routing_status": "routing_deferred",
+    "selector_frontier_read": "serial_budget_then_ordering"
+  },
+  "directive_spec": {
+    "allowed_action_classes": [
+      "low_risk_shell_change",
+      "diagnostic_schema_materialization",
+      "append_only_ledger_write",
+      "local_governance_registry_update"
+    ],
+    "bucket_spec": {
+      "bucket_id": "bucket_trusted_reference_inventory_demo_candidate_v1",
+      "bucket_model": "containerized_bucket_v1"
+    },
+    "clarified_intent_summary": "Prepare one bounded trusted-source-capable growth demo that starts from current local workspace evidence, escalates only for a specific frozen-v5 reference gap, and leaves reviewable design outputs without executing a live trusted-source run yet.",
+    "constraints": [
+      "do not change routing logic",
+      "do not change thresholds",
+      "do not change live policy",
+      "do not change frozen benchmark semantics",
+      "do not modify nined_core.py",
+      "keep controller-only authority",
+      "keep child roles bounded and one-generation only",
+      "treat trusted-source evidence as support only, not governance authority",
+      "preserve truthful partial completion if the later trusted-source run remains unresolved"
+    ],
+    "directive_id": "directive_novali_v6_trusted_reference_inventory_growth_demo_v1",
+    "directive_text": "Start from the existing trusted reference inventory helper/test/note artifacts under workspace_advanced_successor_v3_live_c, identify the specific frozen-v5 reference gap that blocks full confidence, request only the minimal local trusted-source evidence needed from local_repo:novali-v5 and local_artifacts:novali-v5/data, and later distill that evidence into a reusable internal skill pack together with reviewable implementation and decision outputs.",
+    "drift_budget_for_context_exploration": {
+      "allowed": true,
+      "max_budgeted_external_fetches": 0,
+      "max_budgeted_support_reads": 4,
+      "tag_required": "trusted_source_demo_candidate_support"
+    },
+    "human_approval_points": [
+      "trusted-source escalation request",
+      "branch-state changes",
+      "protected-surface challenges",
+      "resource-expansion requests"
+    ],
+    "milestone_model": [
+      {
+        "completion_signal": "the local-first starting point is visible and the exact knowledge gap is stated before any trusted-source escalation is proposed",
+        "milestone_id": "local_first_gap_definition_ready"
+      },
+      {
+        "completion_signal": "the minimal trusted-source request shape is explicit and limited to the approved frozen-v5 local sources",
+        "milestone_id": "minimal_trusted_source_request_defined"
+      },
+      {
+        "completion_signal": "the future reusable skill target and reviewable output pack are explicit without pretending the later trusted-source run has already happened",
+        "milestone_id": "growth_target_and_outputs_defined"
+      }
+    ],
+    "stop_conditions": [
+      "directive validation fails",
+      "clarification remains unresolved",
+      "canonical governance artifacts are inconsistent",
+      "the local-first starting point is not visible on disk",
+      "the bounded trusted-source request shape is no longer minimal or auditable"
+    ],
+    "success_criteria": [
+      "the local-first starting point is explicit and reviewable from current repo artifacts",
+      "the later trusted-source escalation point is explicit and tied to a specific frozen-v5 reference gap",
+      "the later trusted-source request stays limited to local_repo:novali-v5 and local_artifacts:novali-v5/data",
+      "a reusable internal skill / knowledge artifact target is defined clearly",
+      "the future run can yield reviewable implementation, knowledge-pack, and decision outputs without widening authority"
+    ],
+    "trusted_sources": [
+      "local_repo:novali-v5",
+      "local_artifacts:novali-v5/data"
+    ]
+  },
+  "sample_asset_metadata": {
+    "non_authoritative": true,
+    "purpose": "trusted_source_demo_candidate",
+    "sample_only": true
+  },
+  "schema_name": "NOVALIDirectiveBootstrapFile",
+  "schema_version": "novali_directive_bootstrap_file_v1",
+  "trusted_source_demo_metadata": {
+    "expected_knowledge_gap": {
+      "summary": "Local inspection can show the helper/test/note pattern but cannot by itself fully prove the frozen novali-v5 reference inventory and provenance set needed for stronger confidence.",
+      "topic": "frozen_novali_v5_reference_inventory"
+    },
+    "expected_output_pack": [
+      {
+        "label": "Trusted-source request summary",
+        "target_path": "novali-active_workspace/workspace_advanced_successor_v3_live_c/artifacts/trusted_source_request_latest.json"
+      },
+      {
+        "label": "Reference inventory review pack",
+        "target_path": "novali-active_workspace/workspace_advanced_successor_v3_live_c/artifacts/trusted_source_reference_inventory_latest.json"
+      },
+      {
+        "label": "Trusted-source knowledge pack",
+        "target_path": "novali-active_workspace/workspace_advanced_successor_v3_live_c/artifacts/trusted_source_knowledge_pack_latest.json"
+      },
+      {
+        "label": "Reusable skill target",
+        "target_path": "trusted_sources/skill_packs/trusted_reference_inventory_integration_pack_v1.json"
+      }
+    ],
+    "expected_trusted_source_request": {
+      "requested_scope_topic": "frozen_novali_v5_reference_inventory",
+      "requested_source_classes": [
+        "local_path"
+      ],
+      "requested_source_ids": [
+        "local_repo:novali-v5",
+        "local_artifacts:novali-v5/data"
+      ]
+    },
+    "local_first_starting_artifacts": [
+      "novali-active_workspace/workspace_advanced_successor_v3_live_c/src/successor_shell/trusted_reference_inventory.py",
+      "novali-active_workspace/workspace_advanced_successor_v3_live_c/tests/test_trusted_reference_inventory.py",
+      "novali-active_workspace/workspace_advanced_successor_v3_live_c/docs/trusted_source_reference_inventory_note.md",
+      "novali-active_workspace/workspace_advanced_successor_v3_live_c/artifacts/trusted_source_request_latest.json",
+      "novali-active_workspace/workspace_advanced_successor_v3_live_c/artifacts/trusted_source_capability_need_latest.json",
+      "novali-active_workspace/workspace_advanced_successor_v3_live_c/artifacts/trusted_source_knowledge_pack_latest.json",
+      "novali-active_workspace/workspace_advanced_successor_v3_live_c/artifacts/trusted_source_skill_candidate_latest.json",
+      "novali-active_workspace/workspace_advanced_successor_v3_live_c/artifacts/trusted_source_capability_result_latest.json"
+    ],
+    "reusable_artifact_target": {
+      "target_kind": "bounded_skill_pack",
+      "target_path": "trusted_sources/skill_packs/trusted_reference_inventory_integration_pack_v1.json"
+    },
+    "scenario_id": "packaged_trusted_source_reference_inventory_growth_candidate",
+    "scenario_name": "Packaged trusted-source reference inventory growth candidate",
+    "what_this_demo_proves": "A later bounded demo can show local-first analysis, explicit knowledge-gap detection, minimal trusted-source escalation, and reusable internal structure without broadening authority."
+  }
+}

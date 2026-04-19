@@ -1,0 +1,57 @@
+{
+  "advisory_only": true,
+  "artifact_paths": [
+    "C:\\Users\\eLDARi\\Documents\\VScode\\.venv\\9D-Sim\\novali-v7\\dist\\novali-v7_rc00-standalone\\operator_state\\trusted_source_credential_status_latest.json",
+    "C:\\Users\\eLDARi\\Documents\\VScode\\.venv\\9D-Sim\\novali-v7\\dist\\novali-v7_rc00-standalone\\operator_state\\trusted_source_provider_status_latest.json",
+    "C:\\Users\\eLDARi\\Documents\\VScode\\.venv\\9D-Sim\\novali-v7\\dist\\novali-v7_rc00-standalone\\operator_state\\trusted_source_handshake_latest.json",
+    "C:\\Users\\eLDARi\\Documents\\VScode\\.venv\\9D-Sim\\novali-v7\\dist\\novali-v7_rc00-standalone\\operator_state\\trusted_source_session_contract_latest.json",
+    "C:\\Users\\eLDARi\\Documents\\VScode\\.venv\\9D-Sim\\novali-v7\\dist\\novali-v7_rc00-standalone\\operator_state\\trusted_source_request_contract_latest.json",
+    "C:\\Users\\eLDARi\\Documents\\VScode\\.venv\\9D-Sim\\novali-v7\\dist\\novali-v7_rc00-standalone\\operator_state\\trusted_source_response_template_latest.json",
+    "C:\\Users\\eLDARi\\Documents\\VScode\\.venv\\9D-Sim\\novali-v7\\dist\\novali-v7_rc00-standalone\\operator_state\\controller_trusted_live_connectivity_latest.json",
+    "C:\\Users\\eLDARi\\Documents\\VScode\\.venv\\9D-Sim\\novali-v7\\dist\\novali-v7_rc00-standalone\\operator_state\\controller_trusted_live_request_latest.json",
+    "C:\\Users\\eLDARi\\Documents\\VScode\\.venv\\9D-Sim\\novali-v7\\dist\\novali-v7_rc00-standalone\\operator_state\\controller_trusted_live_response_summary_latest.json",
+    "C:\\Users\\eLDARi\\Documents\\VScode\\.venv\\9D-Sim\\novali-v7\\dist\\novali-v7_rc00-standalone\\operator_state\\controller_trusted_live_evidence_receipt_latest.json",
+    "C:\\Users\\eLDARi\\Documents\\VScode\\.venv\\9D-Sim\\novali-v7\\dist\\novali-v7_rc00-standalone\\operator_state\\controller_trusted_live_validation_summary_latest.json"
+  ],
+  "directive_id": "",
+  "external_evidence_summary": "OpenAI returned this bounded connectivity-validation response.",
+  "generated_at": "2026-03-28T23:52:03.322925+00:00",
+  "governance_note": "No NOVALI policy or governance authority is changed by this response.",
+  "non_authoritative_note": "This live trusted-source response summary persists only bounded non-secret evidence and never turns provider output into governance authority.",
+  "provider_display_name": "OpenAI API",
+  "provider_family": "OpenAI",
+  "provider_id": "openai_api",
+  "provider_response_id": "resp_0a111d7431ba0b110169c869a14d1c8191ab10cfa1a87b59e9",
+  "recorded_at": "2026-03-28T23:52:03.320273+00:00",
+  "response_received": true,
+  "response_received_at": "2026-03-28T23:52:02.500195+00:00",
+  "response_state": "response_received",
+  "response_state_label": "Response received",
+  "response_summary": "OpenAI returned this bounded connectivity-validation response.",
+  "schema_name": "ControllerTrustedLiveResponseSummary",
+  "schema_version": "controller_trusted_live_response_summary_v1",
+  "secret_persisted": false,
+  "selected_model": "gpt-5.2-2025-12-11",
+  "structured_response_field_count": 5,
+  "structured_response_preview": {
+    "external_evidence_summary": "OpenAI returned this bounded connectivity-validation response.",
+    "governance_note": "No NOVALI policy or governance authority is changed by this response.",
+    "provider_family": "OpenAI",
+    "provider_ready": true,
+    "transport_note": "Provider returned a structured Responses API JSON reply."
+  },
+  "transport_note": "Provider returned a structured Responses API JSON reply.",
+  "usage": {
+    "input_tokens": 200,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 69,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 269
+  },
+  "workspace_id": "",
+  "workspace_root": ""
+}

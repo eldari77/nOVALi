@@ -1,0 +1,38 @@
+{
+  "capability_gap_id": "trusted_source_gap::workspace_advanced_successor_v3_live_c::trusted_source_reference_inventory_capability_v1",
+  "capability_id": "trusted_source_reference_inventory_capability_v1",
+  "directive_id": "directive_build_advanced_successor_v3",
+  "distillation_summary_path": "C:\\Users\\eLDARi\\Documents\\VScode\\.venv\\9D-Sim\\novali-v6\\novali-active_workspace\\workspace_advanced_successor_v3_live_c\\artifacts\\trusted_source_distillation_summary_latest.json",
+  "generated_at": "2026-03-25T02:45:50.874402+00:00",
+  "governance_authority_note": "trusted-source evidence informed bounded implementation support only and did not replace governance authority",
+  "helper_module_path": "C:\\Users\\eLDARi\\Documents\\VScode\\.venv\\9D-Sim\\novali-v6\\novali-active_workspace\\workspace_advanced_successor_v3_live_c\\src\\successor_shell\\trusted_reference_inventory.py",
+  "helper_test_path": "C:\\Users\\eLDARi\\Documents\\VScode\\.venv\\9D-Sim\\novali-v6\\novali-active_workspace\\workspace_advanced_successor_v3_live_c\\tests\\test_trusted_reference_inventory.py",
+  "inventory_output_path": "C:\\Users\\eLDARi\\Documents\\VScode\\.venv\\9D-Sim\\novali-v6\\novali-active_workspace\\workspace_advanced_successor_v3_live_c\\artifacts\\trusted_source_reference_inventory_latest.json",
+  "knowledge_pack_id": "trusted_source_knowledge_pack::workspace_advanced_successor_v3_live_c::trusted_source_reference_inventory_capability_v1",
+  "knowledge_pack_path": "C:\\Users\\eLDARi\\Documents\\VScode\\.venv\\9D-Sim\\novali-v6\\novali-active_workspace\\workspace_advanced_successor_v3_live_c\\artifacts\\trusted_source_knowledge_pack_latest.json",
+  "missing_role_ids": [],
+  "note_path": "C:\\Users\\eLDARi\\Documents\\VScode\\.venv\\9D-Sim\\novali-v6\\novali-active_workspace\\workspace_advanced_successor_v3_live_c\\docs\\trusted_source_reference_inventory_note.md",
+  "operator_review_recommended_before_reuse": true,
+  "outputs_within_workspace": true,
+  "request_id": "trusted_source_request::workspace_advanced_successor_v3_live_c::trusted_source_reference_inventory_capability_v1",
+  "requested_source_ids": [
+    "local_repo:novali-v5",
+    "local_artifacts:novali-v5/data"
+  ],
+  "required_roles_satisfied": true,
+  "result_state": "validated_complete",
+  "schema_name": "GovernedExecutionTrustedSourceCapabilityResult",
+  "schema_version": "governed_execution_trusted_source_capability_result_v1",
+  "skill_candidate_path": "C:\\Users\\eLDARi\\Documents\\VScode\\.venv\\9D-Sim\\novali-v6\\novali-active_workspace\\workspace_advanced_successor_v3_live_c\\artifacts\\trusted_source_skill_candidate_latest.json",
+  "skill_synthesis_summary_path": "C:\\Users\\eLDARi\\Documents\\VScode\\.venv\\9D-Sim\\novali-v6\\novali-active_workspace\\workspace_advanced_successor_v3_live_c\\artifacts\\trusted_source_skill_synthesis_summary_latest.json",
+  "test_output": "----------------------------------------------------------------------\nRan 2 tests in 0.002s\n\nOK",
+  "tests_passed": true,
+  "tests_run": 2,
+  "used_source_ids": [
+    "local_repo:novali-v5",
+    "local_artifacts:novali-v5/data"
+  ],
+  "validated": true,
+  "workspace_id": "workspace_advanced_successor_v3_live_c",
+  "workspace_root": "C:\\Users\\eLDARi\\Documents\\VScode\\.venv\\9D-Sim\\novali-v6\\novali-active_workspace\\workspace_advanced_successor_v3_live_c"
+}

@@ -1,0 +1,264 @@
+{
+  "case_count": 6,
+  "cases": [
+    {
+      "aggressiveness_posture": "conservative",
+      "budget_state": "local_only_sufficient_no_external_budget_used",
+      "case_id": "packaging_integrity::operator_policy_review_before_external",
+      "cost_governance_state": "local_only_selected_cheapest_sufficient_path",
+      "external_requery_mode": "review_first",
+      "key_artifact_paths": [],
+      "local_or_indexed_sufficient": true,
+      "mission_class": "packaging_integrity",
+      "mission_improved": true,
+      "mission_label": "Artifact index consistency",
+      "mission_outcome_state": "mission_advanced_with_local_packaging_integrity_execution",
+      "mission_outcome_summary": "The bounded packaging/integrity mission advanced locally without trusted-source escalation.",
+      "mission_policy_state": "local_only_sufficient",
+      "mission_requires_external_gap": false,
+      "objective_class": "refine_successor_artifact_index_consistency",
+      "objective_id": "refine_successor_artifact_index_consistency",
+      "operator_policy_profile": "conservative_review_first",
+      "operator_policy_state": "operator_policy_review_before_external",
+      "retry_state": "no_retry_needed_local_only_sufficient",
+      "selected_path": "local_only",
+      "summary_artifact_path": "",
+      "trusted_source_invoked": false,
+      "workspace_root": "C:\\Users\\eLDARi\\Documents\\VScode\\.venv\\9D-Sim\\novali-v6\\novali-active_workspace\\workspace_trusted_source_policy_packaging_conservative_live_i"
+    },
+    {
+      "aggressiveness_posture": "permissive_bounded",
+      "budget_state": "local_only_sufficient_no_external_budget_used",
+      "case_id": "packaging_integrity::operator_policy_permissive_bounded",
+      "cost_governance_state": "local_only_selected_cheapest_sufficient_path",
+      "external_requery_mode": "enabled",
+      "key_artifact_paths": [],
+      "local_or_indexed_sufficient": true,
+      "mission_class": "packaging_integrity",
+      "mission_improved": true,
+      "mission_label": "Artifact index consistency",
+      "mission_outcome_state": "mission_advanced_with_local_packaging_integrity_execution",
+      "mission_outcome_summary": "The bounded packaging/integrity mission still advanced locally because local evidence remained the cheapest sufficient path even under a permissive bounded policy.",
+      "mission_policy_state": "local_only_sufficient",
+      "mission_requires_external_gap": false,
+      "objective_class": "refine_successor_artifact_index_consistency",
+      "objective_id": "refine_successor_artifact_index_consistency",
+      "operator_policy_profile": "permissive_bounded",
+      "operator_policy_state": "operator_policy_permissive_bounded",
+      "retry_state": "no_retry_needed_local_only_sufficient",
+      "selected_path": "local_only",
+      "summary_artifact_path": "",
+      "trusted_source_invoked": false,
+      "workspace_root": "C:\\Users\\eLDARi\\Documents\\VScode\\.venv\\9D-Sim\\novali-v6\\novali-active_workspace\\workspace_trusted_source_policy_packaging_permissive_live_i"
+    },
+    {
+      "aggressiveness_posture": "conservative",
+      "budget_state": "local_only_sufficient_no_external_budget_used",
+      "case_id": "documentation_completeness::operator_policy_review_before_external",
+      "cost_governance_state": "local_only_selected_cheapest_sufficient_path",
+      "external_requery_mode": "review_first",
+      "key_artifact_paths": [],
+      "local_or_indexed_sufficient": true,
+      "mission_class": "documentation_completeness",
+      "mission_improved": true,
+      "mission_label": "Docs readiness review",
+      "mission_outcome_state": "mission_advanced_with_local_docs_execution",
+      "mission_outcome_summary": "The bounded documentation/completeness mission advanced locally without trusted-source escalation.",
+      "mission_policy_state": "local_only_sufficient",
+      "mission_requires_external_gap": false,
+      "objective_class": "refine_successor_docs_readiness",
+      "objective_id": "refine_successor_docs_readiness",
+      "operator_policy_profile": "conservative_review_first",
+      "operator_policy_state": "operator_policy_review_before_external",
+      "retry_state": "no_retry_needed_local_only_sufficient",
+      "selected_path": "local_only",
+      "summary_artifact_path": "",
+      "trusted_source_invoked": false,
+      "workspace_root": "C:\\Users\\eLDARi\\Documents\\VScode\\.venv\\9D-Sim\\novali-v6\\novali-active_workspace\\workspace_trusted_source_policy_docs_conservative_live_i"
+    },
+    {
+      "aggressiveness_posture": "permissive_bounded",
+      "budget_state": "local_only_sufficient_no_external_budget_used",
+      "case_id": "documentation_completeness::operator_policy_permissive_bounded",
+      "cost_governance_state": "local_only_selected_cheapest_sufficient_path",
+      "external_requery_mode": "enabled",
+      "key_artifact_paths": [],
+      "local_or_indexed_sufficient": true,
+      "mission_class": "documentation_completeness",
+      "mission_improved": true,
+      "mission_label": "Docs readiness review",
+      "mission_outcome_state": "mission_advanced_with_local_docs_execution",
+      "mission_outcome_summary": "The bounded documentation/completeness mission still advanced locally because local evidence stayed sufficient under the permissive bounded policy.",
+      "mission_policy_state": "local_only_sufficient",
+      "mission_requires_external_gap": false,
+      "objective_class": "refine_successor_docs_readiness",
+      "objective_id": "refine_successor_docs_readiness",
+      "operator_policy_profile": "permissive_bounded",
+      "operator_policy_state": "operator_policy_permissive_bounded",
+      "retry_state": "no_retry_needed_local_only_sufficient",
+      "selected_path": "local_only",
+      "summary_artifact_path": "",
+      "trusted_source_invoked": false,
+      "workspace_root": "C:\\Users\\eLDARi\\Documents\\VScode\\.venv\\9D-Sim\\novali-v6\\novali-active_workspace\\workspace_trusted_source_policy_docs_permissive_live_i"
+    },
+    {
+      "aggressiveness_posture": "conservative",
+      "budget_state": "indexed_reuse_selected_external_budget_avoided",
+      "case_id": "review_first_conservative",
+      "cost_governance_state": "indexed_reuse_selected_cheaper_sufficient_path",
+      "external_requery_mode": "review_first",
+      "key_artifact_paths": [],
+      "local_or_indexed_sufficient": true,
+      "mission_class": "readiness",
+      "mission_improved": true,
+      "mission_label": "Successor package readiness",
+      "mission_outcome_state": "mission_advanced_with_reused_trusted_source_knowledge",
+      "mission_outcome_summary": "Applied the bounded successor manifest quality pack to improve grouped readiness coverage and manifest coherence. Applied trusted-source-backed structural audit evidence to the delivered standalone zip.",
+      "mission_policy_state": "reuse_indexed_trusted_source_knowledge",
+      "mission_requires_external_gap": false,
+      "objective_class": "improve_successor_package_readiness",
+      "objective_id": "improve_successor_package_readiness",
+      "operator_policy_profile": "conservative_review_first",
+      "operator_policy_state": "operator_policy_review_before_external",
+      "retry_state": "no_retry_needed_indexed_reuse_sufficient",
+      "selected_path": "indexed_reuse",
+      "summary_artifact_path": "",
+      "trusted_source_invoked": true,
+      "workspace_root": "C:\\Users\\eLDARi\\Documents\\VScode\\.venv\\9D-Sim\\novali-v6\\dist\\v6_rc08_operator_policy_validation\\unpacked\\novali-v6_rc08-standalone\\novali-active_workspace\\workspace_operator_policy_review_first_case"
+    },
+    {
+      "aggressiveness_posture": "permissive_bounded",
+      "budget_state": "external_requery_within_budget",
+      "case_id": "permissive_bounded_external",
+      "cost_governance_state": "external_use_admitted_within_budget",
+      "external_requery_mode": "enabled",
+      "key_artifact_paths": [],
+      "local_or_indexed_sufficient": false,
+      "mission_class": "readiness",
+      "mission_improved": true,
+      "mission_label": "Successor package readiness strict scope",
+      "mission_outcome_state": "mission_advanced_with_requeried_trusted_source_knowledge",
+      "mission_outcome_summary": "Applied the bounded successor manifest quality pack to improve grouped readiness coverage and manifest coherence. Applied trusted-source-backed structural audit evidence to the delivered standalone zip.",
+      "mission_policy_state": "external_requery_justified",
+      "mission_requires_external_gap": true,
+      "objective_class": "improve_successor_package_readiness",
+      "objective_id": "improve_successor_package_readiness",
+      "operator_policy_profile": "permissive_bounded",
+      "operator_policy_state": "operator_policy_permissive_bounded",
+      "retry_state": "no_retry_needed_initial_external_request_selected",
+      "selected_path": "external_requery",
+      "summary_artifact_path": "",
+      "trusted_source_invoked": true,
+      "workspace_root": "C:\\Users\\eLDARi\\Documents\\VScode\\.venv\\9D-Sim\\novali-v6\\dist\\v6_rc08_operator_policy_validation\\unpacked\\novali-v6_rc08-standalone\\novali-active_workspace\\workspace_operator_policy_permissive_case"
+    }
+  ],
+  "directive_id": "directive_build_advanced_successor_v3",
+  "generated_at": "2026-03-26T13:57:40.017890+00:00",
+  "mission_class_counts": {
+    "documentation_completeness": 2,
+    "packaging_integrity": 2,
+    "readiness": 2
+  },
+  "mission_class_rows": [
+    {
+      "case_count": 2,
+      "mission_class": "packaging_integrity",
+      "mission_improvements": 2,
+      "mission_labels": [
+        "Artifact index consistency"
+      ],
+      "mission_outcome_states": [
+        "mission_advanced_with_local_packaging_integrity_execution"
+      ],
+      "observed_policy_states": [
+        "local_only_sufficient"
+      ],
+      "observed_selected_paths": [
+        "local_only"
+      ],
+      "operator_policy_states_tested": [
+        "operator_policy_review_before_external",
+        "operator_policy_permissive_bounded"
+      ],
+      "trusted_source_invocations": 0
+    },
+    {
+      "case_count": 2,
+      "mission_class": "documentation_completeness",
+      "mission_improvements": 2,
+      "mission_labels": [
+        "Docs readiness review"
+      ],
+      "mission_outcome_states": [
+        "mission_advanced_with_local_docs_execution"
+      ],
+      "observed_policy_states": [
+        "local_only_sufficient"
+      ],
+      "observed_selected_paths": [
+        "local_only"
+      ],
+      "operator_policy_states_tested": [
+        "operator_policy_review_before_external",
+        "operator_policy_permissive_bounded"
+      ],
+      "trusted_source_invocations": 0
+    },
+    {
+      "case_count": 2,
+      "mission_class": "readiness",
+      "mission_improvements": 2,
+      "mission_labels": [
+        "Successor package readiness",
+        "Successor package readiness strict scope"
+      ],
+      "mission_outcome_states": [
+        "mission_advanced_with_reused_trusted_source_knowledge",
+        "mission_advanced_with_requeried_trusted_source_knowledge"
+      ],
+      "observed_policy_states": [
+        "reuse_indexed_trusted_source_knowledge",
+        "external_requery_justified"
+      ],
+      "observed_selected_paths": [
+        "indexed_reuse",
+        "external_requery"
+      ],
+      "operator_policy_states_tested": [
+        "operator_policy_review_before_external",
+        "operator_policy_permissive_bounded"
+      ],
+      "trusted_source_invocations": 2
+    }
+  ],
+  "mission_policy_state_counts": {
+    "external_requery_justified": 1,
+    "local_only_sufficient": 4,
+    "reuse_indexed_trusted_source_knowledge": 1
+  },
+  "operator_policy_state_counts": {
+    "operator_policy_permissive_bounded": 3,
+    "operator_policy_review_before_external": 3
+  },
+  "schema_name": "GovernedExecutionTrustedSourceMultiMissionValidation",
+  "schema_version": "governed_execution_trusted_source_multi_mission_validation_v1",
+  "selected_path_counts": {
+    "external_requery": 1,
+    "indexed_reuse": 1,
+    "local_only": 4
+  },
+  "validated_mission_class_count": 3,
+  "validated_mission_classes": [
+    "documentation_completeness",
+    "packaging_integrity",
+    "readiness"
+  ],
+  "validated_operator_policy_state_count": 2,
+  "validated_operator_policy_states": [
+    "operator_policy_permissive_bounded",
+    "operator_policy_review_before_external"
+  ],
+  "validation_state": "multi_mission_policy_validation_complete",
+  "workspace_id": "workspace_trusted_source_multi_mission_policy_validation_live_i",
+  "workspace_root": "C:\\Users\\eLDARi\\Documents\\VScode\\.venv\\9D-Sim\\novali-v6\\novali-active_workspace\\workspace_trusted_source_multi_mission_policy_validation_live_i"
+}

@@ -1,0 +1,64 @@
+{
+  "bundled_summary_path": "runtime_data\\acceptance_evidence\\trusted_source_policy_calibration\\workspace_trusted_source_multi_mission_policy_validation_live_i\\artifacts\\bounded_work_summary_latest.json",
+  "calibration_state": "trusted_source_policy_calibration_complete",
+  "case_count": 6,
+  "default_posture_assessment": "defaults_roughly_appropriate",
+  "generated_at": "2026-04-19T21:21:10.732450+00:00",
+  "package_doc_relative_path": "docs/TRUSTED_SOURCE_POLICY_CALIBRATION_EVIDENCE.md",
+  "package_manifest_relative_path": "runtime_data/acceptance_evidence/trusted_source_policy_calibration/package_trusted_source_policy_calibration_manifest.json",
+  "package_version": "novali-v7_rc00-standalone",
+  "packaged_entries": [
+    {
+      "package_relative_path": "runtime_data/acceptance_evidence/trusted_source_policy_calibration/workspace_trusted_source_multi_mission_policy_validation_live_i/artifacts/trusted_source_multi_mission_validation_latest.json",
+      "source_path": "C:\\Users\\eLDARi\\Documents\\VScode\\.venv\\9D-Sim\\novali-v7\\novali-active_workspace\\workspace_trusted_source_multi_mission_policy_validation_live_i\\artifacts\\trusted_source_multi_mission_validation_latest.json",
+      "source_relative_path": "artifacts/trusted_source_multi_mission_validation_latest.json"
+    },
+    {
+      "package_relative_path": "runtime_data/acceptance_evidence/trusted_source_policy_calibration/workspace_trusted_source_multi_mission_policy_validation_live_i/artifacts/trusted_source_policy_calibration_latest.json",
+      "source_path": "C:\\Users\\eLDARi\\Documents\\VScode\\.venv\\9D-Sim\\novali-v7\\novali-active_workspace\\workspace_trusted_source_multi_mission_policy_validation_live_i\\artifacts\\trusted_source_policy_calibration_latest.json",
+      "source_relative_path": "artifacts/trusted_source_policy_calibration_latest.json"
+    },
+    {
+      "package_relative_path": "runtime_data/acceptance_evidence/trusted_source_policy_calibration/workspace_trusted_source_multi_mission_policy_validation_live_i/artifacts/trusted_source_policy_calibration_summary_latest.json",
+      "source_path": "C:\\Users\\eLDARi\\Documents\\VScode\\.venv\\9D-Sim\\novali-v7\\novali-active_workspace\\workspace_trusted_source_multi_mission_policy_validation_live_i\\artifacts\\trusted_source_policy_calibration_summary_latest.json",
+      "source_relative_path": "artifacts/trusted_source_policy_calibration_summary_latest.json"
+    },
+    {
+      "package_relative_path": "runtime_data/acceptance_evidence/trusted_source_policy_calibration/workspace_trusted_source_multi_mission_policy_validation_live_i/artifacts/trusted_source_policy_recommendation_latest.json",
+      "source_path": "C:\\Users\\eLDARi\\Documents\\VScode\\.venv\\9D-Sim\\novali-v7\\novali-active_workspace\\workspace_trusted_source_multi_mission_policy_validation_live_i\\artifacts\\trusted_source_policy_recommendation_latest.json",
+      "source_relative_path": "artifacts/trusted_source_policy_recommendation_latest.json"
+    },
+    {
+      "package_relative_path": "runtime_data/acceptance_evidence/trusted_source_policy_calibration/workspace_trusted_source_multi_mission_policy_validation_live_i/artifacts/bounded_work_summary_latest.json",
+      "source_path": "C:\\Users\\eLDARi\\Documents\\VScode\\.venv\\9D-Sim\\novali-v7\\novali-active_workspace\\workspace_trusted_source_multi_mission_policy_validation_live_i\\artifacts\\bounded_work_summary_latest.json",
+      "source_relative_path": "artifacts/bounded_work_summary_latest.json"
+    },
+    {
+      "package_relative_path": "runtime_data/acceptance_evidence/trusted_source_policy_calibration/workspace_trusted_source_multi_mission_policy_validation_live_i/artifacts/workspace_artifact_index_latest.json",
+      "source_path": "C:\\Users\\eLDARi\\Documents\\VScode\\.venv\\9D-Sim\\novali-v7\\novali-active_workspace\\workspace_trusted_source_multi_mission_policy_validation_live_i\\artifacts\\workspace_artifact_index_latest.json",
+      "source_relative_path": "artifacts/workspace_artifact_index_latest.json"
+    },
+    {
+      "package_relative_path": "runtime_data/acceptance_evidence/trusted_source_policy_calibration/workspace_trusted_source_multi_mission_policy_validation_live_i/docs/trusted_source_policy_calibration_note.md",
+      "source_path": "C:\\Users\\eLDARi\\Documents\\VScode\\.venv\\9D-Sim\\novali-v7\\novali-active_workspace\\workspace_trusted_source_multi_mission_policy_validation_live_i\\docs\\trusted_source_policy_calibration_note.md",
+      "source_relative_path": "docs/trusted_source_policy_calibration_note.md"
+    }
+  ],
+  "packaged_workspace_relative_path": "novali-active_workspace/workspace_trusted_source_multi_mission_policy_validation_live_i",
+  "recommendation_summary": "Across the validated mission classes, conservative policy preserved cheaper sufficient paths while permissive bounded policy admitted external re-query only for genuine gaps.",
+  "recommended_default_policy_state": "operator_policy_normal_bounded",
+  "schema_name": "NovaliStandaloneTrustedSourcePolicyCalibrationEvidence",
+  "schema_version": "novali_standalone_trusted_source_policy_calibration_evidence_v1",
+  "source_workspace_id": "workspace_trusted_source_multi_mission_policy_validation_live_i",
+  "source_workspace_root": "C:\\Users\\eLDARi\\Documents\\VScode\\.venv\\9D-Sim\\novali-v7\\novali-active_workspace\\workspace_trusted_source_multi_mission_policy_validation_live_i",
+  "validated_mission_classes": [
+    "documentation_completeness",
+    "packaging_integrity",
+    "readiness"
+  ],
+  "validated_operator_policy_states": [
+    "operator_policy_permissive_bounded",
+    "operator_policy_review_before_external"
+  ],
+  "validation_state": "multi_mission_policy_validation_complete"
+}

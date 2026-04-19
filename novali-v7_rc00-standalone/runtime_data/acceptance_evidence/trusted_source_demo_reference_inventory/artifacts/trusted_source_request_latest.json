@@ -1,0 +1,30 @@
+{
+  "allow_live_network": false,
+  "allowed_output_types": [
+    "trusted_source_knowledge_pack",
+    "trusted_source_skill_candidate",
+    "trusted_source_reference_inventory"
+  ],
+  "authorization_source": "approved_reseed_objective",
+  "capability_gap_id": "trusted_source_gap::workspace_advanced_successor_v3_live_c::trusted_source_reference_inventory_capability_v1",
+  "directive_id": "directive_build_advanced_successor_v3",
+  "generated_at": "2026-03-25T02:45:50.785901+00:00",
+  "governance_authority_note": "trusted-source requests do not authorize policy or directive mutation",
+  "objective_id": "acquire_trusted_source_reference_inventory_capability",
+  "operator_review_required": false,
+  "provenance_required": true,
+  "request_id": "trusted_source_request::workspace_advanced_successor_v3_live_c::trusted_source_reference_inventory_capability_v1",
+  "requested_scope_topic": "frozen_novali_v5_reference_inventory",
+  "requested_source_classes": [
+    "local_path"
+  ],
+  "requested_source_ids": [
+    "local_repo:novali-v5",
+    "local_artifacts:novali-v5/data"
+  ],
+  "schema_name": "GovernedExecutionTrustedSourceRequest",
+  "schema_version": "governed_execution_trusted_source_request_v1",
+  "why_source_is_needed": "bounded v6 capability acquisition needs auditable reference evidence from the frozen v5 branch and its closeout package",
+  "workspace_id": "workspace_advanced_successor_v3_live_c",
+  "workspace_root": "C:\\Users\\eLDARi\\Documents\\VScode\\.venv\\9D-Sim\\novali-v6\\novali-active_workspace\\workspace_advanced_successor_v3_live_c"
+}

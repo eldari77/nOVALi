@@ -1,0 +1,27 @@
+{
+  "active_bounded_reference_target_id": "workspace_advanced_successor_v3_live_c::prepare_candidate_promotion_bundle::bounded_reference_candidate",
+  "allowed_source_ids": [
+    "local_repo:novali-v5",
+    "local_artifacts:novali-v5/data"
+  ],
+  "capability_gap_id": "trusted_source_gap::workspace_advanced_successor_v3_live_c::trusted_source_reference_inventory_capability_v1",
+  "capability_id": "trusted_source_reference_inventory_capability_v1",
+  "directive_id": "directive_build_advanced_successor_v3",
+  "expected_result": "validated workspace-local helper that inventories frozen novali-v5 reference assets with provenance",
+  "generated_at": "2026-03-25T02:45:50.791297+00:00",
+  "need_state": "ready_for_bounded_acquisition",
+  "protected_live_baseline_reference_id": "current_bounded_baseline_expectations_v1",
+  "ready_source_ids": [
+    "local_repo:novali-v5",
+    "local_artifacts:novali-v5/data"
+  ],
+  "request_id": "trusted_source_request::workspace_advanced_successor_v3_live_c::trusted_source_reference_inventory_capability_v1",
+  "requested_source_ids": [
+    "local_repo:novali-v5",
+    "local_artifacts:novali-v5/data"
+  ],
+  "schema_name": "GovernedExecutionTrustedSourceCapabilityNeed",
+  "schema_version": "governed_execution_trusted_source_capability_need_v1",
+  "workspace_id": "workspace_advanced_successor_v3_live_c",
+  "workspace_root": "C:\\Users\\eLDARi\\Documents\\VScode\\.venv\\9D-Sim\\novali-v6\\novali-active_workspace\\workspace_advanced_successor_v3_live_c"
+}

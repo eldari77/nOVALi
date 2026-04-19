@@ -1,0 +1,43 @@
+{
+  "candidate_overrides": {
+    "dummy_improvement_bias": 0.02,
+    "local_score_bias": 0.01
+  },
+  "context_overrides": {
+    "c2_recent_bias": 0.05,
+    "goal_pressure_bias": 0.28
+  },
+  "decision_scoring": {
+    "gain_bad_penalty": 1.55,
+    "gain_weight": 0.95,
+    "goal_bad_penalty": 2.55,
+    "goal_margin_weight": 1.4,
+    "projection_bad_penalty": 1.35,
+    "projection_margin_weight": 0.55,
+    "status_bonus_full": 0.0,
+    "status_bonus_provisional": 0.0,
+    "status_bonus_reject": 0.03
+  },
+  "description": "gain_goal_conflict scenario 11: goal_priority target=1 proposer=2",
+  "env": {
+    "horizon_pad": 8,
+    "noise_scale": 0.01,
+    "steps": 76
+  },
+  "eval_overrides": {
+    "goal_weight": 0.24,
+    "social_gain": 0.018
+  },
+  "family": "gain_goal_conflict",
+  "id": "gain_goal_conflict_11",
+  "pack_version": "1.0.0",
+  "proposer": 2,
+  "seed": 42309,
+  "tags": [
+    "gain_goal_conflict",
+    "goal_priority"
+  ],
+  "target_agent": 1,
+  "variant_name": "goal_priority",
+  "version": 1
+}

@@ -1,0 +1,332 @@
+{
+  "artifact_count": 63,
+  "artifacts": [
+    {
+      "category": "artifacts",
+      "relative_path": "artifacts/bounded_work_file_plan.json",
+      "size_bytes": 82
+    },
+    {
+      "category": "artifacts",
+      "relative_path": "artifacts/completion_evaluation_latest.json",
+      "size_bytes": 90
+    },
+    {
+      "category": "artifacts",
+      "relative_path": "artifacts/missing_deliverables_latest.json",
+      "size_bytes": 238
+    },
+    {
+      "category": "artifacts",
+      "relative_path": "artifacts/next_step_derivation_latest.json",
+      "size_bytes": 82
+    },
+    {
+      "category": "artifacts",
+      "relative_path": "artifacts/novali-v6_rc00-standalone.zip",
+      "size_bytes": 8799
+    },
+    {
+      "category": "artifacts",
+      "relative_path": "artifacts/successor_admitted_candidate_latest.json",
+      "size_bytes": 679
+    },
+    {
+      "category": "artifacts",
+      "relative_path": "artifacts/successor_baseline_comparison_latest.json",
+      "size_bytes": 509
+    },
+    {
+      "category": "artifacts",
+      "relative_path": "artifacts/successor_capability_gap_latest.json",
+      "size_bytes": 5897
+    },
+    {
+      "category": "artifacts",
+      "relative_path": "artifacts/successor_delivery_manifest_latest.json",
+      "size_bytes": 6041
+    },
+    {
+      "category": "artifacts",
+      "relative_path": "artifacts/successor_effective_next_objective_latest.json",
+      "size_bytes": 1202
+    },
+    {
+      "category": "artifacts",
+      "relative_path": "artifacts/successor_handoff_refresh_manifest_latest.json",
+      "size_bytes": 12517
+    },
+    {
+      "category": "artifacts",
+      "relative_path": "artifacts/successor_package_improvement_summary_latest.json",
+      "size_bytes": 13445
+    },
+    {
+      "category": "artifacts",
+      "relative_path": "artifacts/successor_quality_composite_evaluation_latest.json",
+      "size_bytes": 1661
+    },
+    {
+      "category": "artifacts",
+      "relative_path": "artifacts/successor_quality_gap_summary_latest.json",
+      "size_bytes": 4600
+    },
+    {
+      "category": "artifacts",
+      "relative_path": "artifacts/successor_quality_improvement_summary_latest.json",
+      "size_bytes": 3096
+    },
+    {
+      "category": "artifacts",
+      "relative_path": "artifacts/successor_quality_next_pack_plan_latest.json",
+      "size_bytes": 2526
+    },
+    {
+      "category": "artifacts",
+      "relative_path": "artifacts/successor_quality_priority_matrix_latest.json",
+      "size_bytes": 16963
+    },
+    {
+      "category": "artifacts",
+      "relative_path": "artifacts/successor_quality_roadmap_latest.json",
+      "size_bytes": 28532
+    },
+    {
+      "category": "artifacts",
+      "relative_path": "artifacts/successor_readiness_evaluation_latest.json",
+      "size_bytes": 5064
+    },
+    {
+      "category": "artifacts",
+      "relative_path": "artifacts/successor_reference_target_latest.json",
+      "size_bytes": 1184
+    },
+    {
+      "category": "artifacts",
+      "relative_path": "artifacts/successor_single_zip_delivery_latest.json",
+      "size_bytes": 6806
+    },
+    {
+      "category": "artifacts",
+      "relative_path": "artifacts/successor_skill_pack_invocation_latest.json",
+      "size_bytes": 7858
+    },
+    {
+      "category": "artifacts",
+      "relative_path": "artifacts/successor_skill_pack_result_latest.json",
+      "size_bytes": 6507
+    },
+    {
+      "category": "artifacts",
+      "relative_path": "artifacts/trusted_planning_evidence_latest.json",
+      "size_bytes": 242
+    },
+    {
+      "category": "artifacts",
+      "relative_path": "artifacts/trusted_source_aggressiveness_policy_latest.json",
+      "size_bytes": 1696
+    },
+    {
+      "category": "artifacts",
+      "relative_path": "artifacts/trusted_source_capability_need_latest.json",
+      "size_bytes": 2147
+    },
+    {
+      "category": "artifacts",
+      "relative_path": "artifacts/trusted_source_capability_result_latest.json",
+      "size_bytes": 3099
+    },
+    {
+      "category": "artifacts",
+      "relative_path": "artifacts/trusted_source_escalation_decision_latest.json",
+      "size_bytes": 2225
+    },
+    {
+      "category": "artifacts",
+      "relative_path": "artifacts/trusted_source_escalation_thresholds_latest.json",
+      "size_bytes": 1677
+    },
+    {
+      "category": "artifacts",
+      "relative_path": "artifacts/trusted_source_external_zip_audit_report_latest.json",
+      "size_bytes": 6665
+    },
+    {
+      "category": "artifacts",
+      "relative_path": "artifacts/trusted_source_knowledge_catalog_latest.json",
+      "size_bytes": 5217
+    },
+    {
+      "category": "artifacts",
+      "relative_path": "artifacts/trusted_source_knowledge_freshness_latest.json",
+      "size_bytes": 1972
+    },
+    {
+      "category": "artifacts",
+      "relative_path": "artifacts/trusted_source_knowledge_health_latest.json",
+      "size_bytes": 338
+    },
+    {
+      "category": "artifacts",
+      "relative_path": "artifacts/trusted_source_knowledge_index_latest.json",
+      "size_bytes": 4783
+    },
+    {
+      "category": "artifacts",
+      "relative_path": "artifacts/trusted_source_knowledge_invalidation_latest.json",
+      "size_bytes": 139
+    },
+    {
+      "category": "artifacts",
+      "relative_path": "artifacts/trusted_source_knowledge_pack_latest.json",
+      "size_bytes": 4019
+    },
+    {
+      "category": "artifacts",
+      "relative_path": "artifacts/trusted_source_knowledge_reuse_readiness_latest.json",
+      "size_bytes": 2007
+    },
+    {
+      "category": "artifacts",
+      "relative_path": "artifacts/trusted_source_knowledge_selection_latest.json",
+      "size_bytes": 17117
+    },
+    {
+      "category": "artifacts",
+      "relative_path": "artifacts/trusted_source_knowledge_supersession_latest.json",
+      "size_bytes": 139
+    },
+    {
+      "category": "artifacts",
+      "relative_path": "artifacts/trusted_source_mission_orchestration_latest.json",
+      "size_bytes": 2074
+    },
+    {
+      "category": "artifacts",
+      "relative_path": "artifacts/trusted_source_mission_policy_latest.json",
+      "size_bytes": 2789
+    },
+    {
+      "category": "artifacts",
+      "relative_path": "artifacts/trusted_source_requery_decision_latest.json",
+      "size_bytes": 2015
+    },
+    {
+      "category": "artifacts",
+      "relative_path": "artifacts/trusted_source_request_latest.json",
+      "size_bytes": 2107
+    },
+    {
+      "category": "artifacts",
+      "relative_path": "artifacts/trusted_source_reuse_decision_latest.json",
+      "size_bytes": 1995
+    },
+    {
+      "category": "artifacts",
+      "relative_path": "artifacts/trusted_source_reuse_summary_latest.json",
+      "size_bytes": 2539
+    },
+    {
+      "category": "artifacts",
+      "relative_path": "artifacts/trusted_source_reuse_vs_requery_latest.json",
+      "size_bytes": 2019
+    },
+    {
+      "category": "artifacts",
+      "relative_path": "artifacts/workspace_artifact_index_latest.json",
+      "size_bytes": 6544
+    },
+    {
+      "category": "docs",
+      "relative_path": "docs/mutable_shell_successor_design_note.md",
+      "size_bytes": 157
+    },
+    {
+      "category": "docs",
+      "relative_path": "docs/successor_package_improvement_note.md",
+      "size_bytes": 1290
+    },
+    {
+      "category": "docs",
+      "relative_path": "docs/successor_package_readiness_note.md",
+      "size_bytes": 1847
+    },
+    {
+      "category": "docs",
+      "relative_path": "docs/successor_single_zip_delivery_note.md",
+      "size_bytes": 1268
+    },
+    {
+      "category": "docs",
+      "relative_path": "docs/trusted_source_external_zip_audit_note.md",
+      "size_bytes": 133
+    },
+    {
+      "category": "plans",
+      "relative_path": "plans/bounded_work_cycle_plan.md",
+      "size_bytes": 141
+    },
+    {
+      "category": "plans",
+      "relative_path": "plans/successor_continuation_gap_analysis.md",
+      "size_bytes": 159
+    },
+    {
+      "category": "src",
+      "relative_path": "src/successor_shell/__init__.py",
+      "size_bytes": 748
+    },
+    {
+      "category": "src",
+      "relative_path": "src/successor_shell/__pycache__/trusted_zip_audit.cpython-313.pyc",
+      "size_bytes": 7626
+    },
+    {
+      "category": "src",
+      "relative_path": "src/successor_shell/successor_manifest.py",
+      "size_bytes": 3538
+    },
+    {
+      "category": "src",
+      "relative_path": "src/successor_shell/trusted_zip_audit.py",
+      "size_bytes": 7158
+    },
+    {
+      "category": "src",
+      "relative_path": "src/successor_shell/workspace_contract.py",
+      "size_bytes": 62
+    },
+    {
+      "category": "tests",
+      "relative_path": "tests/__pycache__/test_trusted_zip_audit.cpython-313.pyc",
+      "size_bytes": 4385
+    },
+    {
+      "category": "tests",
+      "relative_path": "tests/test_successor_manifest.py",
+      "size_bytes": 2313
+    },
+    {
+      "category": "tests",
+      "relative_path": "tests/test_trusted_zip_audit.py",
+      "size_bytes": 2616
+    },
+    {
+      "category": "tests",
+      "relative_path": "tests/test_workspace_contract.py",
+      "size_bytes": 179
+    }
+  ],
+  "category_counts": {
+    "artifacts": 47,
+    "docs": 5,
+    "plans": 2,
+    "src": 5,
+    "tests": 4
+  },
+  "generated_at": "2026-03-25T19:56:07.946997+00:00",
+  "next_recommended_cycle": "operator_review_required",
+  "schema_name": "GovernedExecutionWorkspaceArtifactIndex",
+  "schema_version": "governed_execution_workspace_artifact_index_v1",
+  "workspace_root": "C:\\Users\\eLDARi\\Documents\\VScode\\.venv\\9D-Sim\\novali-v6\\novali-active_workspace\\workspace_trusted_source_guided_successor_iteration_live_e"
+}

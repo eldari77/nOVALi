@@ -1,0 +1,44 @@
+{
+  "artifact_count": 6,
+  "artifacts": [
+    {
+      "category": "artifacts",
+      "relative_path": "artifacts/bounded_work_summary_latest.json",
+      "size_bytes": 3812
+    },
+    {
+      "category": "artifacts",
+      "relative_path": "artifacts/trusted_source_multi_mission_validation_latest.json",
+      "size_bytes": 13043
+    },
+    {
+      "category": "artifacts",
+      "relative_path": "artifacts/trusted_source_policy_calibration_latest.json",
+      "size_bytes": 2049
+    },
+    {
+      "category": "artifacts",
+      "relative_path": "artifacts/trusted_source_policy_calibration_summary_latest.json",
+      "size_bytes": 1304
+    },
+    {
+      "category": "artifacts",
+      "relative_path": "artifacts/trusted_source_policy_recommendation_latest.json",
+      "size_bytes": 1713
+    },
+    {
+      "category": "docs",
+      "relative_path": "docs/trusted_source_policy_calibration_note.md",
+      "size_bytes": 555
+    }
+  ],
+  "category_counts": {
+    "artifacts": 5,
+    "docs": 1
+  },
+  "generated_at": "2026-03-26T13:57:40.025802+00:00",
+  "next_recommended_cycle": "materialize_workspace_local_implementation",
+  "schema_name": "GovernedExecutionWorkspaceArtifactIndex",
+  "schema_version": "governed_execution_workspace_artifact_index_v1",
+  "workspace_root": "C:\\Users\\eLDARi\\Documents\\VScode\\.venv\\9D-Sim\\novali-v6\\novali-active_workspace\\workspace_trusted_source_multi_mission_policy_validation_live_i"
+}

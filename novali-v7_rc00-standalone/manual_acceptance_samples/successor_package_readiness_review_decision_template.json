@@ -1,0 +1,22 @@
+{
+  "schema_name": "NOVALIRealWorkBenchmarkReviewDecisionTemplate",
+  "schema_version": "novali_real_work_benchmark_review_decision_template_v1",
+  "workflow_id": "successor_package_readiness_review_bundle_refresh",
+  "workflow_name": "Successor package readiness review bundle refresh",
+  "directive_file_path": "manual_acceptance_samples/successor_package_readiness_benchmark_directive.json",
+  "template_state": "decision_recorded",
+  "explicit_operator_confirmation": true,
+  "promotion_outcome_state": "promotion_confirmed_with_review_gate",
+  "operator_reviewer": "Codex (human operator simulation)",
+  "confirmation_recorded_at": "2026-04-02T14:00:00-05:00",
+  "decision_basis_note": "Promotion-ready package evidence is complete, benchmark replay is reproducible, review packet evidence is sufficient, and unresolved-bundle rationale supports advancing with review gate.",
+  "allowed_outcome_states": [
+    "promotion_confirmed_with_review_gate",
+    "hold_confirmed_with_review_gate",
+    "defer_confirmed",
+    "blocked_review_outcome",
+    "awaiting_operator_confirmation"
+  ],
+  "operator_instruction": "Update this file only after a human reviewer has inspected the benchmark decision packet, promotion-readiness evidence, unresolved-bundle evidence, and output inventory.",
+  "non_authoritative_note": "This template records operator review only. It does not authorize policy change or automatic promotion."
+}
