@@ -1,0 +1,51 @@
+{
+  "advisory_only": true,
+  "artifact_paths": [
+    "C:\\Users\\eLDARi\\Documents\\VScode\\.venv\\9D-Sim\\novali-v7\\dist\\novali-v7_rc00-standalone\\operator_state\\trusted_source_credential_status_latest.json",
+    "C:\\Users\\eLDARi\\Documents\\VScode\\.venv\\9D-Sim\\novali-v7\\dist\\novali-v7_rc00-standalone\\operator_state\\trusted_source_provider_status_latest.json",
+    "C:\\Users\\eLDARi\\Documents\\VScode\\.venv\\9D-Sim\\novali-v7\\dist\\novali-v7_rc00-standalone\\operator_state\\trusted_source_handshake_latest.json",
+    "C:\\Users\\eLDARi\\Documents\\VScode\\.venv\\9D-Sim\\novali-v7\\dist\\novali-v7_rc00-standalone\\operator_state\\trusted_source_session_contract_latest.json",
+    "C:\\Users\\eLDARi\\Documents\\VScode\\.venv\\9D-Sim\\novali-v7\\dist\\novali-v7_rc00-standalone\\operator_state\\trusted_source_request_contract_latest.json",
+    "C:\\Users\\eLDARi\\Documents\\VScode\\.venv\\9D-Sim\\novali-v7\\dist\\novali-v7_rc00-standalone\\operator_state\\trusted_source_response_template_latest.json",
+    "C:\\Users\\eLDARi\\Documents\\VScode\\.venv\\9D-Sim\\novali-v7\\dist\\novali-v7_rc00-standalone\\operator_state\\controller_trusted_live_connectivity_latest.json",
+    "C:\\Users\\eLDARi\\Documents\\VScode\\.venv\\9D-Sim\\novali-v7\\dist\\novali-v7_rc00-standalone\\operator_state\\controller_trusted_live_request_latest.json",
+    "C:\\Users\\eLDARi\\Documents\\VScode\\.venv\\9D-Sim\\novali-v7\\dist\\novali-v7_rc00-standalone\\operator_state\\controller_trusted_live_response_summary_latest.json",
+    "C:\\Users\\eLDARi\\Documents\\VScode\\.venv\\9D-Sim\\novali-v7\\dist\\novali-v7_rc00-standalone\\operator_state\\controller_trusted_live_evidence_receipt_latest.json",
+    "C:\\Users\\eLDARi\\Documents\\VScode\\.venv\\9D-Sim\\novali-v7\\dist\\novali-v7_rc00-standalone\\operator_state\\controller_trusted_live_validation_summary_latest.json"
+  ],
+  "credential_ref": "OPENAI_API_KEY",
+  "credential_strategy": "env_session_only",
+  "directive_id": "",
+  "endpoint_base": "https://api.openai.com/v1",
+  "endpoint_path": "/responses",
+  "generated_at": "2026-03-28T23:52:03.322421+00:00",
+  "non_authoritative_note": "This live trusted-source request record captures only non-secret request-shape metadata and does not create a second authority path.",
+  "non_secret_request_shape": {
+    "input_kind": "tiny_text_only",
+    "max_output_tokens": 120,
+    "request_mode": "responses_api_text_json_schema",
+    "request_purpose": "bounded_live_external_connectivity_validation",
+    "request_scope": "minimal_external_evidence_receipt",
+    "requested_fields": [
+      "provider_ready",
+      "provider_family",
+      "external_evidence_summary",
+      "transport_note",
+      "governance_note"
+    ],
+    "store": false
+  },
+  "provider_display_name": "OpenAI API",
+  "provider_id": "openai_api",
+  "recorded_at": "2026-03-28T23:52:03.320270+00:00",
+  "request_attempted": true,
+  "request_attempted_at": "2026-03-28T23:51:58.236041+00:00",
+  "request_state": "attempted",
+  "request_state_label": "Attempted",
+  "request_summary": "Tiny text-only Responses API JSON-schema request with store=false, one short bounded evidence summary, and no secret persistence.",
+  "schema_name": "ControllerTrustedLiveRequest",
+  "schema_version": "controller_trusted_live_request_v1",
+  "secret_persisted": false,
+  "workspace_id": "",
+  "workspace_root": ""
+}

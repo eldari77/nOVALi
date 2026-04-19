@@ -1,0 +1,34 @@
+<script lang="ts">
+  const title = "NOVALI Operator Shell";
+</script>
+
+<svelte:head>
+  <title>{title}</title>
+</svelte:head>
+
+<slot />
+
+<style>
+  :global(:root) {
+    font-family: "Avenir Next", "Segoe UI", "Fira Sans", "Trebuchet MS", sans-serif;
+    line-height: 1.45;
+    color: #e9edf1;
+    background-color: #07101d;
+    --bg: #07101d;
+    --card: #111b2b;
+    --line: #23324c;
+    --accent: #7ec2ff;
+    --accent-soft: #7fc2ff52;
+    --success: #44c48a;
+    --warning: #f0ad3b;
+    --danger: #ff6b6b;
+  }
+  :global(*) {
+    box-sizing: border-box;
+  }
+  :global(html),
+  :global(body) {
+    margin: 0;
+    min-height: 100%;
+  }
+</style>

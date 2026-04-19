@@ -1,0 +1,64 @@
+{
+  "schema_name": "NovaliBoundedSkillPackManifest",
+  "schema_version": "novali_bounded_skill_pack_manifest_v1",
+  "skill_pack_id": "trusted_reference_inventory_integration_pack_v1",
+  "skill_pack_version": "v1",
+  "title": "Trusted Reference Inventory Integration Pack",
+  "capability_class": "trusted_source_capability_integration",
+  "purpose": "Reuse the bounded integration pattern for incorporating frozen novali-v5 reference inventory evidence into workspace-local helper, test, note, and inventory outputs without broadening authority.",
+  "supported_objective_classes": [
+    "acquire_trusted_source_reference_inventory_capability"
+  ],
+  "allowed_cycle_kinds": [
+    "implementation_bearing"
+  ],
+  "allowed_stage_ids": [
+    "trusted_source_growth_demo"
+  ],
+  "allowed_writable_relative_roots": [
+    "src",
+    "tests",
+    "docs",
+    "artifacts"
+  ],
+  "expected_output_relative_paths": [
+    "src/successor_shell/trusted_reference_inventory.py",
+    "tests/test_trusted_reference_inventory.py",
+    "docs/trusted_source_reference_inventory_note.md",
+    "artifacts/trusted_source_reference_inventory_latest.json"
+  ],
+  "linked_knowledge_pack_ids": [
+    "trusted_source_knowledge_pack::workspace_advanced_successor_v3_live_c::trusted_source_reference_inventory_capability_v1"
+  ],
+  "admissibility_constraints": {
+    "requires_active_workspace_root": true,
+    "requires_workspace_local_outputs_only": true,
+    "requires_reference_target_awareness": true,
+    "protected_surface_mutation_permitted": false,
+    "live_network_permitted": false,
+    "permission_override_permitted": false,
+    "local_first_required": true,
+    "trusted_source_evidence_support_only": true,
+    "allowed_source_ids": [
+      "local_repo:novali-v5",
+      "local_artifacts:novali-v5/data"
+    ]
+  },
+  "reuse_notes": {
+    "operator_review_required_before_reuse": true,
+    "minimum_provenance_fields": [
+      "source_id",
+      "relative_path",
+      "sha256",
+      "title",
+      "why_relevant"
+    ],
+    "bounded_request_shape": {
+      "requested_scope_topic": "frozen_novali_v5_reference_inventory",
+      "requested_source_ids": [
+        "local_repo:novali-v5",
+        "local_artifacts:novali-v5/data"
+      ]
+    }
+  }
+}

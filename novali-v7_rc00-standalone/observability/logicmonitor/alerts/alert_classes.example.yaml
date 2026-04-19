@@ -1,0 +1,133 @@
+alert_classes:
+  - alert_key: collector_down
+    severity: warning
+    implementation_state: implemented
+    evidence_source: artifacts/operator_proof/rc83/logicmonitor_live_collector_smoke_summary.json
+    suggested_dimension: novali.observability.live_probe.count
+    suggested_threshold: latest result=failure after explicit proof run
+  - alert_key: telemetry_export_failure
+    severity: warning
+    implementation_state: implemented
+    evidence_source: shell observability status
+    suggested_dimension: novali.observability.export.failure.count
+    suggested_threshold: any sustained increase
+  - alert_key: no_telemetry_seen
+    severity: warning
+    implementation_state: operator-portal-required
+    evidence_source: collector/portal query
+    suggested_dimension: service.name=novali-operator-shell
+    suggested_threshold: no spans or metrics over operator-defined interval
+  - alert_key: checkpoint_failure
+    severity: warning
+    implementation_state: defined-only
+    evidence_source: checkpoint artifacts plus telemetry evidence
+    suggested_dimension: novali.checkpoint.failure.count
+    suggested_threshold: any increase
+  - alert_key: review_hold_active
+    severity: warning
+    implementation_state: defined-only
+    evidence_source: shell review-hold status
+    suggested_dimension: novali.review_hold.active
+    suggested_threshold: active across repeated checks
+  - alert_key: repeated_review_hold
+    severity: warning
+    implementation_state: defined-only
+    evidence_source: repeated review-hold events
+    suggested_dimension: novali.review_hold.enter
+    suggested_threshold: repeated entries inside one operator window
+  - alert_key: deferred_pressure_high
+    severity: warning
+    implementation_state: implemented
+    evidence_source: shell deferred backlog proxy
+    suggested_dimension: novali.deferred.items
+    suggested_threshold: pressure band high
+  - alert_key: deferred_pressure_worsening
+    severity: warning
+    implementation_state: defined-only
+    evidence_source: shell deferred response outcome
+    suggested_dimension: novali.response_outcome.count
+    suggested_threshold: repeated novali.response_outcome=worsened
+  - alert_key: manager_check_stalled
+    severity: warning
+    implementation_state: defined-only
+    evidence_source: manager-check telemetry cadence
+    suggested_dimension: novali.manager.check.count
+    suggested_threshold: flatline over operator-defined interval
+  - alert_key: queue_pressure_saturation
+    severity: warning
+    implementation_state: defined-only
+    evidence_source: operator queue telemetry
+    suggested_dimension: novali.operator_queue.items
+    suggested_threshold: sustained saturation above local baseline
+  - alert_key: redaction_failure
+    severity: critical
+    implementation_state: defined-only
+    evidence_source: proof audit artifacts
+    suggested_dimension: processor or proof failure artifact
+    suggested_threshold: any confirmed failure
+  - alert_key: rollback_loop_candidate
+    severity: warning
+    implementation_state: defined-only
+    evidence_source: controller/checkpoint and review artifacts
+    suggested_dimension: operator-defined rollback-loop query
+    suggested_threshold: repeated bounce without closure
+  - alert_key: read_only_mutation_requested
+    severity: critical
+    implementation_state: local-evidence-only
+    evidence_source: artifacts/operator_proof/rc88/alert_candidate_summary.json
+    suggested_dimension: novali.alert.type=read_only_mutation_requested
+    suggested_threshold: any occurrence
+  - alert_key: read_only_integrity_failed
+    severity: high
+    implementation_state: local-evidence-only
+    evidence_source: artifacts/operator_proof/rc88/evidence_bundle_summary.json
+    suggested_dimension: novali.alert.type=read_only_integrity_failed
+    suggested_threshold: any occurrence
+  - alert_key: read_only_source_immutability_failed
+    severity: critical
+    implementation_state: local-evidence-only
+    evidence_source: artifacts/operator_proof/rc88/source_immutability_alert_summary.json
+    suggested_dimension: novali.alert.type=read_only_source_immutability_failed
+    suggested_threshold: any occurrence
+  - alert_key: read_only_forbidden_domain_term
+    severity: critical
+    implementation_state: local-evidence-only
+    evidence_source: read-only adapter proof artifacts
+    suggested_dimension: novali.alert.type=read_only_forbidden_domain_term
+    suggested_threshold: any occurrence
+  - alert_key: read_only_secret_detected
+    severity: critical
+    implementation_state: local-evidence-only
+    evidence_source: read-only adapter proof artifacts
+    suggested_dimension: novali.alert.type=read_only_secret_detected
+    suggested_threshold: any occurrence
+  - alert_key: read_only_wrong_lane_attribution
+    severity: high
+    implementation_state: local-evidence-only
+    evidence_source: lane-attribution and alert artifacts
+    suggested_dimension: novali.alert.type=read_only_wrong_lane_attribution
+    suggested_threshold: any occurrence
+  - alert_key: read_only_conflicting_observation
+    severity: high
+    implementation_state: local-evidence-only
+    evidence_source: observation replay plus alert artifacts
+    suggested_dimension: novali.alert.type=read_only_conflicting_observation
+    suggested_threshold: any occurrence
+  - alert_key: read_only_stale_snapshot
+    severity: warning
+    implementation_state: local-evidence-only
+    evidence_source: read-only adapter validation artifacts
+    suggested_dimension: novali.alert.type=read_only_stale_snapshot
+    suggested_threshold: operator-defined stale interval
+  - alert_key: controller_identity_bleed
+    severity: high
+    implementation_state: local-evidence-only
+    evidence_source: controller-isolation findings plus alert artifacts
+    suggested_dimension: novali.alert.type=controller_identity_bleed
+    suggested_threshold: any occurrence
+  - alert_key: scope_expansion_pressure
+    severity: warning
+    implementation_state: local-evidence-only
+    evidence_source: local operator-state evidence
+    suggested_dimension: novali.alert.type=scope_expansion_pressure
+    suggested_threshold: repeated occurrence inside one operator window

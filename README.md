@@ -47,7 +47,7 @@ NOVALI is **not** an unrestricted autonomous system.
 
 Governance truth lives in persisted artifacts. The UI is an operator surface over that governed state — not a second authority source.
 
----
+Governance truth lives in persisted artifacts. The UI is an operator surface over that governed state — not a second authority source. Telemetry, alerts, replay packets, review tickets, rollback analyses, and adapter observations are evidence surfaces; they do not become governance authority.
 
 ## What the current product can do
 
@@ -143,7 +143,7 @@ The operator should be able to tell:
 - what needs attention
 - what action resumes work
 
----
+### 6. Operator legibility
 
 ## Execution modes
 
@@ -225,15 +225,21 @@ These remain intentionally limited and reviewable.
 
 Coding-capable work occurs inside a governed active workspace such as:
 
-`novali-active_workspace/<workspace_id>/`
+Alerts may be raised from:
 
-Typical subfolders include:
+- read-only adapter validation failures
+- mutation-refusal events
+- evidence-integrity failures
+- source immutability failures
+- wrong-lane attribution
+- controller-isolation findings
+- telemetry shutdown/export degradation
+- review-hold or checkpoint concerns
+- rollback ambiguity
+- redaction failures
+- scope-expansion pressure
 
-- `src/`
-- `tests/`
-- `docs/`
-- `artifacts/`
-- `plans/`
+Alert lifecycle actions include:
 
 This keeps work bounded and reviewable instead of granting unrestricted write access across the repo or host.
 
@@ -241,9 +247,9 @@ This keeps work bounded and reviewable instead of granting unrestricted write ac
 
 ## Trusted sources
 
-Trusted sources are bounded evidence channels NOVALI may consult while fulfilling a directive.
+NOVALI includes inactive/mock-only controller-isolation primitives.
 
-Important distinction:
+The current isolation model defines three identity lanes:
 
 - **Governance truth** = persisted NOVALI artifacts
 - **External evidence** = trusted-source channels approved by the operator
@@ -320,7 +326,7 @@ Kubernetes, broad multi-agent orchestration, and open-ended external alerting/ex
 
 ## Current product phase
 
-NOVALI is now best described as:
+### Current target
 
 **a governed, packaged, operator-facing, multi-session bounded continuation framework**
 

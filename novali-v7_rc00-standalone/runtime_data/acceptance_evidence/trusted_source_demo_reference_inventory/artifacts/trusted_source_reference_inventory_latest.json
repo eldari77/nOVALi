@@ -1,0 +1,122 @@
+{
+  "active_bounded_reference_target_id": "workspace_advanced_successor_v3_live_c::prepare_candidate_promotion_bundle::bounded_reference_candidate",
+  "capability_id": "trusted_source_reference_inventory_capability_v1",
+  "generated_at": "2026-03-25T02:45:50.856077+00:00",
+  "knowledge_pack_id": "trusted_source_knowledge_pack::workspace_advanced_successor_v3_live_c::trusted_source_reference_inventory_capability_v1",
+  "missing_role_ids": [],
+  "present_role_ids": [
+    "v5_status_surface",
+    "v5_handoff_readme",
+    "v5_operator_guide",
+    "v5_web_ui_guide",
+    "v5_branch_transition_status",
+    "v5_version_handoff_status",
+    "v5_handoff_layout_manifest",
+    "v5_standalone_zip"
+  ],
+  "request_id": "trusted_source_request::workspace_advanced_successor_v3_live_c::trusted_source_reference_inventory_capability_v1",
+  "required_role_ids": [
+    "v5_status_surface",
+    "v5_handoff_readme",
+    "v5_operator_guide",
+    "v5_web_ui_guide",
+    "v5_branch_transition_status",
+    "v5_version_handoff_status",
+    "v5_handoff_layout_manifest",
+    "v5_standalone_zip"
+  ],
+  "required_roles_satisfied": true,
+  "role_rows": [
+    {
+      "absolute_path": "C:\\Users\\eLDARi\\Documents\\VScode\\.venv\\9D-Sim\\novali-v5\\ACTIVE_VERSION_STATUS.md",
+      "present": true,
+      "relative_path": "ACTIVE_VERSION_STATUS.md",
+      "role_id": "v5_status_surface",
+      "sha256": "b4581dcdecea4e676410d03c80ca0898cb27e10e711839ec8271f287f37c5fdb",
+      "size_bytes": 6149,
+      "source_id": "local_repo:novali-v5",
+      "title": "NOVALI v5 active-version status",
+      "why_relevant": "confirms that novali-v5 is frozen and rc44 is the closeout-ready packaged reference"
+    },
+    {
+      "absolute_path": "C:\\Users\\eLDARi\\Documents\\VScode\\.venv\\9D-Sim\\novali-v5\\HANDOFF_PACKAGE_README.md",
+      "present": true,
+      "relative_path": "HANDOFF_PACKAGE_README.md",
+      "role_id": "v5_handoff_readme",
+      "sha256": "72a0486aa6033d1bd75009adb2bde051b4ccfd4d8813866ac9e860d0aa87c182",
+      "size_bytes": 25829,
+      "source_id": "local_repo:novali-v5",
+      "title": "NOVALI v5 handoff package readme",
+      "why_relevant": "captures the bounded standalone handoff story that the v6 successor can inventory and compare against"
+    },
+    {
+      "absolute_path": "C:\\Users\\eLDARi\\Documents\\VScode\\.venv\\9D-Sim\\novali-v5\\STANDALONE_OPERATOR_GUIDE.md",
+      "present": true,
+      "relative_path": "STANDALONE_OPERATOR_GUIDE.md",
+      "role_id": "v5_operator_guide",
+      "sha256": "4011dd9ea8b61c4641fa153f1e8f3e637da7067cb6257c1839f44def3bd5eaed",
+      "size_bytes": 23327,
+      "source_id": "local_repo:novali-v5",
+      "title": "NOVALI v5 standalone operator guide",
+      "why_relevant": "preserves the packaged operator workflow guidance that the frozen v5 reference exposes"
+    },
+    {
+      "absolute_path": "C:\\Users\\eLDARi\\Documents\\VScode\\.venv\\9D-Sim\\novali-v5\\LOCALHOST_WEB_OPERATOR_UI.md",
+      "present": true,
+      "relative_path": "LOCALHOST_WEB_OPERATOR_UI.md",
+      "role_id": "v5_web_ui_guide",
+      "sha256": "041068fe991ba90647ce96ae28f7d630d0ed2edeb8854f90fbbfc03db24a56af",
+      "size_bytes": 19529,
+      "source_id": "local_repo:novali-v5",
+      "title": "NOVALI v5 localhost web operator guide",
+      "why_relevant": "records the reference operator-surface behavior and productized UI posture for v5"
+    },
+    {
+      "absolute_path": "C:\\Users\\eLDARi\\Documents\\VScode\\.venv\\9D-Sim\\novali-v5\\data\\branch_transition_status.json",
+      "present": true,
+      "relative_path": "branch_transition_status.json",
+      "role_id": "v5_branch_transition_status",
+      "sha256": "4cc2a78591411c0e07d12b42a2f37d0bc3c9ca3b69ffd9ac469c16cc906e13d6",
+      "size_bytes": 2489,
+      "source_id": "local_artifacts:novali-v5/data",
+      "title": "NOVALI v5 branch transition status",
+      "why_relevant": "records the explicit v5-frozen / v6-active authority transition that the trusted-source capability must preserve"
+    },
+    {
+      "absolute_path": "C:\\Users\\eLDARi\\Documents\\VScode\\.venv\\9D-Sim\\novali-v5\\data\\version_handoff_status.json",
+      "present": true,
+      "relative_path": "version_handoff_status.json",
+      "role_id": "v5_version_handoff_status",
+      "sha256": "e4b9b7aaa52fdb3226ef3f6c4d3d0ef83c650d5033c7b5f8f51175d92c4e56ca",
+      "size_bytes": 4122,
+      "source_id": "local_artifacts:novali-v5/data",
+      "title": "NOVALI v5 version handoff status",
+      "why_relevant": "captures the version-level handoff posture for the frozen v5 baseline"
+    },
+    {
+      "absolute_path": "C:\\Users\\eLDARi\\Documents\\VScode\\.venv\\9D-Sim\\novali-v5\\dist\\novali-v5-standalone-handoff\\handoff_layout_manifest.json",
+      "present": true,
+      "relative_path": "dist/novali-v5-standalone-handoff/handoff_layout_manifest.json",
+      "role_id": "v5_handoff_layout_manifest",
+      "sha256": "9a29c9177b13e3c9d9c0734ce89c69656d6cafc13b80926a5aa1c06d61423342",
+      "size_bytes": 3645,
+      "source_id": "local_repo:novali-v5",
+      "title": "NOVALI v5 standalone handoff layout manifest",
+      "why_relevant": "anchors the bounded handoff/package layout that the capability should inventory"
+    },
+    {
+      "absolute_path": "C:\\Users\\eLDARi\\Documents\\VScode\\.venv\\9D-Sim\\novali-v5\\dist\\novali-v5-standalone-handoff.zip",
+      "present": true,
+      "relative_path": "dist/novali-v5-standalone-handoff.zip",
+      "role_id": "v5_standalone_zip",
+      "sha256": "fd31c384137fe63f439aaa5ab461e674d35a699499b35b915aa1167ef2ea3517",
+      "size_bytes": 46021706,
+      "source_id": "local_repo:novali-v5",
+      "title": "NOVALI v5 standalone zip artifact",
+      "why_relevant": "provides the real frozen v5 zip artifact that the capability should track as a first-class reference output"
+    }
+  ],
+  "schema_name": "GovernedExecutionTrustedSourceReferenceInventory",
+  "schema_version": "governed_execution_trusted_source_reference_inventory_v1",
+  "workspace_root": "C:\\Users\\eLDARi\\Documents\\VScode\\.venv\\9D-Sim\\novali-v6\\novali-active_workspace\\workspace_advanced_successor_v3_live_c"
+}

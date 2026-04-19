@@ -1,0 +1,116 @@
+{
+  "advisory_only": true,
+  "after_reviewable_output_count": 4,
+  "after_summary": "Local shell shows capability; preserved novali-v5 evidence closes independent proof gap without network.",
+  "artifact_paths": [
+    "C:\\Users\\eLDARi\\Documents\\VScode\\.venv\\9D-Sim\\novali-v7\\dist\\novali-v7_rc00-standalone\\samples\\directives\\standalone_trusted_source_reference_inventory_demo.example.json",
+    "C:\\Users\\eLDARi\\Documents\\VScode\\.venv\\9D-Sim\\novali-v7\\dist\\novali-v7_rc00-standalone\\runtime_data\\acceptance_evidence\\trusted_source_demo_reference_inventory\\artifacts\\trusted_source_request_latest.json",
+    "C:\\Users\\eLDARi\\Documents\\VScode\\.venv\\9D-Sim\\novali-v7\\dist\\novali-v7_rc00-standalone\\runtime_data\\acceptance_evidence\\trusted_source_demo_reference_inventory\\artifacts\\trusted_source_knowledge_pack_latest.json",
+    "C:\\Users\\eLDARi\\Documents\\VScode\\.venv\\9D-Sim\\novali-v7\\dist\\novali-v7_rc00-standalone\\runtime_data\\acceptance_evidence\\trusted_source_demo_reference_inventory\\artifacts\\trusted_source_reference_inventory_latest.json",
+    "C:\\Users\\eLDARi\\Documents\\VScode\\.venv\\9D-Sim\\novali-v7\\dist\\novali-v7_rc00-standalone\\runtime_data\\acceptance_evidence\\trusted_source_demo_reference_inventory\\docs\\trusted_source_reference_inventory_note.md",
+    "C:\\Users\\eLDARi\\Documents\\VScode\\.venv\\9D-Sim\\novali-v7\\dist\\novali-v7_rc00-standalone\\trusted_sources\\skill_packs\\trusted_reference_inventory_integration_pack_v1.json",
+    "C:\\Users\\eLDARi\\Documents\\VScode\\.venv\\9D-Sim\\novali-v7\\dist\\novali-v7_rc00-standalone\\novali-active_workspace\\workspace_advanced_successor_v3_live_c\\artifacts\\trusted_source_live_demo_improvement_latest.json",
+    "C:\\Users\\eLDARi\\Documents\\VScode\\.venv\\9D-Sim\\novali-v7\\dist\\novali-v7_rc00-standalone\\operator_state\\controller_trusted_demo_request_latest.json",
+    "C:\\Users\\eLDARi\\Documents\\VScode\\.venv\\9D-Sim\\novali-v7\\dist\\novali-v7_rc00-standalone\\operator_state\\controller_trusted_demo_response_summary_latest.json",
+    "C:\\Users\\eLDARi\\Documents\\VScode\\.venv\\9D-Sim\\novali-v7\\dist\\novali-v7_rc00-standalone\\operator_state\\controller_trusted_demo_incorporation_latest.json",
+    "C:\\Users\\eLDARi\\Documents\\VScode\\.venv\\9D-Sim\\novali-v7\\dist\\novali-v7_rc00-standalone\\operator_state\\controller_trusted_demo_growth_artifact_latest.json",
+    "C:\\Users\\eLDARi\\Documents\\VScode\\.venv\\9D-Sim\\novali-v7\\dist\\novali-v7_rc00-standalone\\operator_state\\controller_trusted_demo_delta_summary_latest.json",
+    "C:\\Users\\eLDARi\\Documents\\VScode\\.venv\\9D-Sim\\novali-v7\\dist\\novali-v7_rc00-standalone\\operator_state\\controller_trusted_live_request_latest.json",
+    "C:\\Users\\eLDARi\\Documents\\VScode\\.venv\\9D-Sim\\novali-v7\\dist\\novali-v7_rc00-standalone\\operator_state\\controller_trusted_live_response_summary_latest.json",
+    "C:\\Users\\eLDARi\\Documents\\VScode\\.venv\\9D-Sim\\novali-v7\\dist\\novali-v7_rc00-standalone\\operator_state\\controller_trusted_live_validation_summary_latest.json"
+  ],
+  "before_after_delta_summary": "Add preserved novali-v5 repo line and data artifacts to re-prove frozen provenance set.",
+  "before_reviewable_output_count": 0,
+  "before_summary": "The trusted-source run made the frozen-reference story more complete, more confident, and more reviewable by grounding the local helper/test/note/inventory chain in bounded preserved v5 evidence.",
+  "delta_state": "awaiting_review",
+  "delta_state_label": "Awaiting review",
+  "directive_id": "directive_novali_v6_trusted_reference_inventory_growth_demo_v1",
+  "generated_at": "2026-03-29T01:37:12.433452+00:00",
+  "improved_output_count": 4,
+  "improved_outputs": [
+    {
+      "label": "Trusted-source live review artifact",
+      "produced_by_live_external_step": true,
+      "reviewable_now": true,
+      "status": "updated"
+    },
+    {
+      "label": "Trusted reference inventory artifact",
+      "produced_by_live_external_step": true,
+      "reviewable_now": true,
+      "status": "updated"
+    },
+    {
+      "label": "Trusted reference inventory note",
+      "produced_by_live_external_step": true,
+      "reviewable_now": true,
+      "status": "updated"
+    },
+    {
+      "label": "Trusted reference inventory integration skill pack",
+      "produced_by_live_external_step": true,
+      "reviewable_now": true,
+      "status": "updated"
+    }
+  ],
+  "improved_outputs_summary": "Live external corroboration updated the inventory artifact, workspace note, reusable skill pack, and a new live demo-improvement artifact.",
+  "material_improvement_achieved": true,
+  "mission_id": "",
+  "non_authoritative_note": "This live before/after delta is operator support only; it records bounded improvement evidence without implying broader autonomy, hidden policy change, or authority transfer.",
+  "output_state": "improved_outputs_available",
+  "output_state_label": "Improved outputs available",
+  "post_escalation_state": "knowledge_incorporated",
+  "post_escalation_state_label": "Knowledge incorporated",
+  "pre_escalation_state": "local_only_insufficient",
+  "pre_escalation_state_label": "Local only insufficient",
+  "recorded_at": "2026-03-29T01:37:12.429770+00:00",
+  "request_state": "trusted_source_requested",
+  "request_state_label": "Trusted source requested",
+  "response_state": "response_received",
+  "response_state_label": "Response received",
+  "reviewable_output_count": 4,
+  "reviewable_outputs": [
+    {
+      "label": "Trusted-source live review artifact",
+      "produced_by_live_external_step": true,
+      "reviewable_now": true,
+      "status": "updated"
+    },
+    {
+      "label": "Trusted reference inventory artifact",
+      "produced_by_live_external_step": true,
+      "reviewable_now": true,
+      "status": "updated"
+    },
+    {
+      "label": "Trusted reference inventory note",
+      "produced_by_live_external_step": true,
+      "reviewable_now": true,
+      "status": "updated"
+    },
+    {
+      "label": "Trusted reference inventory integration skill pack",
+      "produced_by_live_external_step": true,
+      "reviewable_now": true,
+      "status": "updated"
+    }
+  ],
+  "scenario_id": "packaged_trusted_source_reference_inventory_growth_candidate",
+  "scenario_name": "Packaged trusted-source reference inventory growth candidate",
+  "schema_name": "ControllerTrustedDemoBeforeAfterDelta",
+  "schema_version": "controller_trusted_demo_before_after_delta_v1",
+  "secret_persisted": false,
+  "unresolved_items": [
+    {
+      "label": "Operator review before reuse",
+      "summary": "Operator review remains recommended before reuse of the live-correlated skill artifact."
+    }
+  ],
+  "unresolved_state": "awaiting_review",
+  "unresolved_state_label": "Awaiting review",
+  "what_improved_summary": "The trusted-source demo now shows a bounded live external corroboration step on top of the preserved-source path, with explicit updated outputs and a reusable skill-pack companion note.",
+  "what_remains_unresolved_summary": "Operator review remains recommended before reuse of the live-correlated skill artifact.",
+  "what_this_run_proves_summary": "NOVALI can preserve its local-first and preserved-source story, add one bounded live external request, incorporate that external response into reviewable outputs, and capture the resulting before/after delta without broadening authority.",
+  "workspace_id": "workspace_advanced_successor_v3_live_c",
+  "workspace_root": "C:\\Users\\eLDARi\\Documents\\VScode\\.venv\\9D-Sim\\novali-v6\\dist\\v6_rc39_live_demo_improvement_validation_final\\unpacked\\novali-v6_rc39-standalone\\novali-active_workspace\\workspace_advanced_successor_v3_live_c"
+}

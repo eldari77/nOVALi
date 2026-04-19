@@ -1,0 +1,17 @@
+{
+  "candidate_kind": "workspace_local_helper_module",
+  "capability_gap_id": "trusted_source_gap::workspace_advanced_successor_v3_live_c::trusted_source_reference_inventory_capability_v1",
+  "capability_id": "trusted_source_reference_inventory_capability_v1",
+  "directive_id": "directive_build_advanced_successor_v3",
+  "expected_output_path": "C:\\Users\\eLDARi\\Documents\\VScode\\.venv\\9D-Sim\\novali-v6\\novali-active_workspace\\workspace_advanced_successor_v3_live_c\\artifacts\\trusted_source_reference_inventory_latest.json",
+  "generated_at": "2026-03-25T02:45:50.822444+00:00",
+  "governance_authority_note": "this helper may consume trusted-source evidence but does not mutate governance authority surfaces",
+  "intended_use": "inventory the frozen novali-v5 reference baseline with explicit provenance before later v6 work depends on those assets",
+  "knowledge_pack_id": "trusted_source_knowledge_pack::workspace_advanced_successor_v3_live_c::trusted_source_reference_inventory_capability_v1",
+  "module_path": "C:\\Users\\eLDARi\\Documents\\VScode\\.venv\\9D-Sim\\novali-v6\\novali-active_workspace\\workspace_advanced_successor_v3_live_c\\src\\successor_shell\\trusted_reference_inventory.py",
+  "schema_name": "GovernedExecutionTrustedSourceSkillCandidate",
+  "schema_version": "governed_execution_trusted_source_skill_candidate_v1",
+  "test_path": "C:\\Users\\eLDARi\\Documents\\VScode\\.venv\\9D-Sim\\novali-v6\\novali-active_workspace\\workspace_advanced_successor_v3_live_c\\tests\\test_trusted_reference_inventory.py",
+  "workspace_id": "workspace_advanced_successor_v3_live_c",
+  "workspace_root": "C:\\Users\\eLDARi\\Documents\\VScode\\.venv\\9D-Sim\\novali-v6\\novali-active_workspace\\workspace_advanced_successor_v3_live_c"
+}

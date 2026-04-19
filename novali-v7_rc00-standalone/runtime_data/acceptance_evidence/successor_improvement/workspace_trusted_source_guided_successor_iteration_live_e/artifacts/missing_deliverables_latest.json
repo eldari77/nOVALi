@@ -1,0 +1,8 @@
+{
+  "missing_required_deliverables": [
+    {
+      "deliverable_id": "successor_readiness_bundle",
+      "reason": "the next canonical handoff still needs refreshed bounded successor-improvement evidence before rebuild"
+    }
+  ]
+}

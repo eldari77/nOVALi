@@ -1,0 +1,55 @@
+{
+  "advisory_only": true,
+  "artifact_paths": [
+    "C:\\Users\\eLDARi\\Documents\\VScode\\.venv\\9D-Sim\\novali-v7\\dist\\novali-v7_rc00-standalone\\operator_state\\trusted_source_credential_status_latest.json",
+    "C:\\Users\\eLDARi\\Documents\\VScode\\.venv\\9D-Sim\\novali-v7\\dist\\novali-v7_rc00-standalone\\operator_state\\trusted_source_provider_status_latest.json",
+    "C:\\Users\\eLDARi\\Documents\\VScode\\.venv\\9D-Sim\\novali-v7\\dist\\novali-v7_rc00-standalone\\operator_state\\trusted_source_handshake_latest.json",
+    "C:\\Users\\eLDARi\\Documents\\VScode\\.venv\\9D-Sim\\novali-v7\\dist\\novali-v7_rc00-standalone\\operator_state\\trusted_source_session_contract_latest.json",
+    "C:\\Users\\eLDARi\\Documents\\VScode\\.venv\\9D-Sim\\novali-v7\\dist\\novali-v7_rc00-standalone\\operator_state\\trusted_source_request_contract_latest.json",
+    "C:\\Users\\eLDARi\\Documents\\VScode\\.venv\\9D-Sim\\novali-v7\\dist\\novali-v7_rc00-standalone\\operator_state\\trusted_source_response_template_latest.json",
+    "C:\\Users\\eLDARi\\Documents\\VScode\\.venv\\9D-Sim\\novali-v7\\dist\\novali-v7_rc00-standalone\\operator_state\\controller_trusted_live_connectivity_latest.json",
+    "C:\\Users\\eLDARi\\Documents\\VScode\\.venv\\9D-Sim\\novali-v7\\dist\\novali-v7_rc00-standalone\\operator_state\\controller_trusted_live_request_latest.json",
+    "C:\\Users\\eLDARi\\Documents\\VScode\\.venv\\9D-Sim\\novali-v7\\dist\\novali-v7_rc00-standalone\\operator_state\\controller_trusted_live_response_summary_latest.json",
+    "C:\\Users\\eLDARi\\Documents\\VScode\\.venv\\9D-Sim\\novali-v7\\dist\\novali-v7_rc00-standalone\\operator_state\\controller_trusted_live_evidence_receipt_latest.json",
+    "C:\\Users\\eLDARi\\Documents\\VScode\\.venv\\9D-Sim\\novali-v7\\dist\\novali-v7_rc00-standalone\\operator_state\\controller_trusted_live_validation_summary_latest.json"
+  ],
+  "directive_id": "",
+  "entries": [
+    {
+      "connectivity_state": "response_received",
+      "external_communication_proven": true,
+      "provider_id": "openai_api",
+      "provider_response_id": "resp_0a111d7431ba0b110169c869a14d1c8191ab10cfa1a87b59e9",
+      "recorded_at": "2026-03-28T23:52:03.320257+00:00",
+      "request_state": "attempted",
+      "response_received": true,
+      "response_state": "response_received",
+      "selected_model": "gpt-5.2-2025-12-11",
+      "validation_signature": "982f1eb33d557c2e1dacef57260088e551645fd4a9cd42afa17e073bcb33ec14",
+      "validation_state": "response_received_but_review_recommended"
+    }
+  ],
+  "entry_count": 1,
+  "generated_at": "2026-03-28T23:52:03.321883+00:00",
+  "latest_validation_signature": "982f1eb33d557c2e1dacef57260088e551645fd4a9cd42afa17e073bcb33ec14",
+  "recent_entries": [
+    {
+      "connectivity_state": "response_received",
+      "external_communication_proven": true,
+      "provider_id": "openai_api",
+      "provider_response_id": "resp_0a111d7431ba0b110169c869a14d1c8191ab10cfa1a87b59e9",
+      "recorded_at": "2026-03-28T23:52:03.320257+00:00",
+      "request_state": "attempted",
+      "response_received": true,
+      "response_state": "response_received",
+      "selected_model": "gpt-5.2-2025-12-11",
+      "validation_signature": "982f1eb33d557c2e1dacef57260088e551645fd4a9cd42afa17e073bcb33ec14",
+      "validation_state": "response_received_but_review_recommended"
+    }
+  ],
+  "recorded_at": "2026-03-28T23:52:03.320284+00:00",
+  "schema_name": "ControllerTrustedLiveConnectivityHistory",
+  "schema_version": "controller_trusted_live_connectivity_history_v1",
+  "workspace_id": "",
+  "workspace_root": ""
+}

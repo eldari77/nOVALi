@@ -1,0 +1,147 @@
+{
+  "bundled_refresh_manifest_path": "runtime_data\\acceptance_evidence\\successor_improvement\\successor_handoff_refresh_manifest_latest.json",
+  "bundled_summary_path": "runtime_data\\acceptance_evidence\\successor_improvement\\successor_package_improvement_summary_latest.json",
+  "generated_at": "2026-04-19T21:21:10.715578+00:00",
+  "governance_authority_note": "trusted-source mission policy may improve package evidence and implementation support, but never replaces directive, policy, or protected governance authority",
+  "handoff_refresh_recommended": true,
+  "mission_objective_id": "improve_successor_package_readiness",
+  "package_doc_relative_path": "docs/SUCCESSOR_IMPROVEMENT_EVIDENCE.md",
+  "package_improvement_state": "trusted_source_guided_successor_package_refresh_ready",
+  "package_improvement_summary": "The bounded successor-improvement mission validated trusted-source-guided structural audit evidence and refreshed the readiness bundle so the next canonical handoff can ship stronger package review support.",
+  "package_manifest_relative_path": "runtime_data/acceptance_evidence/successor_improvement/package_successor_improvement_manifest.json",
+  "package_version": "novali-v7_rc00-standalone",
+  "packaged_entries": [
+    {
+      "absolute_source_path": "C:\\Users\\eLDARi\\Documents\\VScode\\.venv\\9D-Sim\\novali-v6\\novali-active_workspace\\workspace_trusted_source_guided_successor_iteration_live_e\\docs\\successor_package_readiness_note.md",
+      "package_relative_path": "runtime_data/acceptance_evidence/successor_improvement/workspace_trusted_source_guided_successor_iteration_live_e/docs/successor_package_readiness_note.md",
+      "packaging_reason": "bounded successor-readiness note refreshed by the current mission",
+      "source_path": "C:\\Users\\eLDARi\\Documents\\VScode\\.venv\\9D-Sim\\novali-v6\\novali-active_workspace\\workspace_trusted_source_guided_successor_iteration_live_e\\docs\\successor_package_readiness_note.md",
+      "source_relative_path": "docs/successor_package_readiness_note.md"
+    },
+    {
+      "absolute_source_path": "C:\\Users\\eLDARi\\Documents\\VScode\\.venv\\9D-Sim\\novali-v6\\novali-active_workspace\\workspace_trusted_source_guided_successor_iteration_live_e\\artifacts\\successor_readiness_evaluation_latest.json",
+      "package_relative_path": "runtime_data/acceptance_evidence/successor_improvement/workspace_trusted_source_guided_successor_iteration_live_e/artifacts/successor_readiness_evaluation_latest.json",
+      "packaging_reason": "structured readiness evaluation strengthened by the current mission",
+      "source_path": "C:\\Users\\eLDARi\\Documents\\VScode\\.venv\\9D-Sim\\novali-v6\\novali-active_workspace\\workspace_trusted_source_guided_successor_iteration_live_e\\artifacts\\successor_readiness_evaluation_latest.json",
+      "source_relative_path": "artifacts/successor_readiness_evaluation_latest.json"
+    },
+    {
+      "absolute_source_path": "C:\\Users\\eLDARi\\Documents\\VScode\\.venv\\9D-Sim\\novali-v6\\novali-active_workspace\\workspace_trusted_source_guided_successor_iteration_live_e\\artifacts\\successor_delivery_manifest_latest.json",
+      "package_relative_path": "runtime_data/acceptance_evidence/successor_improvement/workspace_trusted_source_guided_successor_iteration_live_e/artifacts/successor_delivery_manifest_latest.json",
+      "packaging_reason": "delivery manifest aligned to the current successor-improvement cycle",
+      "source_path": "C:\\Users\\eLDARi\\Documents\\VScode\\.venv\\9D-Sim\\novali-v6\\novali-active_workspace\\workspace_trusted_source_guided_successor_iteration_live_e\\artifacts\\successor_delivery_manifest_latest.json",
+      "source_relative_path": "artifacts/successor_delivery_manifest_latest.json"
+    },
+    {
+      "absolute_source_path": "C:\\Users\\eLDARi\\Documents\\VScode\\.venv\\9D-Sim\\novali-v6\\novali-active_workspace\\workspace_trusted_source_guided_successor_iteration_live_e\\artifacts\\trusted_source_mission_policy_latest.json",
+      "package_relative_path": "runtime_data/acceptance_evidence/successor_improvement/workspace_trusted_source_guided_successor_iteration_live_e/artifacts/trusted_source_mission_policy_latest.json",
+      "packaging_reason": "mission-level trusted-source policy decision used during the successor-improvement cycle",
+      "source_path": "C:\\Users\\eLDARi\\Documents\\VScode\\.venv\\9D-Sim\\novali-v6\\novali-active_workspace\\workspace_trusted_source_guided_successor_iteration_live_e\\artifacts\\trusted_source_mission_policy_latest.json",
+      "source_relative_path": "artifacts/trusted_source_mission_policy_latest.json"
+    },
+    {
+      "absolute_source_path": "C:\\Users\\eLDARi\\Documents\\VScode\\.venv\\9D-Sim\\novali-v6\\novali-active_workspace\\workspace_trusted_source_guided_successor_iteration_live_e\\artifacts\\trusted_source_escalation_decision_latest.json",
+      "package_relative_path": "runtime_data/acceptance_evidence/successor_improvement/workspace_trusted_source_guided_successor_iteration_live_e/artifacts/trusted_source_escalation_decision_latest.json",
+      "packaging_reason": "escalation decision showing why local-only, reuse, re-query, or review was chosen",
+      "source_path": "C:\\Users\\eLDARi\\Documents\\VScode\\.venv\\9D-Sim\\novali-v6\\novali-active_workspace\\workspace_trusted_source_guided_successor_iteration_live_e\\artifacts\\trusted_source_escalation_decision_latest.json",
+      "source_relative_path": "artifacts/trusted_source_escalation_decision_latest.json"
+    },
+    {
+      "absolute_source_path": "C:\\Users\\eLDARi\\Documents\\VScode\\.venv\\9D-Sim\\novali-v6\\novali-active_workspace\\workspace_trusted_source_guided_successor_iteration_live_e\\artifacts\\trusted_source_mission_orchestration_latest.json",
+      "package_relative_path": "runtime_data/acceptance_evidence/successor_improvement/workspace_trusted_source_guided_successor_iteration_live_e/artifacts/trusted_source_mission_orchestration_latest.json",
+      "packaging_reason": "orchestration record tying the trusted-source path back to the mission",
+      "source_path": "C:\\Users\\eLDARi\\Documents\\VScode\\.venv\\9D-Sim\\novali-v6\\novali-active_workspace\\workspace_trusted_source_guided_successor_iteration_live_e\\artifacts\\trusted_source_mission_orchestration_latest.json",
+      "source_relative_path": "artifacts/trusted_source_mission_orchestration_latest.json"
+    },
+    {
+      "absolute_source_path": "C:\\Users\\eLDARi\\Documents\\VScode\\.venv\\9D-Sim\\novali-v6\\novali-active_workspace\\workspace_trusted_source_guided_successor_iteration_live_e\\artifacts\\trusted_source_aggressiveness_policy_latest.json",
+      "package_relative_path": "runtime_data/acceptance_evidence/successor_improvement/workspace_trusted_source_guided_successor_iteration_live_e/artifacts/trusted_source_aggressiveness_policy_latest.json",
+      "packaging_reason": "bounded aggressiveness policy active for the mission",
+      "source_path": "C:\\Users\\eLDARi\\Documents\\VScode\\.venv\\9D-Sim\\novali-v6\\novali-active_workspace\\workspace_trusted_source_guided_successor_iteration_live_e\\artifacts\\trusted_source_aggressiveness_policy_latest.json",
+      "source_relative_path": "artifacts/trusted_source_aggressiveness_policy_latest.json"
+    },
+    {
+      "absolute_source_path": "C:\\Users\\eLDARi\\Documents\\VScode\\.venv\\9D-Sim\\novali-v6\\novali-active_workspace\\workspace_trusted_source_guided_successor_iteration_live_e\\artifacts\\trusted_source_escalation_thresholds_latest.json",
+      "package_relative_path": "runtime_data/acceptance_evidence/successor_improvement/workspace_trusted_source_guided_successor_iteration_live_e/artifacts/trusted_source_escalation_thresholds_latest.json",
+      "packaging_reason": "escalation thresholds used to keep trusted-source invocation conservative",
+      "source_path": "C:\\Users\\eLDARi\\Documents\\VScode\\.venv\\9D-Sim\\novali-v6\\novali-active_workspace\\workspace_trusted_source_guided_successor_iteration_live_e\\artifacts\\trusted_source_escalation_thresholds_latest.json",
+      "source_relative_path": "artifacts/trusted_source_escalation_thresholds_latest.json"
+    },
+    {
+      "absolute_source_path": "C:\\Users\\eLDARi\\Documents\\VScode\\.venv\\9D-Sim\\novali-v6\\novali-active_workspace\\workspace_trusted_source_guided_successor_iteration_live_e\\artifacts\\trusted_source_reuse_decision_latest.json",
+      "package_relative_path": "runtime_data/acceptance_evidence/successor_improvement/workspace_trusted_source_guided_successor_iteration_live_e/artifacts/trusted_source_reuse_decision_latest.json",
+      "packaging_reason": "reuse decision showing whether indexed knowledge was sufficient",
+      "source_path": "C:\\Users\\eLDARi\\Documents\\VScode\\.venv\\9D-Sim\\novali-v6\\novali-active_workspace\\workspace_trusted_source_guided_successor_iteration_live_e\\artifacts\\trusted_source_reuse_decision_latest.json",
+      "source_relative_path": "artifacts/trusted_source_reuse_decision_latest.json"
+    },
+    {
+      "absolute_source_path": "C:\\Users\\eLDARi\\Documents\\VScode\\.venv\\9D-Sim\\novali-v6\\novali-active_workspace\\workspace_trusted_source_guided_successor_iteration_live_e\\artifacts\\trusted_source_requery_decision_latest.json",
+      "package_relative_path": "runtime_data/acceptance_evidence/successor_improvement/workspace_trusted_source_guided_successor_iteration_live_e/artifacts/trusted_source_requery_decision_latest.json",
+      "packaging_reason": "re-query decision showing whether external acquisition was required",
+      "source_path": "C:\\Users\\eLDARi\\Documents\\VScode\\.venv\\9D-Sim\\novali-v6\\novali-active_workspace\\workspace_trusted_source_guided_successor_iteration_live_e\\artifacts\\trusted_source_requery_decision_latest.json",
+      "source_relative_path": "artifacts/trusted_source_requery_decision_latest.json"
+    },
+    {
+      "absolute_source_path": "C:\\Users\\eLDARi\\Documents\\VScode\\.venv\\9D-Sim\\novali-v6\\novali-active_workspace\\workspace_trusted_source_guided_successor_iteration_live_e\\artifacts\\trusted_source_reuse_vs_requery_latest.json",
+      "package_relative_path": "runtime_data/acceptance_evidence/successor_improvement/workspace_trusted_source_guided_successor_iteration_live_e/artifacts/trusted_source_reuse_vs_requery_latest.json",
+      "packaging_reason": "combined reuse-vs-requery state for the successor-improvement cycle",
+      "source_path": "C:\\Users\\eLDARi\\Documents\\VScode\\.venv\\9D-Sim\\novali-v6\\novali-active_workspace\\workspace_trusted_source_guided_successor_iteration_live_e\\artifacts\\trusted_source_reuse_vs_requery_latest.json",
+      "source_relative_path": "artifacts/trusted_source_reuse_vs_requery_latest.json"
+    },
+    {
+      "absolute_source_path": "C:\\Users\\eLDARi\\Documents\\VScode\\.venv\\9D-Sim\\novali-v6\\novali-active_workspace\\workspace_trusted_source_guided_successor_iteration_live_e\\artifacts\\trusted_source_capability_result_latest.json",
+      "package_relative_path": "runtime_data/acceptance_evidence/successor_improvement/workspace_trusted_source_guided_successor_iteration_live_e/artifacts/trusted_source_capability_result_latest.json",
+      "packaging_reason": "validated trusted-source capability result applied to the successor-improvement mission",
+      "source_path": "C:\\Users\\eLDARi\\Documents\\VScode\\.venv\\9D-Sim\\novali-v6\\novali-active_workspace\\workspace_trusted_source_guided_successor_iteration_live_e\\artifacts\\trusted_source_capability_result_latest.json",
+      "source_relative_path": "artifacts/trusted_source_capability_result_latest.json"
+    },
+    {
+      "absolute_source_path": "C:\\Users\\eLDARi\\Documents\\VScode\\.venv\\9D-Sim\\novali-v6\\novali-active_workspace\\workspace_trusted_source_guided_successor_iteration_live_e\\artifacts\\trusted_source_external_zip_audit_report_latest.json",
+      "package_relative_path": "runtime_data/acceptance_evidence/successor_improvement/workspace_trusted_source_guided_successor_iteration_live_e/artifacts/trusted_source_external_zip_audit_report_latest.json",
+      "packaging_reason": "structural audit evidence used to strengthen successor package review",
+      "source_path": "C:\\Users\\eLDARi\\Documents\\VScode\\.venv\\9D-Sim\\novali-v6\\novali-active_workspace\\workspace_trusted_source_guided_successor_iteration_live_e\\artifacts\\trusted_source_external_zip_audit_report_latest.json",
+      "source_relative_path": "artifacts/trusted_source_external_zip_audit_report_latest.json"
+    },
+    {
+      "absolute_source_path": "C:\\Users\\eLDARi\\Documents\\VScode\\.venv\\9D-Sim\\novali-v6\\novali-active_workspace\\workspace_trusted_source_guided_successor_iteration_live_e\\artifacts\\trusted_source_knowledge_selection_latest.json",
+      "package_relative_path": "runtime_data/acceptance_evidence/successor_improvement/workspace_trusted_source_guided_successor_iteration_live_e/artifacts/trusted_source_knowledge_selection_latest.json",
+      "packaging_reason": "knowledge selection record for the trusted-source-guided mission outcome",
+      "source_path": "C:\\Users\\eLDARi\\Documents\\VScode\\.venv\\9D-Sim\\novali-v6\\novali-active_workspace\\workspace_trusted_source_guided_successor_iteration_live_e\\artifacts\\trusted_source_knowledge_selection_latest.json",
+      "source_relative_path": "artifacts/trusted_source_knowledge_selection_latest.json"
+    },
+    {
+      "absolute_source_path": "C:\\Users\\eLDARi\\Documents\\VScode\\.venv\\9D-Sim\\novali-v6\\novali-active_workspace\\workspace_trusted_source_guided_successor_iteration_live_e\\docs\\successor_package_improvement_note.md",
+      "package_relative_path": "runtime_data/acceptance_evidence/successor_improvement/workspace_trusted_source_guided_successor_iteration_live_e/docs/successor_package_improvement_note.md",
+      "packaging_reason": "human-readable successor-improvement note summarizing the bounded mission outcome",
+      "source_path": "C:\\Users\\eLDARi\\Documents\\VScode\\.venv\\9D-Sim\\novali-v6\\novali-active_workspace\\workspace_trusted_source_guided_successor_iteration_live_e\\docs\\successor_package_improvement_note.md",
+      "source_relative_path": "docs/successor_package_improvement_note.md"
+    },
+    {
+      "artifact_role": "benchmark_support",
+      "package_relative_path": "runtime_data/acceptance_evidence/successor_improvement/workspace_trusted_source_guided_successor_iteration_live_e/artifacts/missing_deliverables_latest.json",
+      "source_path": "C:\\Users\\eLDARi\\Documents\\VScode\\.venv\\9D-Sim\\novali-v6\\novali-active_workspace\\workspace_trusted_source_guided_successor_iteration_live_e\\artifacts\\missing_deliverables_latest.json",
+      "source_relative_path": "artifacts/missing_deliverables_latest.json"
+    },
+    {
+      "artifact_role": "benchmark_support",
+      "package_relative_path": "runtime_data/acceptance_evidence/successor_improvement/workspace_trusted_source_guided_successor_iteration_live_e/artifacts/successor_handoff_refresh_manifest_latest.json",
+      "source_path": "C:\\Users\\eLDARi\\Documents\\VScode\\.venv\\9D-Sim\\novali-v6\\novali-active_workspace\\workspace_trusted_source_guided_successor_iteration_live_e\\artifacts\\successor_handoff_refresh_manifest_latest.json",
+      "source_relative_path": "artifacts/successor_handoff_refresh_manifest_latest.json"
+    },
+    {
+      "artifact_role": "benchmark_support",
+      "package_relative_path": "runtime_data/acceptance_evidence/successor_improvement/workspace_trusted_source_guided_successor_iteration_live_e/artifacts/workspace_artifact_index_latest.json",
+      "source_path": "C:\\Users\\eLDARi\\Documents\\VScode\\.venv\\9D-Sim\\novali-v6\\novali-active_workspace\\workspace_trusted_source_guided_successor_iteration_live_e\\artifacts\\workspace_artifact_index_latest.json",
+      "source_relative_path": "artifacts/workspace_artifact_index_latest.json"
+    }
+  ],
+  "packaged_entry_count": 18,
+  "schema_name": "NovaliStandaloneSuccessorImprovementEvidence",
+  "schema_version": "novali_standalone_successor_improvement_evidence_v1",
+  "source_refresh_manifest_path": "C:\\Users\\eLDARi\\Documents\\VScode\\.venv\\9D-Sim\\novali-v7\\novali-active_workspace\\workspace_trusted_source_guided_successor_iteration_live_e\\artifacts\\successor_handoff_refresh_manifest_latest.json",
+  "source_summary_path": "C:\\Users\\eLDARi\\Documents\\VScode\\.venv\\9D-Sim\\novali-v6\\novali-active_workspace\\workspace_trusted_source_guided_successor_iteration_live_e\\artifacts\\successor_package_improvement_summary_latest.json",
+  "source_workspace_id": "workspace_trusted_source_guided_successor_iteration_live_e",
+  "source_workspace_root": "C:\\Users\\eLDARi\\Documents\\VScode\\.venv\\9D-Sim\\novali-v6\\novali-active_workspace\\workspace_trusted_source_guided_successor_iteration_live_e",
+  "trusted_source_mission_policy_state": "reuse_indexed_trusted_source_knowledge",
+  "trusted_source_selected_knowledge_id": "trusted_source_external_zip_audit_guidance_v3"
+}
