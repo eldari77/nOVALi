@@ -1,0 +1,23 @@
+{
+  "directive_id": "sample_generic_operations_improvement_v1",
+  "title": "Generic Operator Workflow Improvement",
+  "summary": "Improve an operator-facing workflow through governed evidence, reusable packs, and bounded local artifacts.",
+  "objective": "Make an existing operational workflow easier to inspect, recover, and improve.",
+  "scope": [
+    "Describe current operator decisions.",
+    "Identify friction points and safety boundaries.",
+    "Create reusable knowledge or skill pack candidates when evidence becomes durable."
+  ],
+  "expected_outcomes": [
+    "A workflow diagram requirements packet.",
+    "A prototype instruction outline for the improved workflow.",
+    "A research gap map for missing evidence.",
+    "A candidate comparison of improvement paths."
+  ],
+  "success_criteria": [
+    "The shell surfaces current state and next operator action clearly.",
+    "Generated evidence is reusable by the Librarian.",
+    "No secrets or private runtime state are persisted in public artifacts."
+  ]
+}
+

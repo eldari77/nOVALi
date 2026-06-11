@@ -1,0 +1,81 @@
+name: novali-v7-local-llm
+
+services:
+  novali:
+    image: novali-v7-standalone:local
+    restart: unless-stopped
+    build:
+      context: .
+      dockerfile: Dockerfile
+    depends_on:
+      ollama:
+        condition: service_started
+    ports:
+      - "127.0.0.1:8787:8787"
+    environment:
+      NOVALI_OPERATOR_ROOT: /workspace/novali/operator_state
+      NOVALI_STATE_ROOT: /workspace/novali/runtime_data/state
+      NOVALI_DISK_SPILL_ROOT: ${NOVALI_DISK_SPILL_ROOT:-/workspace/novali_disk_spill}
+      NOVALI_MEMORY_SPILL_PROFILE: ${NOVALI_MEMORY_SPILL_PROFILE:-aggressive}
+      NOVALI_LOCAL_LLM_BASE_URL: http://ollama:11434
+      NOVALI_LOCAL_LLM_MODEL: ${NOVALI_LOCAL_LLM_MODEL:-llama3.1}
+      NOVALI_LOCAL_LLM_TIMEOUT_SECONDS: ${NOVALI_LOCAL_LLM_TIMEOUT_SECONDS:-180}
+      OPENAI_API_KEY: ${OPENAI_API_KEY:-}
+      NOVALI_TRUSTED_SOURCE_API_BASE_URL: ${NOVALI_TRUSTED_SOURCE_API_BASE_URL:-}
+      NOVALI_OTEL_ENABLED: ${NOVALI_OTEL_ENABLED:-false}
+      NOVALI_OTEL_REDACTION_MODE: ${NOVALI_OTEL_REDACTION_MODE:-strict}
+      NOVALI_OBSERVABILITY_STATUS_DETAIL: ${NOVALI_OBSERVABILITY_STATUS_DETAIL:-compact}
+      OTEL_SERVICE_NAME: ${OTEL_SERVICE_NAME:-novalioperatorshell}
+      OTEL_EXPORTER_OTLP_PROTOCOL: ${OTEL_EXPORTER_OTLP_PROTOCOL:-http}
+      OTEL_EXPORTER_OTLP_ENDPOINT: ${NOVALI_OTEL_EXPORTER_OTLP_ENDPOINT:-http://host.docker.internal:4318}
+      NOVALI_LM_RESOURCE_TYPE: ${NOVALI_LM_RESOURCE_TYPE:-}
+      NOVALI_LM_HOST_NAME: ${NOVALI_LM_HOST_NAME:-}
+      NOVALI_LM_IP: ${NOVALI_LM_IP:-}
+      NOVALI_LM_RESOURCE_GROUP: ${NOVALI_LM_RESOURCE_GROUP:-}
+      RC83_LIVE_COLLECTOR_PROOF: ${RC83_LIVE_COLLECTOR_PROOF:-false}
+      RC83_LMOTEL_CONTAINER_NAME: ${RC83_LMOTEL_CONTAINER_NAME:-}
+      RC83_2_ENDPOINT_MODE: ${RC83_2_ENDPOINT_MODE:-host_gateway}
+      RC83_2_OTLP_PROTOCOL: ${RC83_2_OTLP_PROTOCOL:-http}
+      RC83_2_PROOF_ARTIFACT_ROOT: ${RC83_2_PROOF_ARTIFACT_ROOT:-/workspace/novali/runtime_data/generated/operator_proof/rc83_2}
+    volumes:
+      - .:/workspace/novali:ro
+      - ./directive_inputs:/workspace/novali/directive_inputs
+      - ./trusted_sources:/workspace/novali/trusted_sources
+      - ./operator_state:/workspace/novali/operator_state
+      - ./runtime_data/state:/workspace/novali/runtime_data/state
+      - ./runtime_data/logs:/workspace/novali/runtime_data/logs
+      - ./runtime_data/generated:/workspace/novali/runtime_data/generated
+      - ./runtime_data/acceptance_evidence:/workspace/novali/runtime_data/acceptance_evidence
+      - novali_disk_spill:/workspace/novali_disk_spill
+      - ./novali-active_workspace:/workspace/novali/novali-active_workspace
+
+  ollama:
+    image: ollama/ollama:${NOVALI_OLLAMA_IMAGE_TAG:-0.24.0}
+    restart: unless-stopped
+    volumes:
+      - novali_ollama_models:/root/.ollama
+    healthcheck:
+      test: ["CMD", "ollama", "list"]
+      interval: 20s
+      timeout: 10s
+      retries: 12
+      start_period: 20s
+
+  ollama-model:
+    image: ollama/ollama:${NOVALI_OLLAMA_IMAGE_TAG:-0.24.0}
+    profiles:
+      - model-pull
+    depends_on:
+      ollama:
+        condition: service_started
+    environment:
+      OLLAMA_HOST: http://ollama:11434
+    entrypoint:
+      - /bin/sh
+      - -lc
+    command: >
+      ollama pull "${NOVALI_LOCAL_LLM_MODEL:-llama3.1}"
+
+volumes:
+  novali_disk_spill:
+  novali_ollama_models:

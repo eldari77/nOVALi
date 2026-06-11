@@ -1,366 +1,119 @@
 # NOVALI
 
-**NOVALI** is an experimental, operator-facing, governed agent framework for directive-driven work, bounded continuation, and reviewable self-improvement.
+NOVALI is an experimental, operator-facing, governed agent framework for directive-driven work, bounded continuation, reusable evidence packs, and reviewable autonomy.
 
-It is built around a simple principle:
+Its operating principle is simple:
 
-> useful long-running agent behavior should stay **bounded, legible, resumable, and governed**.
+> useful long-running agent behavior should stay bounded, legible, resumable, and governed.
 
----
+This public handoff is designed for a first-time local operator. It ships a guided NOVALI v7 standalone package, a browser Operator Shell, generic directive scaffolds, and public documentation. It intentionally does not ship private live directives, active workspaces, runtime ledgers, secrets, or telemetry state.
 
-## Current status
+![Operator Shell overview](docs/assets/operator-shell-overview.svg)
 
-- **Latest confirmed milestone:** `rc70`
-- **Canonical packaged handoff:** `novali-v6_rc70-standalone.zip`
-- **Active development line:** `novali-v6`
-- **Reference baseline:** `novali-v5`
+## First 10 Minutes
 
-NOVALI now supports:
+### 1. Prerequisites
 
-- shell-first packaged startup on localhost
-- directive-first initialization
-- trusted-source validation in-session
-- governed execution after bootstrap
-- same-session bounded continuation
-- intervention-aware resume loops
-- durable attention and handoff memory
-- actionable attention-to-packet jumps
-- stale-attention triage
-- a truthful cross-session operator portfolio queue
+- Windows with PowerShell 7 or Windows PowerShell
+- Docker Desktop running
+- Python on `PATH` as a fallback launcher
+- Optional: an external trusted-source API key, supplied through your local shell or the Operator Shell when needed
 
----
+### 2. Start the guided handoff
 
-## What NOVALI is
+From the repository root:
 
-NOVALI is a **bounded, governed agent system**.
+```powershell
+.\launch\00_first_run_wizard.ps1
+```
 
-It is designed to be:
+The wizard checks Docker, loads or builds the local image if needed, starts the standalone Web Operator, and opens:
 
-- **directive-first**
-- **artifact-governed**
-- **operator-readable**
-- **runtime-bounded**
-- **workspace-scoped**
-- **reviewable over time**
+```text
+http://127.0.0.1:8787/shell
+```
 
-NOVALI is **not** an unrestricted autonomous system.
+### 3. Create or choose a directive
 
-Governance truth lives in persisted artifacts. The UI is an operator surface over that governed state — not a second authority source.
+NOVALI starts from a directive, not from an unrestricted prompt. For a generic scaffold:
 
-Governance truth lives in persisted artifacts. The UI is an operator surface over that governed state — not a second authority source. Telemetry, alerts, replay packets, review tickets, rollback analyses, and adapter observations are evidence surfaces; they do not become governance authority.
+```powershell
+.\novali-v7_rc01-standalone\standalone_docker\generate_directive_scaffold.ps1 `
+  --output .\novali-v7_rc01-standalone\directive_inputs\my_first_directive.json `
+  --directive-id directive_my_first_run_v1 `
+  --directive-text "Initialize NOVALI for a bounded local research and implementation planning run." `
+  --clarified-intent-summary "Create reviewable local artifacts, keep all execution governed, and preserve operator-readable evidence before continuation."
+```
 
-## What the current product can do
+Then load that file from the Operator Shell.
 
-From the packaged handoff, an operator can:
+### 4. Bootstrap, govern, continue
 
-1. start the packaged browser operator
-2. land on the Svelte shell by default
-3. load a directive
-4. validate a trusted-source credential for the current session if needed
-5. run bootstrap initialization
-6. prepare governed execution
-7. launch governed execution
-8. continue in the Operator Workspace
-9. resume the **same** bounded session through repeated continuation / intervention / review cycles
-10. choose the next session needing attention from a portfolio queue
+In `/shell`:
 
-### Current operator loop
+1. Load the directive.
+2. Run bootstrap initialization.
+3. Start governed execution.
+4. Use the workspace and attention queue to review blockers.
+5. Continue bounded work only when the UI shows it is safe.
+6. Use pause or emergency stop whenever the run should halt.
 
-`load directive -> bootstrap -> governed run -> workspace -> approve/resolve when required -> continue until next bounded stop -> repeat`
+### 5. Optional autonomy
 
-### Current portfolio loop
+Autonomy remains governed. It can propose and execute only policy-allowed operations through NOVALI's broker, board, memory guard, and emergency-stop gates. Start with the Operator Shell's autonomy status and keep high-impact actions explicitly validated.
 
-`open shell -> inspect session portfolio -> choose next session needing attention -> resolve / continue -> return to portfolio`
+## What Is Included
 
----
+- `novali-v7_rc01-standalone/` - the sanitized runnable handoff package
+- `launch/00_first_run_wizard.ps1` - first-run guided launcher
+- `AI_OPERATOR_SETUP.md` - safe setup notes for Codex and other AI operators
+- `docs/OPERATOR_QUICK_REFERENCE.md` - operator action reference
+- `docs/PUBLIC_PACKAGE_CONTENTS.md` - included/excluded package contents
+- `docs/PUBLIC_RELEASE_CHECKLIST.md` - repeatable public update checklist
+- `docs/assets/` - sanitized Operator Shell screenshots
 
-## What rc70 adds
+## What Is Not Included
 
-`rc70` is the current canonical milestone.
+This public handoff intentionally excludes:
 
-It adds a **truthful cross-session portfolio queue** so the operator can tell which session needs attention next without manually opening every recent session.
+- private mission directives from local runs
+- pending LLM directives from local runs
+- active workspaces and generated directive dossiers
+- runtime ledgers, telemetry, secrets, cache state, and spill-volume state
+- raw trusted-source provider output or credentials
 
-### rc70 outcomes
+## Current NOVALI v7 Surface
 
-- top-level portfolio queue on `/shell`
-- distinct recent/active session cards
-- queue buckets and recommendation text
-- direct jump from portfolio to the correct blocking session/action
-- preserved same-session identity after queue-based navigation
-- healthy packaged validation and package-size hygiene
+The public package documents and ships the current v7 operating shape:
 
-At this point, NOVALI is no longer just a single-session operator loop. It is now a **bounded multi-session operator portfolio** with governed continuation per session.
+- React Operator Shell served at `/shell`
+- governed bootstrap and execution
+- checkpointed long-run continuation
+- autonomy kernel with approval-board and broker boundaries
+- directive work program and research dossier artifacts
+- Librarian pack library for reusable local evidence
+- memory smoothing, OOM guard, and disk-spill metadata
+- trusted-source validation and redacted evidence handling
+- local LLM drafting as explain-and-draft evidence only
 
----
+## Operator Model
 
-## Quick start
+NOVALI is not an unrestricted autonomous system. Governance truth lives in persisted artifacts. The UI, telemetry, Librarian, trusted-source results, dossiers, and pack refs are evidence surfaces; they do not become a second authority path.
 
-### Packaged handoff flow
+## Licensing
 
-1. unpack the handoff package
-2. load the bundled Docker image archive
-3. run the packaged browser operator launcher
-4. open the localhost URL
-5. land on the shell
-6. load a directive
-7. validate trusted-source credentials only if needed, and only for the current session
-8. run bootstrap
-9. prepare governed execution if prompted
-10. run governed execution
-11. continue in the workspace
-12. use the attention inbox, handoff summary, and portfolio queue to manage repeat bounded continuation
+NOVALI is source-available under the Business Source License 1.1. See:
 
-### Default routes
+- `LICENSE.md`
+- `COMMERCIAL_USE.md`
+- `NOTICE.md`
+- `TRADEMARKS.md`
 
-- `/` redirects to `/shell`
-- `/workspace` redirects to `/shell/workspace`
+The Additional Use Grant is `None`. Production, hosted, managed-service, commercial product integration, customer-facing operational use, and paid delivery built around NOVALI require a separate commercial license from the Licensor.
 
-The shell is the intended primary operator entry. Legacy routes are compatibility-only.
+This repository is not legal advice. If you intend to rely on these terms commercially, obtain legal review.
 
----
+## For AI Operators
 
-## Core design principles
+Start with `AI_OPERATOR_SETUP.md`. Do not load secrets into prompts, do not use private live workspaces as public examples, and do not treat trusted-source or Librarian evidence as execution authority.
 
-### 1. Directive-first initialization
-NOVALI begins from a structured directive rather than freeform prompting alone.
-
-### 2. Canonical artifact authority
-Persisted artifacts define governance truth. Runtime/UI behavior must reflect that truth rather than invent it.
-
-### 3. Bounded execution
-Execution stays inside explicit runtime constraints, review gates, and workspace boundaries.
-
-### 4. Governed self-improvement
-Improvement work is allowed only inside reviewable, bounded paths.
-
-### 5. Trusted-source discipline
-Trusted sources provide bounded evidence, not governance authority.
-
-### 6. Operator legibility
-The operator should be able to tell:
-- what changed
-- why the session stopped
-- what needs attention
-- what action resumes work
-
-### 6. Operator legibility
-
-## Execution modes
-
-### Bootstrap-only initialization
-Used to create or refresh canonical state for a directive/session.
-
-### Governed execution
-Used after initialization when NOVALI resumes under an approved bounded execution profile.
-
-### Bounded long-run supervised continuation
-Used **after the first governed seed** to continue the same session across checkpoints, review boundaries, intervention boundaries, and bounded stop conditions.
-
-This is still governed and bounded. It is **not** unrestricted always-on autonomy.
-
----
-
-## Current long-run capabilities
-
-NOVALI currently supports:
-
-- checkpointed same-session continuation
-- resume from latest valid checkpoint
-- intervention-required stop states
-- post-intervention resume on the same session
-- pause / resume / stop controls
-- supervisor / lease visibility
-- duplicate-launch blocking
-- headroom and policy visibility
-- operator-editable long-run policy slice
-- low-touch continuation until next bounded stop
-- durable attention memory
-- actionable attention signals
-- stale-attention escalation and archive triage
-- portfolio-level session selection
-
----
-
-## Current operator surfaces
-
-### Shell landing
-The shell provides:
-
-- directive loading
-- trusted-source onboarding/validation
-- bootstrap initialization
-- governed execution launch
-- portfolio-level session queue
-- recommendation about which session needs attention next
-
-### Workspace
-The workspace provides:
-
-- live session state
-- checkpoint / cycle / lifecycle summaries
-- policy and headroom visibility
-- attention inbox
-- intervention/review packet handling
-- durable handoff summary
-- actionable attention signal
-- archive and history views
-- continuation controls
-
----
-
-## Current bounded delegation paths
-
-NOVALI currently supports a narrow, governed set of bounded paths under Controller authority:
-
-- `local`
-- `librarian`
-- `verifier`
-- `sequential_librarian_then_verifier`
-
-These remain intentionally limited and reviewable.
-
----
-
-## Active workspace model
-
-Coding-capable work occurs inside a governed active workspace such as:
-
-Alerts may be raised from:
-
-- read-only adapter validation failures
-- mutation-refusal events
-- evidence-integrity failures
-- source immutability failures
-- wrong-lane attribution
-- controller-isolation findings
-- telemetry shutdown/export degradation
-- review-hold or checkpoint concerns
-- rollback ambiguity
-- redaction failures
-- scope-expansion pressure
-
-Alert lifecycle actions include:
-
-This keeps work bounded and reviewable instead of granting unrestricted write access across the repo or host.
-
----
-
-## Trusted sources
-
-NOVALI includes inactive/mock-only controller-isolation primitives.
-
-The current isolation model defines three identity lanes:
-
-- **Governance truth** = persisted NOVALI artifacts
-- **External evidence** = trusted-source channels approved by the operator
-
-Trusted sources may help fill implementation gaps, but they do **not** replace governance authority.
-
-Current product behavior includes:
-
-- session-only credential handling
-- operator-visible validation flow
-- bounded evidence use
-- provenance-aware reuse vs re-query logic
-- reviewable incorporation of external evidence
-
----
-
-## Safety and governance posture
-
-NOVALI is intentionally conservative.
-
-By default, it does **not** assume permission to:
-
-- broaden its own authority
-- rewrite governance truth
-- bypass review gates
-- self-authorize structural adoption
-- expand into unrestricted autonomy
-- recurse into broad delegation trees
-- treat trusted-source evidence as governance authority
-- operate outside bounded runtime/workspace rules
-
-The system is built for **bounded progress**, not unconstrained autonomy.
-
----
-
-## Conceptual reference
-
-NOVALI uses the **9D Theorem whitepaper** as a conceptual reference for planning and architecture review.
-
-It should be treated as:
-
-- exploratory
-- speculative
-- not established science
-
-Operationally, it is used as a lens for:
-
-- projection safety
-- coherence over time
-- hidden-structure awareness
-- self-model quality
-- perspective stability
-- bounded, reviewable improvement
-
----
-
-## Deployment
-
-### Current target
-The current supported product target is **Docker standalone** with a localhost browser UI.
-
-Use this when you want:
-
-- one packaged handoff
-- one bundled image archive
-- one operator-facing browser surface
-- one bounded runtime at a time
-- one or more recent/active sessions visible in the queue
-
-### Not the current target
-Kubernetes, broad multi-agent orchestration, and open-ended external alerting/export are still deferred.
-
----
-
-## Current product phase
-
-### Current target
-
-**a governed, packaged, operator-facing, multi-session bounded continuation framework**
-
-What is already demonstrated:
-
-- packaged shell-first operator flow
-- governed execution after initialization
-- same-session bounded continuation
-- durable re-entry and handoff summaries
-- local attention delivery
-- actionable packet jumps
-- stale-attention triage
-- truthful cross-session portfolio queue
-
-What remains intentionally bounded:
-
-- no unrestricted autonomy
-- no open internet outside approved trusted-source posture
-- no multi-agent swarm behavior
-- no second authority path
-- no external alert/export infrastructure as a core requirement
-- no Kubernetes runtime target as the default product path
-
----
-
-## Final note
-
-NOVALI is an experimental governed-agent product focused on:
-
-- operator legibility
-- bounded self-improvement
-- durable continuation over time
-- truthful attention handling
-- stable execution shape
-- explicit reviewability
-
-The current `rc70` line shows meaningful progress in product usability, packaged delivery, same-session continuation, and portfolio-scale operator management — while still keeping governance and autonomy intentionally bounded.

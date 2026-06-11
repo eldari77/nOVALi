@@ -1,0 +1,41 @@
+{
+  "candidate_overrides": {
+    "dummy_improvement_bias": -0.03,
+    "projection_error_bias": 0.18
+  },
+  "context_overrides": {
+    "instability_bias": 0.08,
+    "projection_recent_bias": 0.18,
+    "projection_trend_bias": 0.08
+  },
+  "decision_scoring": {
+    "gain_bad_penalty": 1.0,
+    "gain_weight": 0.8,
+    "goal_bad_penalty": 0.95,
+    "goal_margin_weight": 0.35,
+    "projection_bad_penalty": 2.75,
+    "projection_margin_weight": 1.45,
+    "status_bonus_full": 0.0,
+    "status_bonus_provisional": 0.0,
+    "status_bonus_reject": 0.0
+  },
+  "description": "projection scenario 05: projection_edge target=1 proposer=2",
+  "env": {
+    "horizon_pad": 10,
+    "noise_scale": 0.016,
+    "steps": 80
+  },
+  "eval_overrides": {},
+  "family": "projection",
+  "id": "projection_05",
+  "pack_version": "1.0.0",
+  "proposer": 2,
+  "seed": 41109,
+  "tags": [
+    "projection",
+    "projection_edge"
+  ],
+  "target_agent": 1,
+  "variant_name": "projection_edge",
+  "version": 1
+}

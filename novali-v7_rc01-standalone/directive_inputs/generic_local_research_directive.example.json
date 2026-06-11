@@ -1,0 +1,70 @@
+{
+  "schema_name": "NOVALIDirectiveBootstrapFile",
+  "schema_version": "novali_directive_bootstrap_file_v1",
+  "sample_asset_metadata": {
+    "sample_only": true,
+    "purpose": "public_guided_handoff",
+    "non_authoritative": true
+  },
+  "bootstrap_context": {
+    "active_branch": "novali-v7",
+    "branch_name": "public_guided_handoff",
+    "branch_state": "local_evaluation",
+    "current_operating_stance": "hold_and_consolidate",
+    "routing_status": "routing_deferred",
+    "plan_non_owning": true,
+    "projection_safety_primary": true
+  },
+  "directive_spec": {
+    "directive_id": "directive_generic_local_research_v1",
+    "directive_text": "Initialize NOVALI for a bounded local research and implementation planning run.",
+    "clarified_intent_summary": "Create reviewable local artifacts, keep all execution governed, and preserve operator-readable evidence before continuation.",
+    "success_criteria": [
+      "directive validates in the Operator Shell",
+      "bootstrap creates canonical persisted artifacts",
+      "governed execution creates a reviewable local work artifact",
+      "autonomy remains bounded and emergency-stop controlled"
+    ],
+    "milestone_model": [
+      {
+        "milestone_id": "directive_loaded",
+        "completion_signal": "the Operator Shell shows the directive as loaded"
+      },
+      {
+        "milestone_id": "governed_artifact_created",
+        "completion_signal": "a local reviewable artifact is created inside the active workspace"
+      }
+    ],
+    "human_approval_points": [
+      "protected-root changes",
+      "high-impact unattended actions",
+      "external trusted-source retrieval",
+      "commercial or production use"
+    ],
+    "constraints": [
+      "do not bypass review gates",
+      "do not persist raw secrets",
+      "do not treat evidence packs as execution authority",
+      "do not mutate protected roots without explicit validation"
+    ],
+    "trusted_sources": [
+      "local_repo:novali-v7",
+      "trusted_benchmark_pack_v1"
+    ],
+    "bucket_spec": {
+      "bucket_id": "bucket_public_guided_handoff_v1",
+      "bucket_model": "containerized_bucket_v1"
+    },
+    "allowed_action_classes": [
+      "diagnostic_schema_materialization",
+      "append_only_ledger_write",
+      "local_evidence_artifact_creation"
+    ],
+    "stop_conditions": [
+      "directive validation fails",
+      "clarification remains unresolved",
+      "memory guard requires pause or recycle",
+      "operator emergency stop is active"
+    ]
+  }
+}

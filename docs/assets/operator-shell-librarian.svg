@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-label="Sanitized NOVALI Librarian tab mock screenshot">
+  <rect width="1280" height="720" fill="#06070d"/>
+  <text x="48" y="70" fill="#d8dde8" font-family="Segoe UI, Arial" font-size="34" font-weight="700">Librarian</text>
+  <text x="48" y="102" fill="#a9b0c0" font-family="Segoe UI, Arial" font-size="16">Reusable Knowledge Packs and Skill Packs stored as governed evidence</text>
+  <rect x="48" y="146" width="350" height="430" rx="12" fill="#10111d" stroke="#24263a"/>
+  <rect x="430" y="146" width="360" height="430" rx="12" fill="#10111d" stroke="#24263a"/>
+  <rect x="822" y="146" width="410" height="430" rx="12" fill="#10111d" stroke="#24263a"/>
+  <text x="78" y="198" fill="#2dd4a2" font-family="Segoe UI, Arial" font-size="22" font-weight="700">Pack Library</text>
+  <text x="78" y="244" fill="#c0c7d2" font-family="Segoe UI, Arial" font-size="16">State: ready</text>
+  <text x="78" y="276" fill="#c0c7d2" font-family="Segoe UI, Arial" font-size="16">Reusable: metadata only</text>
+  <text x="78" y="308" fill="#c0c7d2" font-family="Segoe UI, Arial" font-size="16">Authority: evidence, not execution</text>
+  <text x="460" y="198" fill="#2dd4a2" font-family="Segoe UI, Arial" font-size="22" font-weight="700">Search Packs</text>
+  <rect x="460" y="230" width="250" height="44" rx="8" fill="#06070d" stroke="#24263a"/>
+  <text x="480" y="258" fill="#737b8d" font-family="Segoe UI, Arial" font-size="15">search by family or tag</text>
+  <rect x="720" y="230" width="44" height="44" rx="8" fill="#17142a" stroke="#3b2a68"/>
+  <text x="460" y="320" fill="#a9b0c0" font-family="Segoe UI, Arial" font-size="15">Results expose refs and summaries.</text>
+  <text x="460" y="350" fill="#a9b0c0" font-family="Segoe UI, Arial" font-size="15">Pack bodies stay local and bounded.</text>
+  <text x="852" y="198" fill="#2dd4a2" font-family="Segoe UI, Arial" font-size="22" font-weight="700">Reusable Pack Refs</text>
+  <rect x="852" y="230" width="330" height="100" rx="8" fill="#0b1312" stroke="#1f6f5b"/>
+  <text x="876" y="266" fill="#d8dde8" font-family="Segoe UI, Arial" font-size="15">knowledge_pack:generic_research</text>
+  <text x="876" y="294" fill="#a9b0c0" font-family="Segoe UI, Arial" font-size="14">quality: validated · reuse: reusable</text>
+  <rect x="852" y="352" width="330" height="100" rx="8" fill="#17142a" stroke="#3b2a68"/>
+  <text x="876" y="388" fill="#d8dde8" font-family="Segoe UI, Arial" font-size="15">skill_pack:operator_review</text>
+  <text x="876" y="416" fill="#a9b0c0" font-family="Segoe UI, Arial" font-size="14">quality: validated · source: seed</text>
+  <text x="48" y="660" fill="#656d7e" font-family="Segoe UI, Arial" font-size="13">Sanitized illustrative screenshot. No private directive or runtime data.</text>
+</svg>
