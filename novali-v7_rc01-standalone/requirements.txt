@@ -1,0 +1,4 @@
+opentelemetry-api<2
+opentelemetry-sdk<2
+opentelemetry-exporter-otlp-proto-grpc<2
+opentelemetry-exporter-otlp-proto-http<2

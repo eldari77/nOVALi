@@ -1,0 +1,33 @@
+name: Public Handoff Hygiene
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  hygiene:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Public handoff hygiene scan
+        shell: pwsh
+        run: .\scripts\public_handoff_hygiene.ps1
+
+      - name: Python compile shipped helpers
+        shell: pwsh
+        run: |
+          python -m py_compile .\novali-v7_rc01-standalone\standalone_docker\generate_directive_scaffold.py
+          python -m py_compile .\novali-v7_rc01-standalone\standalone_docker\assemble_handoff_package.py
+          python -m py_compile .\novali-v7_rc01-standalone\standalone_docker\export_standalone_image_archive.py
+
+      - name: Markdown basic checks
+        shell: pwsh
+        run: |
+          $files = Get-ChildItem -Recurse -File -Include *.md | Where-Object { $_.FullName -notmatch '\\node_modules\\' }
+          foreach ($file in $files) {
+            $text = Get-Content -Raw -LiteralPath $file.FullName
+            if ($text -match "`t") {
+              throw "Tab character found in $($file.FullName)"
+            }
+          }

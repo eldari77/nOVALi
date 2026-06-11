@@ -1,0 +1,9 @@
+{
+  "operator_runtime_constraints": {
+    "emergency_stop_visible": true,
+    "high_impact_requires_validation": true,
+    "trusted_source_credentials_private": true,
+    "local_artifacts_only_by_default": true
+  }
+}
+

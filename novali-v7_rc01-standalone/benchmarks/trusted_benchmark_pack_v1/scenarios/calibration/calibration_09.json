@@ -1,0 +1,41 @@
+{
+  "candidate_overrides": {
+    "dummy_improvement_bias": 0.01,
+    "projection_error_bias": 0.08
+  },
+  "context_overrides": {
+    "instability_bias": 0.05,
+    "rollback_rate_bias": 0.1,
+    "wm_quality_penalty_bias": 0.18
+  },
+  "decision_scoring": {
+    "gain_bad_penalty": 1.35,
+    "gain_weight": 0.96,
+    "goal_bad_penalty": 1.25,
+    "goal_margin_weight": 0.72,
+    "projection_bad_penalty": 1.95,
+    "projection_margin_weight": 0.95,
+    "status_bonus_full": 0.0,
+    "status_bonus_provisional": 0.0,
+    "status_bonus_reject": 0.0
+  },
+  "description": "calibration scenario 09: forecast_uncertainty_check target=2 proposer=1",
+  "env": {
+    "horizon_pad": 10,
+    "noise_scale": 0.014,
+    "steps": 80
+  },
+  "eval_overrides": {},
+  "family": "calibration",
+  "id": "calibration_09",
+  "pack_version": "1.0.0",
+  "proposer": 1,
+  "seed": 45215,
+  "tags": [
+    "calibration",
+    "forecast_uncertainty_check"
+  ],
+  "target_agent": 2,
+  "variant_name": "forecast_uncertainty_check",
+  "version": 1
+}

@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-label="Sanitized NOVALI Operator Shell overview mock screenshot">
+  <rect width="1280" height="720" fill="#06070d"/>
+  <rect x="32" y="28" width="1216" height="90" rx="14" fill="#10111d" stroke="#2dd4a2" opacity="0.95"/>
+  <text x="64" y="78" fill="#d8dde8" font-family="Segoe UI, Arial" font-size="34" font-weight="700">NOVALI Operator Shell</text>
+  <text x="64" y="104" fill="#a9b0c0" font-family="Segoe UI, Arial" font-size="16">Safe to continue · checkpointed · stale recovery false</text>
+  <rect x="1010" y="48" width="196" height="46" rx="8" fill="#0e8f68"/>
+  <text x="1046" y="78" fill="#f4f7fb" font-family="Segoe UI, Arial" font-size="17" font-weight="700">Continue</text>
+  <g fill="#0c0d16" stroke="#24263a">
+    <rect x="32" y="144" width="220" height="76" rx="10"/>
+    <rect x="270" y="144" width="220" height="76" rx="10"/>
+    <rect x="508" y="144" width="220" height="76" rx="10"/>
+    <rect x="746" y="144" width="220" height="76" rx="10"/>
+    <rect x="984" y="144" width="264" height="76" rx="10"/>
+  </g>
+  <g font-family="Segoe UI, Arial">
+    <text x="52" y="174" fill="#9ca3af" font-size="13">LIFECYCLE</text>
+    <text x="52" y="200" fill="#d8dde8" font-size="20" font-weight="700">ready</text>
+    <text x="290" y="174" fill="#9ca3af" font-size="13">MEMORY</text>
+    <text x="290" y="200" fill="#2dd4a2" font-size="20" font-weight="700">normal</text>
+    <text x="528" y="174" fill="#9ca3af" font-size="13">AUTONOMY</text>
+    <text x="528" y="200" fill="#d8dde8" font-size="20" font-weight="700">governed</text>
+    <text x="766" y="174" fill="#9ca3af" font-size="13">LIBRARIAN</text>
+    <text x="766" y="200" fill="#c0c7d2" font-size="20" font-weight="700">ready</text>
+    <text x="1004" y="174" fill="#9ca3af" font-size="13">TELEMETRY</text>
+    <text x="1004" y="200" fill="#c0c7d2" font-size="20" font-weight="700">redacted</text>
+  </g>
+  <rect x="32" y="254" width="570" height="370" rx="12" fill="#10111d" stroke="#24263a"/>
+  <rect x="632" y="254" width="616" height="370" rx="12" fill="#10111d" stroke="#24263a"/>
+  <text x="64" y="306" fill="#2dd4a2" font-family="Segoe UI, Arial" font-size="22" font-weight="700">Directive Work</text>
+  <text x="64" y="342" fill="#d8dde8" font-family="Segoe UI, Arial" font-size="18">Generic local research directive loaded</text>
+  <text x="64" y="378" fill="#a9b0c0" font-family="Segoe UI, Arial" font-size="15">Dossier status · materiality · source coverage · next bounded artifact</text>
+  <rect x="64" y="420" width="470" height="130" rx="10" fill="#17142a" stroke="#3b2a68"/>
+  <text x="88" y="462" fill="#c0c7d2" font-family="Segoe UI, Arial" font-size="16">Current track: diagram requirements packet</text>
+  <text x="88" y="494" fill="#c0c7d2" font-family="Segoe UI, Arial" font-size="16">Coverage: Librarian evidence seeded</text>
+  <text x="88" y="526" fill="#c0c7d2" font-family="Segoe UI, Arial" font-size="16">Contract: satisfied</text>
+  <text x="664" y="306" fill="#2dd4a2" font-family="Segoe UI, Arial" font-size="22" font-weight="700">Autonomy + Runtime</text>
+  <text x="664" y="342" fill="#d8dde8" font-family="Segoe UI, Arial" font-size="18">Governed continuation with emergency-stop boundary</text>
+  <text x="664" y="378" fill="#a9b0c0" font-family="Segoe UI, Arial" font-size="15">Memory smoothing · spill volume · trusted-source validation</text>
+  <rect x="664" y="420" width="520" height="130" rx="10" fill="#0b1312" stroke="#1f6f5b"/>
+  <text x="688" y="462" fill="#c0c7d2" font-family="Segoe UI, Arial" font-size="16">Checkpoint: current</text>
+  <text x="688" y="494" fill="#c0c7d2" font-family="Segoe UI, Arial" font-size="16">Review gates: none active</text>
+  <text x="688" y="526" fill="#c0c7d2" font-family="Segoe UI, Arial" font-size="16">High-impact actions: validated only</text>
+  <text x="32" y="690" fill="#656d7e" font-family="Segoe UI, Arial" font-size="13">Sanitized illustrative screenshot. No private directive or runtime data.</text>
+</svg>
+*** Add File: ../GitHub/nOVALi/docs/assets/operator-shell-directive-work.svg
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-label="Sanitized NOVALI Directive Work tab mock screenshot">
+  <rect width="1280" height="720" fill="#06070d"/>
+  <text x="48" y="70" fill="#d8dde8" font-family="Segoe UI, Arial" font-size="34" font-weight="700">Directive Work</text>
+  <text x="48" y="102" fill="#a9b0c0" font-family="Segoe UI, Arial" font-size="16">Track, dossier, materiality, source coverage, and next concrete artifact</text>
+  <g fill="#10111d" stroke="#24263a">
+    <rect x="48" y="146" width="360" height="430" rx="12"/>
+    <rect x="460" y="146" width="360" height="430" rx="12"/>
+    <rect x="872" y="146" width="360" height="430" rx="12"/>
+  </g>
+  <text x="78" y="198" fill="#2dd4a2" font-family="Segoe UI, Arial" font-size="22" font-weight="700">Loaded Directive</text>
+  <text x="78" y="238" fill="#d8dde8" font-family="Segoe UI, Arial" font-size="19" font-weight="700">Generic local research</text>
+  <text x="78" y="276" fill="#a9b0c0" font-family="Segoe UI, Arial" font-size="15">Loaded: yes</text>
+  <text x="78" y="306" fill="#a9b0c0" font-family="Segoe UI, Arial" font-size="15">Gate: no active gate</text>
+  <text x="490" y="198" fill="#2dd4a2" font-family="Segoe UI, Arial" font-size="22" font-weight="700">Directive Track</text>
+  <text x="490" y="238" fill="#d8dde8" font-family="Segoe UI, Arial" font-size="19" font-weight="700">Research dossier</text>
+  <text x="490" y="276" fill="#a9b0c0" font-family="Segoe UI, Arial" font-size="15">Depth: substantive packet</text>
+  <text x="490" y="306" fill="#a9b0c0" font-family="Segoe UI, Arial" font-size="15">Focus: system boundary</text>
+  <text x="490" y="336" fill="#a9b0c0" font-family="Segoe UI, Arial" font-size="15">Layer: evidence inventory</text>
+  <text x="902" y="198" fill="#2dd4a2" font-family="Segoe UI, Arial" font-size="22" font-weight="700">Meaningful Work</text>
+  <circle cx="980" cy="284" r="58" fill="#17142a" stroke="#2dd4a2"/>
+  <text x="948" y="295" fill="#f4f7fb" font-family="Segoe UI, Arial" font-size="27" font-weight="700">Yes</text>
+  <text x="902" y="382" fill="#c0c7d2" font-family="Segoe UI, Arial" font-size="16">Dossier delta credited</text>
+  <text x="902" y="414" fill="#c0c7d2" font-family="Segoe UI, Arial" font-size="16">Coverage: Librarian evidence</text>
+  <text x="902" y="446" fill="#c0c7d2" font-family="Segoe UI, Arial" font-size="16">Next: concrete artifact</text>
+  <text x="48" y="660" fill="#656d7e" font-family="Segoe UI, Arial" font-size="13">Sanitized illustrative screenshot. No private directive or runtime data.</text>
+</svg>
+*** Add File: ../GitHub/nOVALi/docs/assets/operator-shell-librarian.svg
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-label="Sanitized NOVALI Librarian tab mock screenshot">
+  <rect width="1280" height="720" fill="#06070d"/>
+  <text x="48" y="70" fill="#d8dde8" font-family="Segoe UI, Arial" font-size="34" font-weight="700">Librarian</text>
+  <text x="48" y="102" fill="#a9b0c0" font-family="Segoe UI, Arial" font-size="16">Reusable Knowledge Packs and Skill Packs stored as governed evidence</text>
+  <rect x="48" y="146" width="350" height="430" rx="12" fill="#10111d" stroke="#24263a"/>
+  <rect x="430" y="146" width="360" height="430" rx="12" fill="#10111d" stroke="#24263a"/>
+  <rect x="822" y="146" width="410" height="430" rx="12" fill="#10111d" stroke="#24263a"/>
+  <text x="78" y="198" fill="#2dd4a2" font-family="Segoe UI, Arial" font-size="22" font-weight="700">Pack Library</text>
+  <text x="78" y="244" fill="#c0c7d2" font-family="Segoe UI, Arial" font-size="16">State: ready</text>
+  <text x="78" y="276" fill="#c0c7d2" font-family="Segoe UI, Arial" font-size="16">Reusable: metadata only</text>
+  <text x="78" y="308" fill="#c0c7d2" font-family="Segoe UI, Arial" font-size="16">Authority: evidence, not execution</text>
+  <text x="460" y="198" fill="#2dd4a2" font-family="Segoe UI, Arial" font-size="22" font-weight="700">Search Packs</text>
+  <rect x="460" y="230" width="250" height="44" rx="8" fill="#06070d" stroke="#24263a"/>
+  <text x="480" y="258" fill="#737b8d" font-family="Segoe UI, Arial" font-size="15">search by family or tag</text>
+  <rect x="720" y="230" width="44" height="44" rx="8" fill="#17142a" stroke="#3b2a68"/>
+  <text x="460" y="320" fill="#a9b0c0" font-family="Segoe UI, Arial" font-size="15">Results expose refs and summaries.</text>
+  <text x="460" y="350" fill="#a9b0c0" font-family="Segoe UI, Arial" font-size="15">Pack bodies stay local and bounded.</text>
+  <text x="852" y="198" fill="#2dd4a2" font-family="Segoe UI, Arial" font-size="22" font-weight="700">Reusable Pack Refs</text>
+  <rect x="852" y="230" width="330" height="100" rx="8" fill="#0b1312" stroke="#1f6f5b"/>
+  <text x="876" y="266" fill="#d8dde8" font-family="Segoe UI, Arial" font-size="15">knowledge_pack:generic_research</text>
+  <text x="876" y="294" fill="#a9b0c0" font-family="Segoe UI, Arial" font-size="14">quality: validated · reuse: reusable</text>
+  <rect x="852" y="352" width="330" height="100" rx="8" fill="#17142a" stroke="#3b2a68"/>
+  <text x="876" y="388" fill="#d8dde8" font-family="Segoe UI, Arial" font-size="15">skill_pack:operator_review</text>
+  <text x="876" y="416" fill="#a9b0c0" font-family="Segoe UI, Arial" font-size="14">quality: validated · source: seed</text>
+  <text x="48" y="660" fill="#656d7e" font-family="Segoe UI, Arial" font-size="13">Sanitized illustrative screenshot. No private directive or runtime data.</text>
+</svg>

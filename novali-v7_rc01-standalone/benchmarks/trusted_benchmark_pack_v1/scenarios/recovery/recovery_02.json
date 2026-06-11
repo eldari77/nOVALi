@@ -1,0 +1,40 @@
+{
+  "candidate_overrides": {
+    "dummy_improvement_bias": -0.04
+  },
+  "context_overrides": {
+    "instability_bias": 0.08,
+    "recent_realized_bias": -20.0,
+    "rollback_rate_bias": 0.22
+  },
+  "decision_scoring": {
+    "gain_bad_penalty": 1.55,
+    "gain_weight": 0.92,
+    "goal_bad_penalty": 1.4,
+    "goal_margin_weight": 0.82,
+    "projection_bad_penalty": 2.1,
+    "projection_margin_weight": 0.95,
+    "status_bonus_full": 0.0,
+    "status_bonus_provisional": 0.0,
+    "status_bonus_reject": 0.1
+  },
+  "description": "recovery scenario 02: rollback_scar_tight target=1 proposer=0",
+  "env": {
+    "horizon_pad": 10,
+    "noise_scale": 0.013,
+    "steps": 76
+  },
+  "eval_overrides": {},
+  "family": "recovery",
+  "id": "recovery_02",
+  "pack_version": "1.0.0",
+  "proposer": 0,
+  "seed": 44007,
+  "tags": [
+    "recovery",
+    "rollback_scar_tight"
+  ],
+  "target_agent": 1,
+  "variant_name": "rollback_scar_tight",
+  "version": 1
+}

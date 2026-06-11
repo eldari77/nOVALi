@@ -1,0 +1,151 @@
+{
+  "bootstrap_context": {
+    "active_branch": "novali-v6",
+    "additional_reference_versions": [
+      "novali-v4",
+      "novali-v3",
+      "novali-v2"
+    ],
+    "branch_name": "wm_hybrid_context_scoped",
+    "branch_state": "paused_with_baseline_held",
+    "branch_transition_id": "sample_branch_transition::real_work_benchmark::novali-v6",
+    "branch_transition_reason": "Sample directive for the rc45 real-work benchmark baseline while preserving the rc35-rc44 demo stack, the frozen novali-v5 reference line, and the current bounded operator authority model.",
+    "branch_transition_status": "sample_real_work_benchmark_candidate_only",
+    "branch_transition_timestamp": "2026-03-30T00:00:00+00:00",
+    "carried_forward_safe_trio_reference": {
+      "baseline_name": "swap_C",
+      "selected_ids": [
+        "recovery_02",
+        "recovery_03",
+        "recovery_12"
+      ]
+    },
+    "completed_reference_branch": "novali-v5",
+    "current_operating_stance": "hold_and_consolidate",
+    "frozen_fallback_reference_version": "novali-v4",
+    "governed_work_loop_status": "hold_position_closed_out_v1",
+    "held_baseline": {
+      "template": "proposal_learning_loop.v4_wm_hybrid_context_scoped_probe_v1"
+    },
+    "held_baseline_template": "proposal_learning_loop.v4_wm_hybrid_context_scoped_probe_v1",
+    "older_reference_version": "novali-v2",
+    "plan_non_owning": true,
+    "projection_safety_primary": true,
+    "reference_operator_surface_branch": "novali-v5",
+    "routing_status": "routing_deferred",
+    "selector_frontier_read": "serial_budget_then_ordering"
+  },
+  "directive_spec": {
+    "allowed_action_classes": [
+      "low_risk_shell_change",
+      "diagnostic_schema_materialization",
+      "append_only_ledger_write",
+      "local_governance_registry_update"
+    ],
+    "bucket_spec": {
+      "bucket_id": "bucket_successor_package_readiness_benchmark_v1",
+      "bucket_model": "containerized_bucket_v1"
+    },
+    "clarified_intent_summary": "Define a bounded successor package-readiness workflow that starts from current repo, package, workspace, and acceptance-evidence artifacts, produces a reviewable readiness bundle, and helps an operator judge whether the next standalone handoff refresh is ready without broadening authority or inventing setup.",
+    "constraints": [
+      "do not change routing logic",
+      "do not change thresholds",
+      "do not change live policy",
+      "do not change frozen benchmark semantics",
+      "do not modify nined_core.py",
+      "preserve the rc35-rc44 demo stack unchanged",
+      "keep controller-only authority",
+      "keep child roles bounded and one-generation only",
+      "treat trusted-source evidence as support only, not governance authority",
+      "prefer current repo, packaged handoff, workspace, and acceptance-evidence inspection before proposing any later escalation",
+      "do not assume open-ended browsing or hidden operator setup",
+      "preserve truthful blocked, partial, and review-gated outcomes"
+    ],
+    "directive_id": "directive_novali_v6_successor_package_readiness_benchmark_v1",
+    "directive_text": "Prepare a bounded successor package readiness review bundle from current repo, package, workspace, and acceptance-evidence artifacts so an operator can judge whether the next standalone handoff refresh is ready, what remains missing, and why the review gate still matters, while preserving directive-first bootstrap, canonical artifact authority, and the current bounded path set.",
+    "drift_budget_for_context_exploration": {
+      "allowed": true,
+      "max_budgeted_external_fetches": 0,
+      "max_budgeted_support_reads": 6,
+      "tag_required": "real_work_benchmark_support"
+    },
+    "human_approval_points": [
+      "trusted-source escalation request",
+      "branch-state changes",
+      "protected-surface challenges",
+      "scope-expansion requests"
+    ],
+    "milestone_model": [
+      {
+        "completion_signal": "the bounded package-readiness workflow is selected from real repo and packaged evidence rather than demo framing alone",
+        "milestone_id": "workflow_selection_ready"
+      },
+      {
+        "completion_signal": "the directive, output contract, success rubric, operator-value criteria, and expected artifact set are explicit and reviewable on disk",
+        "milestone_id": "baseline_definition_ready"
+      },
+      {
+        "completion_signal": "a later operator can attempt the workflow through current bounded paths without hidden setup or hidden authority changes",
+        "milestone_id": "later_execution_ready"
+      }
+    ],
+    "stop_conditions": [
+      "directive validation fails",
+      "clarification remains unresolved",
+      "the benchmark candidate is not grounded in current repo or package artifacts",
+      "required output expectations become vague or non-reviewable",
+      "the workflow would require broader orchestration, hidden setup, or a second authority path"
+    ],
+    "success_criteria": [
+      "the workflow can start local-first from current repo, package, workspace, and acceptance-evidence artifacts",
+      "the workflow yields a crisp readiness bundle with reviewable note, manifest, evaluation, missing-deliverable, and refresh-recommendation outputs",
+      "the success rubric can classify pass, pass_with_review_gate, partial, blocked, or failed without hiding unresolved states",
+      "the operator value is clear outside the demo lane",
+      "future execution-quality work can improve this benchmark without broadening authority"
+    ],
+    "trusted_sources": [
+      "local_bundle:standalone_handoff_package",
+      "local_artifacts:novali-active_workspace",
+      "local_repo:novali-v5",
+      "local_artifacts:novali-v5/data"
+    ]
+  },
+  "real_work_benchmark_metadata": {
+    "expected_output_pack": [
+      {
+        "label": "Successor package readiness note",
+        "target_path": "novali-active_workspace/workspace_trusted_source_guided_successor_iteration_live_e/docs/successor_package_readiness_note.md"
+      },
+      {
+        "label": "Successor readiness evaluation",
+        "target_path": "novali-active_workspace/workspace_trusted_source_guided_successor_iteration_live_e/artifacts/successor_readiness_evaluation_latest.json"
+      },
+      {
+        "label": "Successor delivery manifest",
+        "target_path": "novali-active_workspace/workspace_trusted_source_guided_successor_iteration_live_e/artifacts/successor_delivery_manifest_latest.json"
+      },
+      {
+        "label": "Missing deliverables summary",
+        "target_path": "novali-active_workspace/workspace_trusted_source_guided_successor_iteration_live_e/artifacts/missing_deliverables_latest.json"
+      },
+      {
+        "label": "Successor handoff refresh manifest",
+        "target_path": "novali-active_workspace/workspace_trusted_source_guided_successor_iteration_live_e/artifacts/successor_handoff_refresh_manifest_latest.json"
+      }
+    ],
+    "expected_workspace_id": "workspace_trusted_source_guided_successor_iteration_live_e",
+    "future_trusted_source_note": "Later passes may optionally reuse the packaged structural audit evidence path, but rc45 does not require live external help.",
+    "operator_value_summary": "This workflow gives an operator a bounded way to judge whether the next standalone handoff refresh is ready, what reviewable evidence supports that judgment, and what still blocks promotion.",
+    "output_contract_summary": "Produce a reviewable readiness bundle with explicit required outputs, bounded partial/blocked handling, and a refresh recommendation that remains support-only rather than governance authority.",
+    "scenario_id": "successor_package_readiness_review_bundle_refresh",
+    "scenario_name": "Successor package readiness review bundle refresh",
+    "what_this_benchmark_proves": "NOVALI can define a real operator-value workflow outside the demo lane using current repo and packaged evidence, while keeping authority local and outcomes reviewable."
+  },
+  "sample_asset_metadata": {
+    "non_authoritative": true,
+    "purpose": "real_work_benchmark_baseline",
+    "sample_only": true
+  },
+  "schema_name": "NOVALIDirectiveBootstrapFile",
+  "schema_version": "novali_directive_bootstrap_file_v1"
+}

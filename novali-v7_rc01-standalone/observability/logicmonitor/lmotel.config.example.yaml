@@ -1,0 +1,68 @@
+receivers:
+  otlp:
+    protocols:
+      grpc:
+        # Python instrumentation often uses OTLP gRPC on 4317.
+        # Keep this on a trusted path only.
+        endpoint: 0.0.0.0:4317
+      http:
+        # Deliberate cross-container example only.
+        # Prefer localhost-oriented binding unless the operator intentionally needs
+        # Docker-network or host-published OTLP intake.
+        endpoint: 0.0.0.0:4318
+
+processors:
+  memory_limiter:
+    check_interval: 1s
+    limit_mib: 256
+  probabilistic_sampler:
+    sampling_percentage: 100
+  batch:
+    timeout: 2s
+    send_batch_size: 256
+  attributes/redact:
+    actions:
+      - key: authorization
+        action: delete
+      - key: cookie
+        action: delete
+      - key: api_key
+        action: delete
+      - key: access_id
+        action: delete
+      - key: access_key
+        action: delete
+      - key: otel_exporter_otlp_headers
+        action: delete
+      - key: logicmonitor_access_id
+        action: delete
+      - key: logicmonitor_access_key
+        action: delete
+      - key: novali.secret
+        action: delete
+  resource/novali:
+    attributes:
+      - key: service.namespace
+        value: novali
+        action: upsert
+      # Prefer host.name, ip, and resource.type from the NOVALI app resource
+      # attributes. Do not place live portal credentials here.
+
+exporters:
+  otlphttp/logicmonitor:
+    endpoint: https://<COLLECTOR_HOST>/otlp
+    headers:
+      X-LM-Portal: <LOGICMONITOR_PORTAL_NAME>
+      X-LM-Access-Id: <LOGICMONITOR_ACCESS_ID>
+      X-LM-Access-Key: <LOGICMONITOR_ACCESS_KEY>
+
+service:
+  pipelines:
+    traces:
+      receivers: [otlp]
+      processors: [memory_limiter, probabilistic_sampler, attributes/redact, resource/novali, batch]
+      exporters: [otlphttp/logicmonitor]
+    metrics:
+      receivers: [otlp]
+      processors: [memory_limiter, attributes/redact, resource/novali, batch]
+      exporters: [otlphttp/logicmonitor]

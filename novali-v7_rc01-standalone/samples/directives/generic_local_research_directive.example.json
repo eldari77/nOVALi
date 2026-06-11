@@ -1,0 +1,23 @@
+{
+  "directive_id": "sample_generic_local_research_v1",
+  "title": "Generic Local Research And Prototype Planning",
+  "summary": "Create a reusable research dossier and prototype outline for a locally selected technical objective.",
+  "objective": "Turn a broad technical objective into evidence-backed deliverables that a human operator can review.",
+  "scope": [
+    "Identify the system boundary and key interfaces.",
+    "Map reusable knowledge or skill packs before requesting external evidence.",
+    "Produce local evidence artifacts only unless governance explicitly allows more."
+  ],
+  "expected_outcomes": [
+    "A research gap map.",
+    "A candidate comparison.",
+    "A prototype instruction outline.",
+    "A technical diagram requirements packet."
+  ],
+  "success_criteria": [
+    "All generated artifacts are local, reviewable, and redacted.",
+    "External retrieval remains validated and governed.",
+    "Autonomy can explain the next bounded step."
+  ]
+}
+
