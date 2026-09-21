@@ -1,0 +1,14 @@
+{
+  "title": "9D framework theory refinement",
+  "research_question": "Identify precise claims in the existing 9D implementation, seek counterexamples, and propose scoped refinements that withstand independent evaluation.",
+  "sources": [
+    "theory/nined_core.py",
+    "environment/multi_agent_env.py",
+    "benchmarks/nine_d_null_probe.py"
+  ],
+  "evaluator_ids": [
+    "finite_domain_v1",
+    "nine_d_intervention_v1",
+    "nine_d_comparison_v2"
+  ]
+}

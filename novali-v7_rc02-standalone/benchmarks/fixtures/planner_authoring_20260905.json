@@ -1,0 +1,25 @@
+{
+  "cases": [
+    {
+      "id": "finite_area_identity",
+      "domain": "finite_geometry",
+      "mode": "fresh",
+      "source": "Investigate whether (n+3)*(n-3) equals n*n-9 for n in [-4,0,2,5]. Form the exact finite proposition, test it independently, and record a scoped decision. This check alone cannot prove a universal geometric theorem.",
+      "expected": "evaluation_and_decision"
+    },
+    {
+      "id": "batch_accounting_retention",
+      "domain": "accounting",
+      "mode": "displaced_context",
+      "source": "Investigate whether 2*p+5 equals 5*p for p in [-3,0,2,8]. Preserve any counterexamples and record a scoped research decision. Do not replace the declared expressions or input domain to make the equality hold.",
+      "expected": "counterexample_and_rejection"
+    },
+    {
+      "id": "pressure_measurement_recovery",
+      "domain": "instrumentation",
+      "mode": "unsupported_recovery",
+      "source": "Investigate whether the measured pressure error stays below 2 kPa over a fixed 30-second trace. This workspace has no sensor readings, calibration record, pressure acquisition interface or pressure evaluator. Only an exact finite arithmetic checker is registered. Request the actual missing measurement capability with bounded scope and testable acceptance criteria.",
+      "expected": "scoped_capability_request"
+    }
+  ]
+}

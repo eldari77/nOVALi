@@ -1,0 +1,30 @@
+{
+  "schema_name": "NovaliStandaloneHandoffLayout",
+  "schema_version": "novali_standalone_handoff_layout_v1",
+  "package_name": "novali-v7_rc02-standalone",
+  "package_version": "novali-v7_rc02-standalone",
+  "release_channel": "release_candidate",
+  "product_target": "source_first_local_docker_browser",
+  "primary_readme": "README_FIRST.md",
+  "primary_browser_url": "http://127.0.0.1:8787/shell",
+  "image_archive": {
+    "included": false,
+    "reason": "No current source-matched archive is available; build locally from Dockerfile."
+  },
+  "operator_input_directories": {
+    "directive_inputs": "directive_inputs",
+    "operator_state": "operator_state",
+    "trusted_sources": "trusted_sources"
+  },
+  "runtime_directories": {
+    "state": "runtime_data/state",
+    "logs": "runtime_data/logs",
+    "generated": "runtime_data/generated"
+  },
+  "public_content_policy": {
+    "authored_or_test_directives_included": false,
+    "active_workspace_included": false,
+    "live_runtime_state_included": false,
+    "evidence_carry_forward_included": false
+  }
+}

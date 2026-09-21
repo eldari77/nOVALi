@@ -1,0 +1,25 @@
+{
+  "cases": [
+    {
+      "id": "robot_position_formula",
+      "domain": "kinematic_formulas",
+      "mode": "fresh",
+      "source": "Investigate exactly this finite mathematical proposition: 8*(t-1) equals 8*t-8 for t in [1,4,7,11]. These are two proposed position formulas. Read this source, register the specified proposition, independently evaluate it and record a decision restricted to those four cases. The finite arithmetic result is not validation of a physical robot.",
+      "expected": "evaluation_and_decision"
+    },
+    {
+      "id": "package_mass_retention",
+      "domain": "mass_accounting",
+      "mode": "displaced_context",
+      "source": "Investigate exactly this finite mathematical proposition: 3*m+7 equals 7*m for m in [-2,0,3,6]. These are two proposed package mass calculations. Register precisely this equality on the four specified inputs, independently evaluate it, retain any counterexamples and record a scoped decision. Do not replace the requested proposition with a different identity.",
+      "expected": "counterexample_and_rejection"
+    },
+    {
+      "id": "acoustic_recovery",
+      "domain": "acoustic_measurement",
+      "mode": "unsupported_recovery",
+      "source": "Investigate whether a microphone's measured sound pressure level differs from a calibrated reference by less than 1 decibel over a fixed 60-second recording. This workspace has no paired recordings, reference calibration, microphone runner, audio simulator or acoustic evaluator. Only finite rational arithmetic can currently be evaluated. Request a precise missing capability with an observable acceptance test and bounded scope if this empirical task cannot be performed.",
+      "expected": "scoped_capability_request"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "cases": [
+    {
+      "id": "finite_conversion_identity",
+      "domain": "finite_conversion",
+      "mode": "fresh",
+      "source": "Investigate whether (k+2)*3 equals 3*k+6 for k in [-5,1,4,10]. Register the exact finite proposition, run the available independent checker, and record a scoped research decision. Do not infer a universal theorem from this finite test.",
+      "expected": "evaluation_and_decision"
+    },
+    {
+      "id": "inventory_balance_retention",
+      "domain": "inventory_accounting",
+      "mode": "displaced_context",
+      "source": "Investigate whether 4*r+1 equals 5*r for r in [0,1,3,9]. Retain any counterexamples and record a scoped decision. Keep these exact expressions and the complete declared domain; a counterexample is useful evidence.",
+      "expected": "counterexample_and_rejection"
+    },
+    {
+      "id": "optical_measurement_recovery",
+      "domain": "instrumentation",
+      "mode": "unsupported_recovery",
+      "source": "Investigate whether measured light intensity varies by less than 3 percent over a fixed 100-sample capture. No detector readings, calibration record, acquisition interface or optical measurement evaluator exist here. Only an exact finite arithmetic checker is registered. Request the actual missing measurement capability with bounded scope and independently testable acceptance criteria.",
+      "expected": "scoped_capability_request"
+    }
+  ]
+}

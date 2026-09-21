@@ -1,16 +1,5 @@
-# Release Asset Notes
+# Release Assets
 
-This update keeps the Docker image archive in the repository to preserve the guided handoff shape.
+`novali-v7_rc02-standalone` intentionally does not include a Docker image archive: the available prior archive predates this source refresh.
 
-For future releases, consider moving large binary artifacts to GitHub Releases:
-
-- `novali-v7-standalone.tar`
-- packaged zip archives
-- larger screenshot/video walkthroughs
-
-Recommended future release layout:
-
-- source and docs stay in git;
-- large runnable artifacts attach to a tagged GitHub Release;
-- root README links to the release asset and checksum;
-- `image/image_archive_manifest.json` records tag, digest, size, and build timestamp.
+The first-run wizard builds the image locally from the package Dockerfile. If a future release attaches an image or zip asset, publish it through a tagged GitHub Release with a version, checksum, build provenance, and a documented match to the packaged source revision.
