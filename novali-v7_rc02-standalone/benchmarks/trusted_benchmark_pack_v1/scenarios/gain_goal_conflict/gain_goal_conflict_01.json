@@ -1,0 +1,42 @@
+{
+  "candidate_overrides": {
+    "dummy_improvement_bias": 0.06,
+    "local_score_bias": 0.02
+  },
+  "context_overrides": {
+    "goal_pressure_bias": 0.18
+  },
+  "decision_scoring": {
+    "gain_bad_penalty": 1.6,
+    "gain_weight": 1.0,
+    "goal_bad_penalty": 2.2,
+    "goal_margin_weight": 1.2,
+    "projection_bad_penalty": 1.4,
+    "projection_margin_weight": 0.6,
+    "status_bonus_full": 0.0,
+    "status_bonus_provisional": 0.0,
+    "status_bonus_reject": 0.0
+  },
+  "description": "gain_goal_conflict scenario 01: goal_fragile target=0 proposer=1",
+  "env": {
+    "horizon_pad": 8,
+    "noise_scale": 0.011,
+    "steps": 74
+  },
+  "eval_overrides": {
+    "goal_weight": 0.18,
+    "social_gain": 0.025
+  },
+  "family": "gain_goal_conflict",
+  "id": "gain_goal_conflict_01",
+  "pack_version": "1.0.0",
+  "proposer": 1,
+  "seed": 42001,
+  "tags": [
+    "gain_goal_conflict",
+    "goal_fragile"
+  ],
+  "target_agent": 0,
+  "variant_name": "goal_fragile",
+  "version": 1
+}

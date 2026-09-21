@@ -1,0 +1,133 @@
+{
+  "schema_name": "NovaliSuccessorAdmittedCandidateComparisonKnowledgePack",
+  "schema_version": "novali_successor_admitted_candidate_comparison_knowledge_pack_v1",
+  "pack_id": "successor_admitted_candidate_comparison_v1",
+  "purpose": "Define a conservative admitted-candidate handoff and bounded baseline-comparison rubric without mutating the protected or live baseline.",
+  "baseline_reference": {
+    "reference_id": "current_bounded_baseline_expectations_v1",
+    "reference_kind": "internal_bounded_reference_pack",
+    "title": "Current bounded baseline expectations",
+    "description": "A conservative internal reference rubric for deciding whether an admitted candidate is strong enough to become the preferred future bounded comparison target.",
+    "live_baseline_replacement_permitted": false
+  },
+  "state_model": {
+    "admitted_candidate_recorded_state": "admitted_candidate_recorded",
+    "handoff_ready_state": "admitted_candidate_handoff_ready",
+    "comparison_complete_state": "comparison_complete",
+    "stronger_state": "stronger_than_current_bounded_baseline",
+    "not_stronger_state": "not_stronger_enough_yet",
+    "future_reference_eligible_state": "eligible_as_future_reference_target",
+    "future_reference_deferred_state": "future_reference_target_deferred"
+  },
+  "handoff_required_relative_paths": [
+    "src/successor_shell/workspace_contract.py",
+    "src/successor_shell/successor_manifest.py",
+    "tests/test_workspace_contract.py",
+    "tests/test_successor_manifest.py",
+    "docs/mutable_shell_successor_design_note.md",
+    "docs/successor_package_readiness_note.md",
+    "docs/successor_promotion_bundle_note.md",
+    "artifacts/workspace_artifact_index_latest.json",
+    "artifacts/successor_readiness_evaluation_latest.json",
+    "artifacts/successor_delivery_manifest_latest.json",
+    "artifacts/successor_review_summary_latest.json",
+    "artifacts/successor_promotion_recommendation_latest.json",
+    "artifacts/successor_next_objective_proposal_latest.json",
+    "artifacts/successor_candidate_promotion_bundle_latest.json",
+    "artifacts/successor_baseline_admission_review_latest.json",
+    "artifacts/successor_baseline_admission_recommendation_latest.json",
+    "artifacts/successor_baseline_admission_decision_latest.json",
+    "artifacts/successor_continuation_lineage_latest.json"
+  ],
+  "comparison_checks": [
+    {
+      "check_id": "candidate_is_admitted",
+      "title": "Candidate has explicit admitted status",
+      "requires_admitted_candidate_recorded": true,
+      "failure_objective_id": "prepare_candidate_promotion_bundle"
+    },
+    {
+      "check_id": "handoff_bundle_is_complete",
+      "title": "Admitted candidate handoff bundle is complete",
+      "required_relative_paths": [
+        "artifacts/successor_candidate_promotion_bundle_latest.json",
+        "docs/successor_promotion_bundle_note.md",
+        "artifacts/successor_delivery_manifest_latest.json",
+        "artifacts/successor_readiness_evaluation_latest.json"
+      ],
+      "requires_handoff_ready": true,
+      "requires_manifest_completion_ready": true,
+      "failure_objective_id": "improve_successor_package_readiness"
+    },
+    {
+      "check_id": "required_source_and_tests_present",
+      "title": "Required successor source and tests are present",
+      "required_relative_paths": [
+        "src/successor_shell/workspace_contract.py",
+        "src/successor_shell/successor_manifest.py",
+        "tests/test_workspace_contract.py",
+        "tests/test_successor_manifest.py"
+      ],
+      "failure_objective_id": "strengthen_successor_test_coverage"
+    },
+    {
+      "check_id": "review_and_admission_evidence_complete",
+      "title": "Review, promotion, and admission evidence are complete",
+      "required_relative_paths": [
+        "artifacts/successor_review_summary_latest.json",
+        "artifacts/successor_promotion_recommendation_latest.json",
+        "artifacts/successor_next_objective_proposal_latest.json",
+        "artifacts/successor_baseline_admission_review_latest.json",
+        "artifacts/successor_baseline_admission_recommendation_latest.json",
+        "artifacts/successor_baseline_admission_decision_latest.json"
+      ],
+      "requires_review_evidence_complete": true,
+      "failure_objective_id": "refine_operator_observability_bundle"
+    },
+    {
+      "check_id": "lineage_and_outputs_are_auditable",
+      "title": "Lineage is coherent and outputs stayed inside the bounded workspace",
+      "required_relative_paths": [
+        "artifacts/successor_continuation_lineage_latest.json",
+        "artifacts/workspace_artifact_index_latest.json"
+      ],
+      "requires_lineage_coherence": true,
+      "requires_outputs_within_workspace": true,
+      "failure_objective_id": "refine_operator_observability_bundle"
+    },
+    {
+      "check_id": "candidate_strength_signal_present",
+      "title": "Candidate is materially stronger than the current bounded baseline rubric",
+      "requires_candidate_strength_signal": true,
+      "failure_objective_id": "prepare_candidate_promotion_bundle"
+    },
+    {
+      "check_id": "no_live_baseline_mutation",
+      "title": "No live or protected baseline mutation was performed",
+      "requires_no_baseline_mutation": true,
+      "failure_objective_id": "prepare_candidate_promotion_bundle"
+    }
+  ],
+  "remediation_objective_templates": [
+    {
+      "objective_id": "strengthen_successor_test_coverage",
+      "title": "Strengthen candidate test coverage",
+      "rationale": "The admitted candidate is missing or weakening required successor test coverage relative to the bounded baseline rubric."
+    },
+    {
+      "objective_id": "improve_successor_package_readiness",
+      "title": "Improve candidate handoff completeness",
+      "rationale": "The admitted candidate handoff or readiness bundle is incomplete relative to the conservative bounded comparison rubric."
+    },
+    {
+      "objective_id": "refine_operator_observability_bundle",
+      "title": "Close candidate observability or lineage gaps",
+      "rationale": "The admitted candidate still has audit, observability, or lineage gaps that weaken it as a future bounded reference target."
+    },
+    {
+      "objective_id": "prepare_candidate_promotion_bundle",
+      "title": "Prepare a revised candidate promotion bundle",
+      "rationale": "The admitted candidate is preserved, but a revised candidate promotion bundle is still needed before it should become the preferred future bounded reference target."
+    }
+  ]
+}

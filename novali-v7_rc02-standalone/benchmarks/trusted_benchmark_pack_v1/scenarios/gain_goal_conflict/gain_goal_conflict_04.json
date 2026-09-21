@@ -1,0 +1,43 @@
+{
+  "candidate_overrides": {
+    "dummy_improvement_bias": 0.1,
+    "local_score_bias": 0.04
+  },
+  "context_overrides": {
+    "goal_pressure_bias": 0.14,
+    "recent_realized_bias": 10.0
+  },
+  "decision_scoring": {
+    "gain_bad_penalty": 1.75,
+    "gain_weight": 1.1,
+    "goal_bad_penalty": 2.35,
+    "goal_margin_weight": 1.15,
+    "projection_bad_penalty": 1.35,
+    "projection_margin_weight": 0.55,
+    "status_bonus_full": 0.0,
+    "status_bonus_provisional": 0.04,
+    "status_bonus_reject": 0.0
+  },
+  "description": "gain_goal_conflict scenario 04: gain_temptation target=0 proposer=2",
+  "env": {
+    "horizon_pad": 8,
+    "noise_scale": 0.012,
+    "steps": 78
+  },
+  "eval_overrides": {
+    "goal_weight": 0.2,
+    "social_gain": 0.03
+  },
+  "family": "gain_goal_conflict",
+  "id": "gain_goal_conflict_04",
+  "pack_version": "1.0.0",
+  "proposer": 2,
+  "seed": 42102,
+  "tags": [
+    "gain_goal_conflict",
+    "gain_temptation"
+  ],
+  "target_agent": 0,
+  "variant_name": "gain_temptation",
+  "version": 1
+}

@@ -1,0 +1,49 @@
+version: "3.9"
+
+services:
+  novali-agent-probe:
+    image: novali-v6-standalone:local
+    command: ["python", "operator_shell/scripts/rc83_2_container_trace_probe.py"]
+    environment:
+      NOVALI_OTEL_ENABLED: "true"
+      NOVALI_OTEL_REDACTION_MODE: "strict"
+      OTEL_SERVICE_NAME: "novalioperatorshell"
+      NOVALI_LM_RESOURCE_TYPE: "host"
+      NOVALI_LM_HOST_NAME: "<LM_MONITORED_HOST_NAME>"
+      NOVALI_LM_IP: "<LM_MONITORED_HOST_IP>"
+      NOVALI_LM_RESOURCE_GROUP: "<OPTIONAL_GROUP>"
+      RC83_2_ENDPOINT_MODE: "same_network"
+      RC83_2_OTLP_PROTOCOL: "grpc"
+      OTEL_EXPORTER_OTLP_PROTOCOL: "grpc"
+      OTEL_EXPORTER_OTLP_ENDPOINT: "http://lmotel-collector:4317"
+      RC83_2_LMOTEL_CONTAINER_NAME: "lmotel-collector"
+      RC83_2_DOCKER_NETWORK: "novali-observability"
+      RC83_2_PROOF_ARTIFACT_ROOT: "/workspace/novali/artifacts/operator_proof/rc83_2"
+    volumes:
+      - ./artifacts/operator_proof/rc83_2:/workspace/novali/artifacts/operator_proof/rc83_2
+    networks:
+      - novali-observability
+
+  novali-agent-probe-http:
+    image: novali-v6-standalone:local
+    command: ["python", "operator_shell/scripts/rc83_2_container_trace_probe.py"]
+    environment:
+      NOVALI_OTEL_ENABLED: "true"
+      NOVALI_OTEL_REDACTION_MODE: "strict"
+      OTEL_SERVICE_NAME: "novalioperatorshell"
+      NOVALI_LM_RESOURCE_TYPE: "host"
+      NOVALI_LM_HOST_NAME: "<LM_MONITORED_HOST_NAME>"
+      NOVALI_LM_IP: "<LM_MONITORED_HOST_IP>"
+      RC83_2_ENDPOINT_MODE: "host_gateway"
+      RC83_2_OTLP_PROTOCOL: "http"
+      OTEL_EXPORTER_OTLP_PROTOCOL: "http"
+      OTEL_EXPORTER_OTLP_ENDPOINT: "http://host.docker.internal:4318"
+      RC83_2_PROOF_ARTIFACT_ROOT: "/workspace/novali/artifacts/operator_proof/rc83_2"
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    volumes:
+      - ./artifacts/operator_proof/rc83_2:/workspace/novali/artifacts/operator_proof/rc83_2
+
+networks:
+  novali-observability:
+    external: true

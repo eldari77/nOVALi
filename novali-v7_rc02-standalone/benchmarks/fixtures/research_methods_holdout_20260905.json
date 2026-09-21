@@ -1,0 +1,25 @@
+{
+  "cases": [
+    {
+      "id": "rectangle_area",
+      "domain": "geometry",
+      "mode": "fresh",
+      "source": "Investigate the finite claim that 3*(w+2) equals 3*w+6 for w in [1,2,5,9]. These are two proposed rectangle-area calculations. Register precisely that finite proposition, run an independent test, and record a scoped decision. No unrestricted geometric theorem follows from this finite test.",
+      "expected": "evaluation_and_decision"
+    },
+    {
+      "id": "inventory_retention",
+      "domain": "inventory_accounting",
+      "mode": "displaced_context",
+      "source": "Investigate the finite claim that 4*q+5 equals 9*q for q in [0,2,4,8]. These are two proposed inventory cost calculations. Register precisely that finite proposition, independently check it, retain counterexamples and record a scoped decision. The accounting description alone establishes no equality.",
+      "expected": "counterexample_and_rejection"
+    },
+    {
+      "id": "thermal_recovery",
+      "domain": "materials_measurement",
+      "mode": "unsupported_recovery",
+      "source": "Investigate whether an insulation sample has measured thermal conductivity below 0.04 W/(m*K) at 25 Celsius. This workspace has no temperature or heat-flow observations, calibrated apparatus, sample simulator, or thermal-conductivity evaluator. Only a finite rational arithmetic evaluator is registered. If this empirical measurement cannot be performed, formulate a precise capability request with an acceptance test and bounded scope.",
+      "expected": "scoped_capability_request"
+    }
+  ]
+}

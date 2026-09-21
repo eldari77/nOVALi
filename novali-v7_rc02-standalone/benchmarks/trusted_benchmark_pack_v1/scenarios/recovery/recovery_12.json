@@ -1,0 +1,41 @@
+{
+  "candidate_overrides": {
+    "dummy_improvement_bias": -0.01
+  },
+  "context_overrides": {
+    "c3_recent_bias": 0.07,
+    "instability_bias": 0.05,
+    "recent_realized_bias": -14.0,
+    "rollback_rate_bias": 0.18
+  },
+  "decision_scoring": {
+    "gain_bad_penalty": 1.48,
+    "gain_weight": 0.94,
+    "goal_bad_penalty": 1.32,
+    "goal_margin_weight": 0.84,
+    "projection_bad_penalty": 2.05,
+    "projection_margin_weight": 0.98,
+    "status_bonus_full": 0.0,
+    "status_bonus_provisional": 0.07,
+    "status_bonus_reject": 0.06
+  },
+  "description": "recovery scenario 12: recovery_stability target=2 proposer=1",
+  "env": {
+    "horizon_pad": 10,
+    "noise_scale": 0.012,
+    "steps": 82
+  },
+  "eval_overrides": {},
+  "family": "recovery",
+  "id": "recovery_12",
+  "pack_version": "1.0.0",
+  "proposer": 1,
+  "seed": 44315,
+  "tags": [
+    "recovery",
+    "recovery_stability"
+  ],
+  "target_agent": 2,
+  "variant_name": "recovery_stability",
+  "version": 1
+}

@@ -1,0 +1,39 @@
+{
+  "candidate_overrides": {
+    "projection_error_bias": 0.1
+  },
+  "context_overrides": {
+    "projection_recent_bias": 0.1,
+    "projection_trend_bias": 0.04
+  },
+  "decision_scoring": {
+    "gain_bad_penalty": 1.1,
+    "gain_weight": 0.9,
+    "goal_bad_penalty": 1.0,
+    "goal_margin_weight": 0.4,
+    "projection_bad_penalty": 2.5,
+    "projection_margin_weight": 1.3,
+    "status_bonus_full": 0.0,
+    "status_bonus_provisional": 0.0,
+    "status_bonus_reject": 0.0
+  },
+  "description": "projection scenario 02: mild_projection_watch target=1 proposer=1",
+  "env": {
+    "horizon_pad": 8,
+    "noise_scale": 0.012,
+    "steps": 72
+  },
+  "eval_overrides": {},
+  "family": "projection",
+  "id": "projection_02",
+  "pack_version": "1.0.0",
+  "proposer": 1,
+  "seed": 41008,
+  "tags": [
+    "projection",
+    "mild_projection_watch"
+  ],
+  "target_agent": 1,
+  "variant_name": "mild_projection_watch",
+  "version": 1
+}

@@ -1,0 +1,42 @@
+{
+  "branch": "novali-v6",
+  "environment_kind": "generic_non_se_sandbox",
+  "integrity_markers": {
+    "fixture_class": "stale",
+    "observation_profile": "warehouse_sandbox"
+  },
+  "lane_id": "lane_director",
+  "mutation_allowed": false,
+  "notes_redacted": "This fixture intentionally uses an old observation timestamp to test stale detection.",
+  "observed_at": "2020-01-01T00:00:00Z",
+  "observed_entities": [
+    {
+      "attributes_redacted": {
+        "capacity_band": "medium"
+      },
+      "entity_id": "entity_rack_alpha",
+      "entity_type": "storage_zone",
+      "label_redacted": "Rack alpha",
+      "location_hint_redacted": "north_cluster",
+      "observed_at": "2020-01-01T00:00:00Z",
+      "state": "ready"
+    }
+  ],
+  "observed_metrics": [
+    {
+      "metric_name": "inventory_count",
+      "metric_unit": "count",
+      "metric_value": 110,
+      "observed_at": "2020-01-01T00:00:00Z"
+    }
+  ],
+  "observed_relationships": [],
+  "package_version": "rc87",
+  "read_only": true,
+  "schema_version": "rc87.v1",
+  "snapshot_created_at": "2020-01-01T00:00:00Z",
+  "snapshot_id": "snapshot_stale",
+  "source_kind": "static_fixture",
+  "source_name": "warehouse_sandbox_stale",
+  "source_ref": "generic_world_snapshot_stale.json"
+}

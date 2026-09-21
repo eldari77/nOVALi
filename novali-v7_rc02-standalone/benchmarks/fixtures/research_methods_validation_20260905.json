@@ -1,0 +1,25 @@
+{
+  "cases": [
+    {
+      "id": "batch_time",
+      "domain": "production_scheduling",
+      "mode": "fresh",
+      "source": "Investigate the finite proposition that 7*(n+1) equals 7*n+7 for n in [0,3,6,10]. These are alternative batch-time calculations. Register exactly this finite arithmetic proposition, independently evaluate it, and record a decision restricted to these four cases.",
+      "expected": "evaluation_and_decision"
+    },
+    {
+      "id": "sensor_offset_retention",
+      "domain": "instrument_calibration",
+      "mode": "displaced_context",
+      "source": "Investigate the finite proposition that 6*s+4 equals 10*s for s in [-3,0,2,5]. These are proposed calibration formulas. Register exactly this finite proposition, independently test it, preserve any counterexamples and record a scoped decision. Do not substitute a broader prose proposition for the specified equality.",
+      "expected": "counterexample_and_rejection"
+    },
+    {
+      "id": "rainfall_recovery",
+      "domain": "environmental_measurement",
+      "mode": "unsupported_recovery",
+      "source": "Investigate whether a rain gauge's measured daily total has absolute error below 0.5 millimeters relative to a calibrated reference. This workspace has no paired gauge samples, timestamps, reference calibration, sensor runner or rainfall evaluator. It has only the finite rational arithmetic checker. Formulate a precise capability request with an acceptance test and bounded scope if the empirical observable is unavailable.",
+      "expected": "scoped_capability_request"
+    }
+  ]
+}

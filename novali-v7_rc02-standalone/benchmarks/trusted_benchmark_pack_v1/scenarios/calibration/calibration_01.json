@@ -1,0 +1,39 @@
+{
+  "candidate_overrides": {
+    "dummy_improvement_bias": 0.05
+  },
+  "context_overrides": {
+    "projection_recent_bias": 0.04,
+    "wm_quality_penalty_bias": 0.1
+  },
+  "decision_scoring": {
+    "gain_bad_penalty": 1.4,
+    "gain_weight": 1.0,
+    "goal_bad_penalty": 1.25,
+    "goal_margin_weight": 0.7,
+    "projection_bad_penalty": 1.75,
+    "projection_margin_weight": 0.85,
+    "status_bonus_full": 0.0,
+    "status_bonus_provisional": 0.04,
+    "status_bonus_reject": 0.0
+  },
+  "description": "calibration scenario 01: forecast_gain_check target=0 proposer=1",
+  "env": {
+    "horizon_pad": 8,
+    "noise_scale": 0.011,
+    "steps": 72
+  },
+  "eval_overrides": {},
+  "family": "calibration",
+  "id": "calibration_01",
+  "pack_version": "1.0.0",
+  "proposer": 1,
+  "seed": 45001,
+  "tags": [
+    "calibration",
+    "forecast_gain_check"
+  ],
+  "target_agent": 0,
+  "variant_name": "forecast_gain_check",
+  "version": 1
+}

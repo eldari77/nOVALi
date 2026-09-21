@@ -1,11 +1,6 @@
-# NOVALI History
+# NOVALI Public Handoff History
 
-This public handoff keeps first-run documentation focused on current operator setup. Older rc milestone detail is historical and should not be required to operate the current guided handoff.
+- `novali-v7_rc01-standalone` is the June 2026 guided handoff retained for reference.
+- `novali-v7_rc02-standalone` is the current source-first refresh. It incorporates later v7 application improvements, removes development and acceptance directives, removes live-state/evidence carry-forward, and requires a local Docker build instead of shipping an older image archive.
 
-High-level lineage:
-
-- v6 established packaged governed continuation and operator portfolio behavior.
-- v7 moved to the current clean handoff root and local Docker/browser operator model.
-- Current v7 work adds the React Operator Shell, autonomy kernel, Librarian pack library, directive work program/dossiers, memory smoothing, disk-spill metadata, and validated trusted-source evidence handling.
-
-Historical notes may mention older packages or internal release candidates. Treat them as context, not current setup instructions.
+Older milestone documents are historical context, not setup instructions for the current handoff.

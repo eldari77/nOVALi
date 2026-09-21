@@ -1,30 +1,23 @@
 # Public Package Contents
 
-This file explains what the public guided handoff includes and excludes.
+The current public handoff is `novali-v7_rc02-standalone/`. It is a source-first release candidate assembled from the active v7 codebase.
 
 ## Included
 
-- runnable NOVALI v7 standalone package;
-- Docker image archive or build path for local execution;
-- React Operator Shell static build;
-- generic directive scaffolding tools;
-- generic trusted-source and Librarian seed documentation;
-- public operator guides and quick references;
-- sanitized screenshots;
-- placeholder runtime folders with README files.
+- NOVALI v7 application source and the built Web Operator assets;
+- Dockerfile, Compose configuration, and PowerShell launch helpers;
+- local directive-scaffold tooling;
+- public governance, runtime, operator, and security documentation;
+- empty, documented locations for operator-owned input and runtime state.
 
 ## Excluded
 
-- private mission directive files from local runs;
-- active workspace artifacts and generated dossiers from private runs;
-- pending LLM directive candidates;
-- runtime JSONL ledgers;
-- local telemetry exports;
-- spill-volume state;
-- `.env` files;
-- raw trusted-source provider output;
-- API keys, tokens, passwords, and credential-shaped values.
+- all authored, acceptance, and test directive JSON files;
+- active workspaces, directive dossiers, and generated review packets;
+- runtime ledgers, checkpoints, provider responses, telemetry, and local state;
+- credentials, `.env` files, cache files, and compiled Python artifacts;
+- a prebuilt Docker image archive, because the prior archive would not represent this source revision.
 
-## Why
+## Operator-owned state
 
-The public handoff should be runnable and reviewable without becoming a dump of private runtime state. Operators should start from their own directive and let NOVALI create new local evidence under their own workspace.
+After launch, operators may create a directive under `directive_inputs/` and use `runtime_data/` or `operator_state/` locally. Those files are not public-package content and must not be committed.

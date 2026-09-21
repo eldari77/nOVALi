@@ -1,0 +1,54 @@
+receivers:
+  otlp:
+    protocols:
+      grpc:
+        endpoint: 127.0.0.1:4317
+      http:
+        endpoint: 127.0.0.1:4318
+
+processors:
+  memory_limiter:
+    check_interval: 1s
+    limit_mib: 128
+  probabilistic_sampler:
+    sampling_percentage: 100
+  batch:
+    timeout: 1s
+  attributes/redact:
+    actions:
+      - key: authorization
+        action: delete
+      - key: cookie
+        action: delete
+      - key: api_key
+        action: delete
+      - key: access_id
+        action: delete
+      - key: access_key
+        action: delete
+      - key: otel_exporter_otlp_headers
+        action: delete
+      - key: novali.secret
+        action: delete
+  resource/novali:
+    attributes:
+      - key: service.namespace
+        value: novali
+        action: upsert
+      # host.name, ip, and resource.type should normally arrive from NOVALI's
+      # resource attributes during rc83.1 proof runs.
+
+exporters:
+  logging:
+    verbosity: basic
+
+service:
+  pipelines:
+    traces:
+      receivers: [otlp]
+      processors: [memory_limiter, probabilistic_sampler, attributes/redact, resource/novali, batch]
+      exporters: [logging]
+    metrics:
+      receivers: [otlp]
+      processors: [memory_limiter, attributes/redact, resource/novali, batch]
+      exporters: [logging]

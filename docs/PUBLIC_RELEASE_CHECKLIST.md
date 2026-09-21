@@ -1,28 +1,20 @@
 # Public Release Checklist
 
-Run this checklist before committing or publishing a NOVALI public handoff.
+Use this checklist before committing or publishing a NOVALI public handoff.
 
-## Required Checks
+## Package
 
-- [ ] Build or refresh the public handoff package.
-- [ ] Confirm the package contains no private live directive.
-- [ ] Confirm `directive_inputs/` contains only generic samples/placeholders.
-- [ ] Confirm `novali-active_workspace/` contains only a README placeholder.
-- [ ] Confirm `operator_state/` contains only a README placeholder or safe seed metadata.
-- [ ] Confirm `runtime_data/` contains only README placeholders and safe acceptance evidence.
-- [ ] Confirm `node_modules/`, caches, and test outputs are not tracked.
-- [ ] Confirm screenshots are sanitized and do not show private runtime state.
-- [ ] Run `.\scripts\public_handoff_hygiene.ps1`.
-- [ ] Run Python compile checks for shipped helper scripts.
-- [ ] Launch the wizard and verify `/shell` opens.
+- [ ] Build a new versioned package rather than overwrite the previous public candidate.
+- [ ] Confirm the package is assembled from the intended source revision.
+- [ ] Confirm the package has no authored, acceptance, or test directive files.
+- [ ] Confirm `directive_inputs/`, `operator_state/`, `novali-active_workspace/`, and runtime folders contain only their public README placeholders.
+- [ ] Confirm no active-workspace evidence, provider output, runtime ledgers, telemetry, or `.env` files are present.
+- [ ] Confirm any image archive matches the packaged source; otherwise omit it and document the local-build path.
 
-## Forbidden Public Content
+## Documentation and validation
 
-- private mission directive text from local runs;
-- raw provider output;
-- `.env` files;
-- API keys or bearer strings;
-- active workspace artifacts;
-- pending LLM directives;
-- runtime JSONL ledgers;
-- absolute local host paths except documentation examples that are clearly generic.
+- [ ] Update the root README, quick reference, package contents, and AI operator guide to the new package name.
+- [ ] Run `./scripts/public_handoff_hygiene.ps1`.
+- [ ] Compile the shipped directive-scaffold helper.
+- [ ] Start the wizard and verify `/shell` opens against the new package.
+- [ ] Review the final file list for absolute local paths, credentials, and stale release references.

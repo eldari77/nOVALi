@@ -1,7 +1,7 @@
 $ErrorActionPreference = "Stop"
 
 $repoRoot = Split-Path -Parent $PSScriptRoot
-$packageRoot = Join-Path $repoRoot "novali-v7_rc01-standalone"
+$packageRoot = Join-Path $repoRoot "novali-v7_rc02-standalone"
 $shellUrl = "http://127.0.0.1:8787/shell"
 $imageTag = "novali-v7-standalone:local"
 $imageArchive = Join-Path $packageRoot "image\novali-v7-standalone.tar"
@@ -44,7 +44,7 @@ else {
 Write-Host ""
 Write-Host "Directive setup:"
 Write-Host "  Use the scaffold helper when you need a first directive:"
-Write-Host "  .\novali-v7_rc01-standalone\standalone_docker\generate_directive_scaffold.ps1 --output .\novali-v7_rc01-standalone\directive_inputs\my_first_directive.json --directive-id directive_my_first_run_v1 --directive-text `"Initialize NOVALI for a bounded local research and implementation planning run.`" --clarified-intent-summary `"Create reviewable local artifacts, keep all execution governed, and preserve operator-readable evidence before continuation.`""
+Write-Host "  .\novali-v7_rc02-standalone\standalone_docker\generate_directive_scaffold.ps1 --output .\novali-v7_rc02-standalone\directive_inputs\my_first_directive.json --directive-id directive_my_first_run_v1 --directive-text `"Initialize NOVALI for a bounded local research and implementation planning run.`" --clarified-intent-summary `"Create reviewable local artifacts, keep all execution governed, and preserve operator-readable evidence before continuation.`""
 Write-Host ""
 Write-Host "Trusted-source credentials:"
 Write-Host "  Do not commit secrets. Provide credentials only through your local shell or the Operator Shell when needed."

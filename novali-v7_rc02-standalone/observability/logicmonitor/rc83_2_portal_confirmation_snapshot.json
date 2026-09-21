@@ -1,0 +1,13 @@
+{
+  "schema_name": "novali_portal_confirmation_snapshot_v1",
+  "milestone": "rc83_2",
+  "proof_id": "rc83-2-dockerized-trace-20260419-023215-3hcq9u",
+  "service_name": "novalioperatorshell",
+  "protocol": "grpc",
+  "endpoint_mode": "host_gateway",
+  "confirmation_state": "confirmed",
+  "confirmation_source": "human operator",
+  "note": "Operator confirmed NOVALI traces visible in LogicMonitor after collector config correction.",
+  "no_credentials_stored": true,
+  "no_api_calls_made": true
+}
