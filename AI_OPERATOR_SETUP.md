@@ -4,7 +4,7 @@ This guide applies to Codex and other AI assistants helping a human use the publ
 
 ## Operating boundary
 
-- Use `novali-v7_rc02-standalone/` as the current public package; `rc01` is retained as historical reference.
+- Use `novali-v7_rc02-standalone/` as the only public handoff package.
 - Keep public work source-first. The package deliberately has no authored, acceptance, or test directives.
 - Never copy secrets, `.env` values, local runtime state, active workspaces, raw provider output, or telemetry captures into the repository.
 - Treat generated local evidence as advisory. Approval, broker, runtime policy, and emergency-stop gates remain authoritative.

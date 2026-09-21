@@ -7,4 +7,4 @@
 - Public directive policy: no authored, acceptance, or test directive is bundled
 - State policy: directives, workspaces, runtime state, provider output, and credentials are local-only
 
-`novali-v7_rc01-standalone` is retained in the repository as the preceding public candidate, not as the current setup target.
+Earlier public candidates were removed so this package is the sole supported setup target.
